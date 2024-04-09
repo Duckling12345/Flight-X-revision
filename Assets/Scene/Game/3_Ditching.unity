@@ -29468,8 +29468,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 8.851362, y: 2.3802996, z: 4.955108}
-  m_Center: {x: -1.6138984, y: 0.6901505, z: 1.5600742}
+  m_Size: {x: 5.3648868, y: 2.3802996, z: 3.8409576}
+  m_Center: {x: -0.7950744, y: 0.69015074, z: 2.1171494}
 --- !u!23 &1460975285
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29529,7 +29529,7 @@ Transform:
   m_GameObject: {fileID: 1460975283}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.09656666, w: 0.9953265}
-  m_LocalPosition: {x: 570.15, y: 194.74, z: 251.2006}
+  m_LocalPosition: {x: 570.15, y: 194.74, z: 254.262}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -46298,7 +46298,7 @@ Transform:
   m_GameObject: {fileID: 919132148516947582}
   serializedVersion: 2
   m_LocalRotation: {x: -0.08197859, y: -0.5555972, z: -0.075135395, w: 0.8239818}
-  m_LocalPosition: {x: 491.2, y: 97.1, z: -543}
+  m_LocalPosition: {x: 454.2, y: 106.1, z: -529.3}
   m_LocalScale: {x: 24.934622, y: 24.934624, z: 24.934626}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -47128,8 +47128,9 @@ GameObject:
   - component: {fileID: 1167271748}
   - component: {fileID: 1167271751}
   - component: {fileID: 5866666020878654161}
+  - component: {fileID: 5866666020878654162}
   m_Layer: 0
-  m_Name: Passenger 4
+  m_Name: Passenger
   m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47165,8 +47166,10 @@ GameObject:
   - component: {fileID: 1586533995}
   - component: {fileID: 1586533998}
   - component: {fileID: 5866666020406757055}
+  - component: {fileID: 5866666020406757056}
+  - component: {fileID: 5866666020406757057}
   m_Layer: 0
-  m_Name: Passenger 1
+  m_Name: Passenger
   m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58450,6 +58453,54 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!54 &5866666020406757056
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148516947582}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &5866666020406757057
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148516947582}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.53204995, y: 0.9999998, z: 0.9999998}
+  m_Center: {x: -0.23397574, y: 5.93095e-11, z: -0.0000000018521326}
 --- !u!95 &5866666020878654160
 Animator:
   serializedVersion: 5
@@ -58493,6 +58544,27 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!135 &5866666020878654162
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148040866320}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5879981008593513934
 GameObject:
   m_ObjectHideFlags: 0
