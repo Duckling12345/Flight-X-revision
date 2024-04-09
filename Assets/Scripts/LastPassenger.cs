@@ -11,14 +11,16 @@ public class LastPassenger : MonoBehaviour
     public int objectiveID;
     [SerializeField] Animator popupAnimator;
     public float timetowait;
-
-
+    public GameObject oxygens;
+    
     private void Update()
     {
+        
         if (fixbutton.Pressed == true && objective.objectivesDone == objectiveID)
         {
             objectiveText1.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);
             Invoke("WaitAnimation", timetowait);
+            oxygens.SetActive(true);
 
         }
     }
