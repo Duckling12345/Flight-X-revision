@@ -4,16 +4,13 @@ using UnityEngine;
 
 public class TriggerLevelShake : MonoBehaviour
 {
-    public NPCScript npc;
     public Shake shaker;
     public Shake shaker2;
 
-    void Update()
+    void Awake()
     {
-        if(npc.talkPressed)
-        {
             shaker.ShakeScreen();
             shaker2.ShakeScreen();
-        }
+        
     }
 }

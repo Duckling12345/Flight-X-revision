@@ -353,6 +353,63 @@ Transform:
   - {fileID: 765795879}
   m_Father: {fileID: 522077530}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &44100665
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: f27b46af4fd899745851091f7e752fc4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 188.47021
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f27b46af4fd899745851091f7e752fc4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.5922353
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f27b46af4fd899745851091f7e752fc4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 686.30634
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f27b46af4fd899745851091f7e752fc4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f27b46af4fd899745851091f7e752fc4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f27b46af4fd899745851091f7e752fc4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f27b46af4fd899745851091f7e752fc4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f27b46af4fd899745851091f7e752fc4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f27b46af4fd899745851091f7e752fc4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f27b46af4fd899745851091f7e752fc4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f27b46af4fd899745851091f7e752fc4, type: 3}
+      propertyPath: m_Name
+      value: OxygenMasks
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f27b46af4fd899745851091f7e752fc4, type: 3}
 --- !u!1 &47820886
 GameObject:
   m_ObjectHideFlags: 0
@@ -3893,6 +3950,7 @@ MonoBehaviour:
   objectiveText1: {fileID: 0}
   objectiveText2: {fileID: 0}
   obstacle: {fileID: 0}
+  removeImage: {fileID: 0}
 --- !u!4 &924261585
 Transform:
   m_ObjectHideFlags: 0
@@ -7527,6 +7585,7 @@ MonoBehaviour:
   objectiveText1: {fileID: 1901369156}
   objectiveText2: {fileID: 168474760}
   obstacle: {fileID: 0}
+  removeImage: {fileID: 0}
 --- !u!135 &1956619009
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8224,3 +8283,4 @@ SceneRoots:
   - {fileID: 924261585}
   - {fileID: 410172359}
   - {fileID: 2853930486809455981}
+  - {fileID: 44100665}

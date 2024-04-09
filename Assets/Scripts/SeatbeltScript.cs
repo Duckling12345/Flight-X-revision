@@ -20,9 +20,8 @@ public class SeatbeltScript : MonoBehaviour, IPointerUpHandler, IPointerDownHand
     {
         if (fixedSeatbelt.Pressed)
         {
+           
             FastenSeatbelt();
-            shaker.ShakeScreen();
-
         }
     }
     void FastenSeatbelt()
@@ -30,7 +29,6 @@ public class SeatbeltScript : MonoBehaviour, IPointerUpHandler, IPointerDownHand
         CameraAnimation.SetActive(true);
         BuckleAnim.Play(StateName);
         tempDisable.SetActive(false);
-        shaker.ShakeScreen();
         activateNext.SetActive(true);
         deactivateCurrent.SetActive(false);
         AudioManager.Instance.PlayBuckleSound();

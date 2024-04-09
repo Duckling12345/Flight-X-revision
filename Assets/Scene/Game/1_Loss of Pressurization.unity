@@ -14249,6 +14249,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7959172845899526850, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
   m_PrefabInstance: {fileID: 1828772947}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &352670006 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8411025752569456832, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+  m_PrefabInstance: {fileID: 1828772947}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &354713440
 GameObject:
   m_ObjectHideFlags: 0
@@ -15450,12 +15455,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 375874051}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 670b652e50c0a0f4c9b72d7cd097e55c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npc: {fileID: 375874052}
   shaker: {fileID: 1500110046}
   shaker2: {fileID: 682147829}
 --- !u!114 &375874057
@@ -21066,6 +21070,7 @@ MonoBehaviour:
   shaker: {fileID: 682147829}
   activateNext: {fileID: 904269312}
   deactivateCurrent: {fileID: 25174393}
+  disableObjectCollider: {fileID: 515623409}
 --- !u!114 &515623419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21082,6 +21087,8 @@ MonoBehaviour:
   fixbutton: {fileID: 577062110}
   objective: {fileID: 21444180}
   objectiveID: 2
+  popupAnimator: {fileID: 352670006}
+  timetowait: 3
 --- !u!1 &520429542
 GameObject:
   m_ObjectHideFlags: 0
@@ -34361,6 +34368,7 @@ MonoBehaviour:
   sceneMover: {fileID: 1381748869}
   EndSound: {fileID: 2132566865}
   deactivateCurrent: {fileID: 904269312}
+  removeButton: {fileID: 360663363}
 --- !u!114 &834232690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49548,6 +49556,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1207805463}
   - component: {fileID: 1207805462}
+  - component: {fileID: 1207805464}
   m_Layer: 0
   m_Name: Testing
   m_TagString: Untagged
@@ -49666,6 +49675,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1207805464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207805461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 670b652e50c0a0f4c9b72d7cd097e55c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shaker: {fileID: 1500110046}
+  shaker2: {fileID: 682147829}
 --- !u!1 &1212887138
 GameObject:
   m_ObjectHideFlags: 0
@@ -83713,6 +83736,7 @@ MonoBehaviour:
   shaker: {fileID: 682147829}
   activateNext: {fileID: 25174393}
   deactivateCurrent: {fileID: 896615903}
+  disableObjectCollider: {fileID: 1996033551}
 --- !u!1 &1997991239
 GameObject:
   m_ObjectHideFlags: 0

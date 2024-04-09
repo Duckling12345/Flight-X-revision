@@ -18,7 +18,7 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
     public UnlockDoor sceneMover;
     public GameObject EndSound;
     public GameObject deactivateCurrent;
-
+    public GameObject removeButton;
 
     private void Update()
     {
@@ -48,6 +48,7 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
         mask.SetActive(true);
         wear.Play("WearOxygen");
         AudioManager.Instance.PlayOxygenSound();
+        removeButton.SetActive(false);
 
     }
 
