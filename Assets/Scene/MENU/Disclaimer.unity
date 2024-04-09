@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 30.389, y: 187}
+  m_AnchoredPosition: {x: 30.389, y: 175}
   m_SizeDelta: {x: 1413.5, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &690278872
@@ -181,7 +181,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'By accessing and using our simulation game, you agree to comply with these
-    terms and conditions:'
+    conditions:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3c399d287f7490c449c29039a82711ee, type: 2}
   m_sharedMaterial: {fileID: -3015122423470148846, guid: 3c399d287f7490c449c29039a82711ee, type: 2}
@@ -208,8 +208,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32
-  m_fontSizeBase: 32
+  m_fontSize: 37
+  m_fontSizeBase: 37
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -713,7 +713,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 360}
+  m_AnchoredPosition: {x: 0, y: 363}
   m_SizeDelta: {x: 1000, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1334561122
@@ -736,7 +736,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Terms and Conditions
+  m_text: Disclaimer
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8b69cb9661d59a440b3bc9e0ff1eab8a, type: 2}
   m_sharedMaterial: {fileID: 5767788990938898048, guid: 8b69cb9661d59a440b3bc9e0ff1eab8a, type: 2}
@@ -769,7 +769,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 16
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -1220,7 +1220,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 39.092106, y: 78}
+  m_AnchoredPosition: {x: 39.092106, y: 47}
   m_SizeDelta: {x: 1396.0527, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1898978915
@@ -1243,27 +1243,23 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Only entertainment and educational purposes are intended for the game.
-    It cannot replace formal education or certification in the workplace.
+  m_text: 'This game is intended solely for entertainment and educational purposes.
+    It is not a substitute for formal education or certification in professional
+    contexts.
 
 
-    We
-    reserve the right to change or alter the game at any time without warning, including
-    its availability, features, and content.
+    This application is not affiliated with any aircraft organization
+    and should not be relied upon encountering real-life scenarios. Consult with
+    verified and official sources to comply with aviation standards.
 
 
-    Any unlawful use of the game,
-    such as hacking, cheating, or taking advantage of loopholes, is strictly forbidden.
+    Any unlawful
+    use of the game, such as hacking, cheating, or taking advantage of loopholes,
+    is strictly forbidden.
 
 
-    You
-    are not allowed to use the game for any unlawful, damaging, or objectionable
-    activity, such as harassing, discriminating against, or disseminating inappropriate
-    material.
-
-
-    In the event that you violate these terms and conditions, we
-    have the right to suspend or terminate your access to the game.'
+    Violation of these terms and conditions may result
+    in suspension or termination of access to the game.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4c41be3721296094098dcfc868c6f87e, type: 2}
   m_sharedMaterial: {fileID: -7727011910826303001, guid: 4c41be3721296094098dcfc868c6f87e, type: 2}
@@ -1290,8 +1286,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 31
+  m_fontSizeBase: 31
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
