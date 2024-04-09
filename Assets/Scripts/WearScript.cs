@@ -17,10 +17,10 @@ public class WearScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public ObjectiveScript objective;
     public int objectiveID;
     public GameObject activate;
-    [SerializeField] Animator transitionAnim;
     public GameObject activateNext;
     public GameObject deactivateCurrent;
-
+    [SerializeField] Animator popupAnimator;
+    public float timetowait;
 
 
     private void Update()
@@ -29,9 +29,14 @@ public class WearScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         {
             WearPBE();
             objectiveText1.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);
+            Invoke("WaitAnimation", timetowait);
         }
     }
+    public void WaitAnimation()
+    {
+        popupAnimator.Play("PopUpAnimation");
 
+    }
     void WearPBE()
     {
         if (wearPressed)
@@ -39,10 +44,8 @@ public class WearScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
            ObjectToWear.SetActive(false);
             disableButton.SetActive(false);
             PBEWorn.SetActive(true);
-            activate.SetActive(true);
             activateNext.SetActive(true);
             deactivateCurrent.SetActive(false);
-            transitionAnim.Play("FadeIn");
             AudioManager.Instance.PlayInspectSound();
         }
     }

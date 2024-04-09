@@ -17,6 +17,7 @@ public class LastObjective : MonoBehaviour
     public GameObject activateNext;
     public GameObject deactivateCurrent;
     public GameObject Stopper;
+    [SerializeField] Animator popupAnimator;
 
     private void Update()
     {
@@ -30,10 +31,13 @@ public class LastObjective : MonoBehaviour
             deactivateCurrent.SetActive(false);
             objectiveText1.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);
             Stopper.SetActive(false);
-
+            Invoke("WaitAnimation", 1f);
         }
     }
+    public void WaitAnimation()
+    {
+        popupAnimator.Play("PopUpAnimation");
 
-
+    }
 
 }

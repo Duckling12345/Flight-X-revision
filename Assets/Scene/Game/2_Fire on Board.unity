@@ -2808,6 +2808,11 @@ MonoBehaviour:
   fixedExtinguish: {fileID: 6019915763898676062}
   Extinguish: {fileID: 1540041863942086}
   deactivateCurrent: {fileID: 1534505064}
+--- !u!95 &859384722 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8411025752569456832, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+  m_PrefabInstance: {fileID: 1429166141}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &872608221
 GameObject:
   m_ObjectHideFlags: 0
@@ -4348,9 +4353,10 @@ MonoBehaviour:
   objective: {fileID: 1304250769}
   objectiveID: 1
   activate: {fileID: 1838412637}
-  transitionAnim: {fileID: 1838412638}
   activateNext: {fileID: 1138766173}
   deactivateCurrent: {fileID: 1192442991}
+  popupAnimator: {fileID: 859384722}
+  timetowait: 3
 --- !u!114 &1274419792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5890,6 +5896,7 @@ MonoBehaviour:
   activateNext: {fileID: 1534505064}
   deactivateCurrent: {fileID: 1138766173}
   Stopper: {fileID: 1030764600}
+  popupAnimator: {fileID: 859384722}
 --- !u!65 &1525581169
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7571,11 +7578,6 @@ MonoBehaviour:
 --- !u!1 &1838412637 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 102945623998708169, guid: f9be2d1fdae3a0e46ad85adaa082516d, type: 3}
-  m_PrefabInstance: {fileID: 9031266298428100319}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1838412638 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 6348849455167932364, guid: f9be2d1fdae3a0e46ad85adaa082516d, type: 3}
   m_PrefabInstance: {fileID: 9031266298428100319}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1854323775
@@ -79143,7 +79145,7 @@ SceneRoots:
   - {fileID: 7811873283841752178}
   - {fileID: 3672785806925239140}
   - {fileID: 1320654049}
-  - {fileID: 9031266298428100319}
   - {fileID: 1207145050}
   - {fileID: 220726359}
+  - {fileID: 9031266298428100319}
   - {fileID: 1030764604}
