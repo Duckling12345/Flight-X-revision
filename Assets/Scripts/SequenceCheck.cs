@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 
 public class SequenceCheck : MonoBehaviour
@@ -8,6 +9,11 @@ public class SequenceCheck : MonoBehaviour
 
     private string correctSequence, currentSequence;
     public UnlockDoor sceneMover;
+    [SerializeField] Animator NPCanimation;
+    public string stateName;
+    public string stateName2;
+    public string stateName3;
+    public int delayTime;
 
     private void Start()
     {
@@ -23,12 +29,15 @@ public class SequenceCheck : MonoBehaviour
         {
             case "LifeVest":
                 currentSequence += 1;
+                NPCanimation.Play(stateName);
                 break;
             case "Seatbelt": 
-                currentSequence += 2; 
+                currentSequence += 2;
+                NPCanimation.Play(stateName2);
                 break;
             case "Oxygen":
                 currentSequence += 3;
+                NPCanimation.Play(stateName3);
                 break;
         }
 
@@ -39,11 +48,17 @@ public class SequenceCheck : MonoBehaviour
         } else if (currentSequence == correctSequence)
         {
             currentSequence = "";
-            Destroy(gameObject);
-            sceneMover.NextLevel();
+            Invoke("DelayTransition", delayTime);
         }
 
     }
+
+    void DelayTransition()
+    {
+        sceneMover.NextLevel();
+    }
+
+
 
     private void OnDestroy()
     {

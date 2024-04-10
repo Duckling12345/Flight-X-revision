@@ -32303,7 +32303,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4533449660980142709, guid: 730e7b62fa8cd1f4f8f2706e82c45a68, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6867935344451985052, guid: 730e7b62fa8cd1f4f8f2706e82c45a68, type: 3}
       propertyPath: m_IsActive
@@ -34976,7 +34976,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.009433985, g: 0.0017265966, b: 0.0017265966, a: 1}
+    m_PressedColor: {r: 0.09411766, g: 0.29411766, b: 0.44705886, a: 0.8039216}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -38213,7 +38213,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.009433985, g: 0.0017265966, b: 0.0017265966, a: 1}
+    m_PressedColor: {r: 0.09411766, g: 0.29411766, b: 0.44705886, a: 0.8039216}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -49898,7 +49898,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.009433985, g: 0.0017265966, b: 0.0017265966, a: 1}
+    m_PressedColor: {r: 0.09411766, g: 0.29411766, b: 0.44705886, a: 0.8039216}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -60323,6 +60323,11 @@ MonoBehaviour:
   correctSequence: 
   currentSequence: 
   sceneMover: {fileID: 1319838110}
+  NPCanimation: {fileID: 919132149090428103}
+  stateName: F_Talking
+  stateName2: F_Standing Greeting
+  stateName3: Greeting
+  delayTime: 0
 --- !u!1 &919132149472910813
 GameObject:
   m_ObjectHideFlags: 0
