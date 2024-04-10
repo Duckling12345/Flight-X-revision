@@ -16,6 +16,8 @@ public class SeatbeltScript : MonoBehaviour, IPointerUpHandler, IPointerDownHand
     public Shake shaker;
     public GameObject activateNext;
     public GameObject deactivateCurrent;
+    public GameObject seatbeltObject;
+    public GameObject seatbeltObject2;
     void Update()
     {
         if (fixedSeatbelt.Pressed)
@@ -31,6 +33,7 @@ public class SeatbeltScript : MonoBehaviour, IPointerUpHandler, IPointerDownHand
         tempDisable.SetActive(false);
         activateNext.SetActive(true);
         deactivateCurrent.SetActive(false);
+        seatbeltObject.SetActive(true);
         AudioManager.Instance.PlayBuckleSound();
     }
 

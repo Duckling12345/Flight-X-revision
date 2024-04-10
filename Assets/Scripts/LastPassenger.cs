@@ -12,7 +12,8 @@ public class LastPassenger : MonoBehaviour
     [SerializeField] Animator popupAnimator;
     public float timetowait;
     public GameObject oxygens;
-    
+    public GameObject seatbelt;
+
     private void Update()
     {
         
@@ -21,7 +22,7 @@ public class LastPassenger : MonoBehaviour
             objectiveText1.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);
             Invoke("WaitAnimation", timetowait);
             oxygens.SetActive(true);
-
+            seatbelt.SetActive(true);
         }
     }
 

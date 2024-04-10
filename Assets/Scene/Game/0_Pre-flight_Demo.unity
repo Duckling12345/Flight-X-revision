@@ -32303,7 +32303,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4533449660980142709, guid: 730e7b62fa8cd1f4f8f2706e82c45a68, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6867935344451985052, guid: 730e7b62fa8cd1f4f8f2706e82c45a68, type: 3}
       propertyPath: m_IsActive
@@ -41443,19 +41443,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7835312381361627917, guid: 32188e4d73be93240b4895385cb19d22, type: 3}
---- !u!114 &1659790362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7507833022654525391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e48bf00ae6d8e8f4bbb080295f74f9bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Pressed: 0
 --- !u!1 &1661793097
 GameObject:
   m_ObjectHideFlags: 0
@@ -64776,7 +64763,7 @@ MonoBehaviour:
   _FixedButton: {fileID: 2749211638836227824}
   _PauseMenu: {fileID: 3826643470955931693}
   _PauseFixedButton: {fileID: 3181584261370236970}
-  _FixedClipboardButton: {fileID: 1659790362}
+  _FixedClipboardButton: {fileID: 0}
   _PopupWindow: {fileID: 817077882}
   _FixedTalkButton: {fileID: 5809612637541490069}
   _NPCScript: {fileID: 49122384}
@@ -102465,7 +102452,7 @@ Transform:
   m_GameObject: {fileID: 4159898159870257614}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.8552643, z: -0, w: -0.518192}
-  m_LocalPosition: {x: 38.84, y: 7.62, z: -606.97}
+  m_LocalPosition: {x: 38.46, y: 7.62, z: -607.48}
   m_LocalScale: {x: 1.5956136, y: 2.62, z: 1.595614}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -110481,14 +110468,13 @@ GameObject:
   - component: {fileID: 5432037804399245849}
   - component: {fileID: 2250238529584603759}
   - component: {fileID: 3737478540646655607}
-  - component: {fileID: 1659790362}
   m_Layer: 5
   m_Name: Clipboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!33 &7509306410726910449
 MeshFilter:
   m_ObjectHideFlags: 0

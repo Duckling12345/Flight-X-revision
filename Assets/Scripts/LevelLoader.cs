@@ -10,6 +10,24 @@ public class LevelLoader : MonoBehaviour
     public GameObject loadingScreen2;
     public GameObject loadingScreen3;
 
+    public Button[] buttons;
+
+    //Locks Level
+    private void Awake()
+    {
+        int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
+        for (int i = 0; i< buttons.Length; i++)
+        {
+            buttons[i].interactable = false;
+        }
+        for (int i = 0; i < unlockedLevel; i++)
+        {
+            buttons[i].interactable = true;
+        }
+    }
+
+
+    //Loads Level
     public void LoadLevel(int sceneIndex)
     {
         StartCoroutine(LoadAsynchronously(sceneIndex));
@@ -42,28 +60,7 @@ public class LevelLoader : MonoBehaviour
             float progress = Mathf.Clamp01(operation.progress / .9f);
             // Update loading progress
             yield return null;
-        }
-
-        // Scene loaded, update images and text
-        SceneLoad(sceneIndex);
+        }        
     }
 
-    public void SceneLoad(int sceneIndex)
-    {
-        switch (sceneIndex)
-        {
-            case 6:
-                // Update title for sceneIndex 6
-                break;
-            case 9:
-                // Update title for sceneIndex 7
-                break;
-            case 12:
-                // Update title for sceneIndex 8
-                break;
-            case 15:
-                // Update title for sceneIndex 9
-                break;
-        }
-    }
 }

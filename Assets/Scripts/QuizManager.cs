@@ -70,8 +70,20 @@ public class QuizManager : MonoBehaviour
     public void proceed()
     {
         SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);
+        UnlockNew();
     }
 
+    //Unlock Level
+    void UnlockNew()
+    {
+        if (SceneManager.GetActiveScene().buildIndex >= PlayerPrefs.GetInt("ReachedIndex"))
+        {
+            PlayerPrefs.SetInt("ReachedIndex", SceneManager.GetActiveScene().buildIndex + 1);
+            PlayerPrefs.SetInt("UnlockedLevel", PlayerPrefs.GetInt("UnlockedLevel", 1) + 1);
+            PlayerPrefs.Save();
+
+        }
+    }
     void SetAnswers()
     {
 
