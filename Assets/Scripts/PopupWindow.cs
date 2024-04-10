@@ -39,14 +39,14 @@ public class PopupWindow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
                 ShowPopup("Level 1 | Pre-flight Checking");
                 break;
 
-            case 9:
+            case 10:
                 ShowPopup("Level 2 | Loss of Pressurization");
                 break;
 
             case 12:
                 ShowPopup("Level 3 | Fire on Board");
                 break;
-            case 15:
+            case 14:
                 ShowPopup("Level 4 | Water Ditching");
                 break;
             default:
@@ -58,11 +58,11 @@ public class PopupWindow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     }
     private void Update()
     {
-        if (clipPressed && scene.buildIndex == 6)
+        if (clipPressed && scene.buildIndex == 7)
         {
             ShowPopup("Level 1 | Pre-flight Checking");
         }
-        else if (clipPressed && scene.buildIndex == 9)
+        else if (clipPressed && scene.buildIndex == 10)
         {
             ShowPopup("Level 2 | Loss of Pressurization");
         }
@@ -71,7 +71,7 @@ public class PopupWindow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             ShowPopup("Level 3 | Fire on Board");
 
         }
-        else if (clipPressed && scene.buildIndex == 15)
+        else if (clipPressed && scene.buildIndex == 14)
         {
             ShowPopup("Level 4 | Water Landing");
         }
