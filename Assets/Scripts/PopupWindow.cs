@@ -35,7 +35,7 @@ public class PopupWindow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         //switch case gets the current scene displays pop up based on current scene;
         switch (scene.buildIndex)
         {
-            case 6:
+            case 7:
                 ShowPopup("Level 1 | Pre-flight Checking");
                 break;
 
