@@ -1043,13 +1043,12 @@ MonoBehaviour:
     - Provide conflicting information to confuse passengers.
     - Use technical jargon that passengers may not understand.
     CorrectAnswer: 2
-  - Questions: When experiencing loss of oxygen inside the plane, what is the primary
-      responsibility of flight attendants?
+  - Questions: When do the oxygen masks automatically drop?
     Answers:
-    - Secure all loose items in the cabin.
-    - Inform the passengers of the situation and tell them to stay calm.
-    - Comfort and reassure passengers.
-    - Manually provide oxygen masks to passengers.
+    - When the aircraft is preparing for landing.
+    - When there is a significant loss of cabin pressure.
+    - When the cabin temperature exceeds a certain limit.
+    - When the aircraft is flying at a high altitude.
     CorrectAnswer: 2
   - Questions: As a flight attendant, what actions should you take when there is
       a sudden loss of oxygen inside the cabin?
@@ -1060,21 +1059,20 @@ MonoBehaviour:
     - Encourage passengers to remain seated and do nothing.
     - 'Engage in casual conversation with passengers to calm passengers down. '
     CorrectAnswer: 1
-  - Questions: How should flight attendants assist passengers who are panicking during
-      an emergency?
+  - Questions: How should newly appointed cabin crew assist passengers during this
+      situation?
     Answers:
-    - Provide verbal reassurance and offer assistance.
-    - 'Ignore the passengers who are panicking and focus on evacuation procedures. '
-    - 'Use physical force to calm passengers down. '
-    - Encourage passengers to distract themselves with in-flight entertainment.
+    - Act according to the training that you have received.
+    - 'Wait for the instructions from the cabin crew supervisor. '
+    - Take immediate action without considering your training.
+    - Panic and wait for a senior crew member to take charge.
     CorrectAnswer: 1
-  - Questions: After the loss of pressurization event has stabilized, what additional
-      steps do flight attendants have to make?
+  - Questions: After using the oxygen mask on yourself, what should you do?
     Answers:
-    - 'Resume with normal operations because there is nothing left to do. '
-    - Administer portable oxygen bottles to all passengers.
-    - Check if other cabin crew members are alright.
-    - Take a short break in the galley.
+    - Remain standing and try to assess the situation on your own.
+    - Stay seated and wait for the announcement of the captain or flight crew.
+    - Distribute emergency pamphlets to nearby passengers.
+    - Begin documenting the incident for the airline's records.
     CorrectAnswer: 2
   options:
   - {fileID: 959689059}
@@ -1090,7 +1088,7 @@ MonoBehaviour:
   ScoreTxt: {fileID: 1276789726}
   QuestionNum: {fileID: 1540910395}
   score: 0
-  sceneBuildIndex: 10
+  sceneBuildIndex: 11
 --- !u!4 &591525921
 Transform:
   m_ObjectHideFlags: 0
