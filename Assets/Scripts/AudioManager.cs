@@ -62,9 +62,9 @@ public class AudioManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "0_How to Play" || scene.name == "1_Loss of Pressurization" || scene.name == "2_Fire on Board" || scene.name == "3_Ditching")
+        if (scene.name == "0_How to Play" || scene.name == "0_Pre-flight_Demo" || scene.name == "0_Prologue" || scene.name == "1_Loss of Pressurization" || scene.name == "2_Fire on Board" || scene.name == "3_Ditching")
         {
-            musicSource.Stop();
+            musicSource.Stop(); 
             return;
         }
 
