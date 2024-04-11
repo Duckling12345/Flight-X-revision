@@ -11,18 +11,28 @@ public class LevelLoader : MonoBehaviour
     public GameObject loadingScreen3;
 
     public Button[] buttons;
+    public Sprite lockedImg;
 
     //Locks Level
     private void Awake()
     {
         int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
-        for (int i = 0; i< buttons.Length; i++)
+        for (int i = 0; i < buttons.Length; i++)
         {
-            buttons[i].interactable = false;
-        }
-        for (int i = 0; i < unlockedLevel; i++)
-        {
-            buttons[i].interactable = true;
+            if (i < unlockedLevel)
+            {
+                buttons[i].interactable = true;
+            }
+            else
+            {
+                buttons[i].interactable = false;
+                // Set a locked level icon
+                Image buttonImage = buttons[i].GetComponent<Image>();
+                if (buttonImage != null && lockedImg != null)
+                {
+                    buttonImage.sprite = lockedImg;
+                }
+            }
         }
     }
 
