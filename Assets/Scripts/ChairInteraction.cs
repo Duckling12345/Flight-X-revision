@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -19,6 +20,8 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
     public GameObject EndSound;
     public GameObject deactivateCurrent;
     public GameObject removeButton;
+    public GameObject levelResult;
+    public GameObject playerUI;
 
     private void Update()
     {
@@ -54,12 +57,20 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
 
     public void playAnimation()
     {
-        sceneMover.NextLevel();
+        LevelResult();
     }
 
     public void playSound()
     {
         EndSound.SetActive(true);
+    }
+
+    void LevelResult()
+    {
+        levelResult.SetActive(true);
+        playerUI.SetActive(false);
+        GetComponent<StarsHandler>().starsAchieved();
+        Time.timeScale = 0f;
     }
 
     void IPointerDownHandler.OnPointerDown(PointerEventData eventData)

@@ -11,7 +11,7 @@ public class ExitScene : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         disableButton.SetActive(false);
-        nextScene.NextLevel();
+        nextScene.NextLevel(); //level result
         disableTimer.SetActive(false);
     }
 }

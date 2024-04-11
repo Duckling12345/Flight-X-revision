@@ -20,7 +20,7 @@ public class EndScene : MonoBehaviour
         int numbers = partikol.particleCount;
         if (fireScript.isLit == false && numbers == 0)
         {   
-            sceneMover.NextLevel();
+            sceneMover.NextLevel(); //level result
             audioSource.Stop();
 
         }

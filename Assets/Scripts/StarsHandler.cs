@@ -1,30 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StarsHandler : MonoBehaviour
 {
+    public GameOverManager timer; 
     public GameObject[] stars;
-    private int objCount;
-
-    private void Start()
-    {
-        objCount = GameObject.FindGameObjectsWithTag("Objective").Length;
-    }
-
+    public UnlockDoor SceneMover;
+    
     public void starsAchieved()
     {
-        int objsLeft = GameObject.FindGameObjectsWithTag("Objective").Length;
-        int objsCompleted = objCount - objsLeft;
 
-        float percentage = float.Parse(objsCompleted.ToString()) / float.Parse(objCount.ToString()) * 100f;
-
-        if (percentage >= 33f && percentage < 66)
+        if (timer.remainingTime >= 1f && timer.remainingTime <= 15f) 
         {
             //one star
             stars[0].SetActive(true);
         }
-        else if (percentage >= 666 && percentage < 70)
+        else if (timer.remainingTime >= 16f && timer.remainingTime <= 44f)
         {
             //two stars
             stars[0].SetActive(true);
@@ -37,6 +31,18 @@ public class StarsHandler : MonoBehaviour
             stars[1].SetActive(true);
             stars[2].SetActive(true);
         }
+    }
+    public void Continue()
+    {
+        Time.timeScale = 1f;
+        SceneMover.NextLevel();
+    }
+
+    public void backToMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Level Modules");
+
     }
 }
 
