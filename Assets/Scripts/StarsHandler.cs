@@ -32,7 +32,7 @@ public class StarsHandler : MonoBehaviour
             stars[2].SetActive(true);
         }
     }
-    public void Continue()
+    public void Quiz()
     {
         Time.timeScale = 1f;
         SceneMover.NextLevel();
