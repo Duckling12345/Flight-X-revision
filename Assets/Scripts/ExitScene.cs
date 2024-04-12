@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,13 +10,14 @@ public class ExitScene : MonoBehaviour
     public GameObject disableTimer;
     public GameObject levelResult;
     public GameObject playerUI;
+    public GameObject timer;
 
     void LevelResult()
     {
         levelResult.SetActive(true);
         playerUI.SetActive(false);
         GetComponent<StarsHandler>().starsAchieved();
-        Time.timeScale = 0f;
+        timer.SetActive(false);
     }
     private void OnTriggerEnter(Collider other)
     {

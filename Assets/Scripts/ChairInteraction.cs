@@ -22,12 +22,14 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
     public GameObject removeButton;
     public GameObject levelResult;
     public GameObject playerUI;
+    public GameObject timer;
 
     private void Update()
     {
         if (fixedSitbutton.Pressed)
         {
             Sit();
+            AudioManager.Instance.PlayOxygenSound();
             shaker.ShakeScreen();
             Invoke("playSound", 2f);
             Invoke("playAnimation", 15f);
@@ -49,8 +51,6 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
         sittingPlayer.SetActive(true);
         player.SetActive(false);
         mask.SetActive(true);
-        wear.Play("WearOxygen");
-        AudioManager.Instance.PlayOxygenSound();
         removeButton.SetActive(false);
 
     }
@@ -70,7 +70,7 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
         levelResult.SetActive(true);
         playerUI.SetActive(false);
         GetComponent<StarsHandler>().starsAchieved();
-        Time.timeScale = 0f;
+        timer.SetActive(false);    
     }
 
     void IPointerDownHandler.OnPointerDown(PointerEventData eventData)

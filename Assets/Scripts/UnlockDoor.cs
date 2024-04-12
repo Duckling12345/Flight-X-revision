@@ -12,13 +12,14 @@ public class UnlockDoor : MonoBehaviour
     [SerializeField] Animator transitionAnim;
     public void NextLevel()
     {
+        
         StartCoroutine(LoadLevel());
     }
 
     IEnumerator LoadLevel()
     {
         transitionAnim.SetTrigger("End");
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1);
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
         asyncOperation.allowSceneActivation = true;
         transitionAnim.SetTrigger("Start");

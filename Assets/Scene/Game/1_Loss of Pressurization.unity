@@ -24895,7 +24895,6 @@ GameObject:
   - component: {fileID: 515623414}
   - component: {fileID: 515623413}
   - component: {fileID: 515623412}
-  - component: {fileID: 515623418}
   - component: {fileID: 515623419}
   m_Layer: 0
   m_Name: ObjectiveChair
@@ -25026,29 +25025,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 515623409}
   m_Mesh: {fileID: -8997716596068595922, guid: 32188e4d73be93240b4895385cb19d22, type: 3}
---- !u!114 &515623418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 515623409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14ae8c43a2c081a4d82cb87bfd781fbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Pressed: 0
-  fixedSeatbelt: {fileID: 577062110}
-  BuckleAnim: {fileID: 682147828}
-  CameraAnimation: {fileID: 682147821}
-  StateName: Fasten seatbelt of second passenger
-  tempDisable: {fileID: 7101956817918852904}
-  shaker: {fileID: 682147829}
-  activateNext: {fileID: 904269312}
-  deactivateCurrent: {fileID: 25174393}
-  seatbeltObject: {fileID: 5184647976002160255}
-  seatbeltObject2: {fileID: 801667596}
 --- !u!114 &515623419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25069,6 +25045,13 @@ MonoBehaviour:
   timetowait: 3
   oxygens: {fileID: 2094953259}
   seatbelt: {fileID: 801667596}
+  BuckleAnim: {fileID: 682147828}
+  CameraAnimation: {fileID: 682147821}
+  StateName: Fasten seatbelt of second passenger
+  tempDisable: {fileID: 7101956817918852904}
+  shaker: {fileID: 682147829}
+  activateNext: {fileID: 904269312}
+  deactivateCurrent: {fileID: 25174393}
 --- !u!1 &520429542
 GameObject:
   m_ObjectHideFlags: 0
@@ -40503,6 +40486,7 @@ MonoBehaviour:
   removeButton: {fileID: 360663363}
   levelResult: {fileID: 248537255}
   playerUI: {fileID: 7677441607108472253}
+  timer: {fileID: 2106876147}
 --- !u!114 &834232690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40534,14 +40518,14 @@ MonoBehaviour:
   - {fileID: 928341671}
   - {fileID: 2114635809}
   - {fileID: 603842464}
-  SceneMover: {fileID: 0}
+  SceneMover: {fileID: 1381748869}
 --- !u!1001 &836572220
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 2013904750}
     m_Modifications:
     - target: {fileID: 4533449660980142709, guid: 730e7b62fa8cd1f4f8f2706e82c45a68, type: 3}
       propertyPath: m_Name
@@ -40553,15 +40537,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7063089816218150408, guid: 730e7b62fa8cd1f4f8f2706e82c45a68, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1146.6458
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7063089816218150408, guid: 730e7b62fa8cd1f4f8f2706e82c45a68, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 299.61
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7063089816218150408, guid: 730e7b62fa8cd1f4f8f2706e82c45a68, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 259.56677
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7063089816218150408, guid: 730e7b62fa8cd1f4f8f2706e82c45a68, type: 3}
       propertyPath: m_LocalRotation.w
@@ -40569,15 +40553,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7063089816218150408, guid: 730e7b62fa8cd1f4f8f2706e82c45a68, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7063089816218150408, guid: 730e7b62fa8cd1f4f8f2706e82c45a68, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7063089816218150408, guid: 730e7b62fa8cd1f4f8f2706e82c45a68, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7063089816218150408, guid: 730e7b62fa8cd1f4f8f2706e82c45a68, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -67162,6 +67146,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 893c6d61f02744e4fb4ee4072415d045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1381748871 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7063089816218150408, guid: 730e7b62fa8cd1f4f8f2706e82c45a68, type: 3}
+  m_PrefabInstance: {fileID: 836572220}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1389170633
 GameObject:
   m_ObjectHideFlags: 0
@@ -97836,7 +97825,6 @@ MonoBehaviour:
   activateNext: {fileID: 25174393}
   deactivateCurrent: {fileID: 896615903}
   seatbeltObject: {fileID: 5184647976002160255}
-  seatbeltObject2: {fileID: 0}
 --- !u!1 &1997991239
 GameObject:
   m_ObjectHideFlags: 0
@@ -98823,13 +98811,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1381748871}
   - {fileID: 1828772948}
   - {fileID: 115531884}
+  - {fileID: 282775703}
   - {fileID: 1296486146}
   - {fileID: 248537256}
   - {fileID: 1710828448}
   - {fileID: 2106876149}
-  - {fileID: 282775703}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2017306173
@@ -138515,7 +138504,6 @@ GameObject:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 836572220}
   - {fileID: 1146936108}
   - {fileID: 1084589308293888166}
   - {fileID: 2013904750}

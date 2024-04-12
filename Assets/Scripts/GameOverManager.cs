@@ -39,13 +39,13 @@ public class GameOverManager : MonoBehaviour
 
    public void Retry()
     {
-        Time.timeScale = 1f;
+        Time.timeScale += Time.deltaTime;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void backToMenu()
     {
-        Time.timeScale = 1f;
+        Time.timeScale += Time.deltaTime;
         SceneManager.LoadScene("Level Modules");
 
     }

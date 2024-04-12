@@ -30,7 +30,6 @@ public class Shake : MonoBehaviour
          Vector3 randomOffset = Random.insideUnitSphere * shakeIntensity;
          transform.localPosition = initialPosition + randomOffset;
          currentShakeDuration -= Time.deltaTime;
-         Debug.Log("Event triggered");
         }
         else
         {

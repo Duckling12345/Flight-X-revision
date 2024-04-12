@@ -34,13 +34,11 @@ public class StarsHandler : MonoBehaviour
     }
     public void Quiz()
     {
-        Time.timeScale = 1f;
         SceneMover.NextLevel();
     }
 
     public void backToMenu()
     {
-        Time.timeScale = 1f;
         SceneManager.LoadScene("Level Modules");
 
     }

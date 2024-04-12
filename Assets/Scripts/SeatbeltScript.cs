@@ -17,12 +17,10 @@ public class SeatbeltScript : MonoBehaviour, IPointerUpHandler, IPointerDownHand
     public GameObject activateNext;
     public GameObject deactivateCurrent;
     public GameObject seatbeltObject;
-    public GameObject seatbeltObject2;
     void Update()
     {
         if (fixedSeatbelt.Pressed)
         {
-           
             FastenSeatbelt();
         }
     }

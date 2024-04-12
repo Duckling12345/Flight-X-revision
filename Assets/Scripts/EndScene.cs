@@ -11,6 +11,7 @@ public class EndScene : MonoBehaviour
     [SerializeField] AudioSource audioSource;
     public GameObject levelResult;
     public GameObject playerUI;
+    public GameObject timer;
 
     // Update is called once per frame
     void Update()
@@ -22,7 +23,7 @@ public class EndScene : MonoBehaviour
         levelResult.SetActive(true);
         playerUI.SetActive(false);
         GetComponent<StarsHandler>().starsAchieved();
-        Time.timeScale = 0f;
+        timer.SetActive(false);
     }
     private void FadetoBlack()
     {
