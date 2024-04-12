@@ -61414,14 +61414,23 @@ MonoBehaviour:
   sceneMover: {fileID: 1319838110}
   NPCanimation: {fileID: 919132149090428103}
   soundSource: {fileID: 1769169589}
-  seatbeltIntro: {fileID: 8300000, guid: 26fde17d784332a4eb93f40bb523b0d5, type: 3}
-  oxyIntro: {fileID: 8300000, guid: 446ff40686ae2dc48a1087c2a0d0f471, type: 3}
-  vestIntro: {fileID: 8300000, guid: 89a66a5755ea1564d81b4e6ca4dea03d, type: 3}
+  seatbeltIntro:
+  - {fileID: 8300000, guid: 26fde17d784332a4eb93f40bb523b0d5, type: 3}
+  - {fileID: 8300000, guid: 5daae7bed3a61c34c938693f2f147a5b, type: 3}
+  - {fileID: 8300000, guid: 5c35860f8fad87545b6f7d49e8ea50ff, type: 3}
+  oxyIntro:
+  - {fileID: 8300000, guid: 446ff40686ae2dc48a1087c2a0d0f471, type: 3}
+  - {fileID: 8300000, guid: d7e54468463f9c0429e238ed02460e14, type: 3}
+  vestIntro:
+  - {fileID: 8300000, guid: 89a66a5755ea1564d81b4e6ca4dea03d, type: 3}
+  - {fileID: 8300000, guid: db4d1e160b82de14db3063b11926c096, type: 3}
+  - {fileID: 8300000, guid: 858ab61bfc7dc744e866c1449406a2b7, type: 3}
   outro: {fileID: 8300000, guid: ae4ea9e1c41f6744084892231fce0a6d, type: 3}
+  failedSound: {fileID: 8300000, guid: 84153692aebc7c647b7b38276d5af2b7, type: 3}
   stateName: WearVest
   stateName2: DemoBelt
   stateName3: WearMask
-  delayTime: 10
+  delayTime: 20
 --- !u!1 &919132149472910813
 GameObject:
   m_ObjectHideFlags: 0
@@ -74472,7 +74481,7 @@ Transform:
   m_GameObject: {fileID: 9138683659147179543}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.36, y: 2.48, z: 623.8}
+  m_LocalPosition: {x: -19.977219, y: 2.7392068, z: 621.1507}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -104190,15 +104199,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4159898159870257614}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.8552643, z: -0, w: -0.518192}
-  m_LocalPosition: {x: 38.46, y: 7.62, z: -607.48}
+  m_LocalRotation: {x: -0, y: 0.71090156, z: -0, w: 0.7032916}
+  m_LocalPosition: {x: 33.78, y: 8.28, z: -607.64}
   m_LocalScale: {x: 1.5956136, y: 2.62, z: 1.595614}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7791561797390817030}
   - {fileID: 1568345860}
   m_Father: {fileID: 2686312011176832831}
-  m_LocalEulerAnglesHint: {x: 0, y: 242.422, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90.617, z: 0}
 --- !u!23 &6515105608704712180
 MeshRenderer:
   m_ObjectHideFlags: 0

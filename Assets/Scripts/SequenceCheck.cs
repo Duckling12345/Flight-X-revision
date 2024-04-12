@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SequenceCheck : MonoBehaviour
 {
@@ -11,10 +12,11 @@ public class SequenceCheck : MonoBehaviour
     public UnlockDoor sceneMover;
     [SerializeField] Animator NPCanimation;
     [SerializeField] AudioSource soundSource;
-    [SerializeField] AudioClip seatbeltIntro;
-    [SerializeField] AudioClip oxyIntro;
-    [SerializeField] AudioClip vestIntro;
+    [SerializeField] AudioClip []seatbeltIntro;
+    [SerializeField] AudioClip []oxyIntro;
+    [SerializeField] AudioClip []vestIntro;
     [SerializeField] AudioClip outro;
+    [SerializeField] AudioClip failedSound;
 
     public string stateName;
     public string stateName2;
@@ -37,21 +39,21 @@ public class SequenceCheck : MonoBehaviour
         switch (buttonColor)
         {
             case "LifeVest":
-                soundSource.PlayOneShot(vestIntro);
                 currentSequence += 1;
                 NPCanimation.Play(stateName);
+                StartCoroutine(PlayVestIntro());
                 break;
 
             case "Seatbelt":
-                soundSource.PlayOneShot(seatbeltIntro);
                 currentSequence += 2;
                 NPCanimation.Play(stateName2);
+                StartCoroutine(PlaySeatbeltIntro());
                 break;
 
             case "Oxygen":
-                soundSource.PlayOneShot(oxyIntro);
                 currentSequence += 3;
                 NPCanimation.Play(stateName3);
+                StartCoroutine(PlayOxygenIntro());
                 break;
         }
 
@@ -59,10 +61,16 @@ public class SequenceCheck : MonoBehaviour
         {
             currentSequence = "";
             Debug.Log("Incorrect");
+            if (soundSource.isPlaying)
+            {
+                soundSource.Stop();
+                soundSource.PlayOneShot(failedSound);
+                Invoke("Incorrect", 5f);
+            }
         } else if (currentSequence == correctSequence)
         {
             currentSequence = "";
-            Invoke("OutroSound", 8f);
+            Invoke("OutroSound", 15f);
             Invoke("DelayTransition", delayTime);
         }
 
@@ -78,6 +86,59 @@ public class SequenceCheck : MonoBehaviour
         soundSource.PlayOneShot(outro);
 
     }
+
+    void Incorrect()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    IEnumerator PlayVestIntro()
+    {
+        for (int i = 0; i < vestIntro.Length; i++)
+        {
+            soundSource.clip = vestIntro[i];
+
+            soundSource.Play();
+
+            while (soundSource.isPlaying)
+            {
+                yield return null;
+            }
+        }
+    } 
+    
+    IEnumerator PlaySeatbeltIntro()
+    {
+        for (int i = 0; i < seatbeltIntro.Length; i++)
+        {
+            soundSource.clip = seatbeltIntro[i];
+
+            soundSource.Play();
+
+            while (soundSource.isPlaying)
+            {
+                yield return null;
+            }
+        }
+    } 
+    
+    IEnumerator PlayOxygenIntro()
+    {
+        for (int i = 0; i < oxyIntro.Length; i++)
+        {
+            soundSource.clip = oxyIntro[i];
+
+            soundSource.Play();
+
+            while (soundSource.isPlaying)
+            {
+                yield return null;
+            }
+        }
+    }
+
+
+
+
 
     private void OnDestroy()
     {
