@@ -86,9 +86,15 @@ public class ScanScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
         goBackButton.SetActive(false);
         objectiveText3.SetActive(true);
         scanButton.SetActive(false);
-        openDoor.Play(statetoPlay);
         ActivateIndicator.SetActive(true);
-        //AudioManager.Instance.PlayDoorSound();
+        Invoke("PlayAnimationLate", 2f);
+        AudioManager.Instance.PlayDoorSound();
+    }
+
+
+    void PlayAnimationLate()
+    {
+        openDoor.Play(statetoPlay);
     }
 
     private void OnTriggerExit(Collider other)
