@@ -87,7 +87,7 @@ public class ScanScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
         objectiveText3.SetActive(true);
         scanButton.SetActive(false);
         ActivateIndicator.SetActive(true);
-        Invoke("PlayAnimationLate", 2f);
+        Invoke("PlayAnimationLate", 1f);
         AudioManager.Instance.PlayDoorSound();
     }
 

@@ -23,27 +23,30 @@ public class LastCheck : MonoBehaviour
     public GameObject ActivateIndicator;
     public GameObject DeactiveIndicator;
     public GameObject removeNPC;
-    
+
+
+    public GameObject ActivateFirstAid;
+
     private void OnTriggerEnter(Collider other)
     {
+            
+                DisableButton.SetActive(false);
+                objectiveText.text = changeObjectiveText;
+                objectiveText.color = Color.black;
 
-        if (objective.objectivesDone == objectiveID)
-        {
-            DisableButton.SetActive(false);
-            objectiveText.text = changeObjectiveText;
-            objectiveText.color = Color.black;
-
-            objectiveText1.text = changeObjectiveText1;
-            objectiveText1.color = Color.black;
+                objectiveText1.text = changeObjectiveText1;
+                objectiveText1.color = Color.black;
 
 
-            disableObjectiveText.SetActive(false);
-            disableObjectiveText2.SetActive(false);
+                disableObjectiveText.SetActive(false);
+                disableObjectiveText2.SetActive(false);
 
-            ActivateIndicator.SetActive(true);
-            DeactiveIndicator.SetActive(false);
+                ActivateIndicator.SetActive(true);
+                DeactiveIndicator.SetActive(false);
 
-            removeNPC.SetActive(false);
-        }
-    }
+                removeNPC.SetActive(false);
+                ActivateFirstAid.SetActive(true);
+            }
+        
+    
 }
