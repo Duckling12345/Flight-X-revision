@@ -1,37 +1,42 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class StarsHandler : MonoBehaviour
 {
-    public GameOverManager timer; 
+    public GameOverManager timer;
     public GameObject[] stars;
     public UnlockDoor SceneMover;
-    
+    public TMP_Text TimeLeft;
+
     public void starsAchieved()
     {
-
-        if (timer.remainingTime >= 1f && timer.remainingTime <= 15f) 
+        if (timer.remainingTime >= 1f && timer.remainingTime <= 15f)
         {
-            //one star
+            // One star
             stars[0].SetActive(true);
         }
         else if (timer.remainingTime >= 16f && timer.remainingTime <= 44f)
         {
-            //two stars
+            // Two stars
             stars[0].SetActive(true);
             stars[1].SetActive(true);
         }
         else
         {
-            //three stars
+            // Three stars
             stars[0].SetActive(true);
             stars[1].SetActive(true);
             stars[2].SetActive(true);
         }
+
+        // Remaining time 
+        int seconds = Mathf.FloorToInt(timer.remainingTime);
+        TimeLeft.text = "Time Left: " + seconds.ToString() + " seconds";
     }
+
     public void Quiz()
     {
         SceneMover.NextLevel();
@@ -40,7 +45,5 @@ public class StarsHandler : MonoBehaviour
     public void backToMenu()
     {
         SceneManager.LoadScene("Level Modules");
-
     }
 }
-
