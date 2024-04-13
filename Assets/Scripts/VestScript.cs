@@ -6,7 +6,11 @@ using UnityEngine.EventSystems;
 
 public class VestScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
-    [SerializeField] Animator transitionAnim;
+
+    public int objectiveID;
+    public float timetowait;
+    public bool wearPressed;
+
     [SerializeField] Animator popupAnimator;
     public GameObject ObjectToWear;
     public GameObject ExitStopper;
@@ -23,10 +27,7 @@ public class VestScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public GameObject activateObject;
     
     
-    public int objectiveID;
-    public string stateName;
-    public float timetowait;
-    public bool wearPressed;
+   
 
 
 
@@ -34,7 +35,7 @@ public class VestScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     private void Update()
     {
-        if (fixbutton.Pressed == true && objective.objectivesDone == objectiveID)
+        if (fixbutton.Pressed == true && objective.objectivesDone == objectiveID || wearPressed == true)
         {
             ObjectToWear.SetActive(false);
             disableButton.SetActive(false);
@@ -42,9 +43,7 @@ public class VestScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             activateEnd.SetActive(true);
             ActivateIndicator.SetActive(true);
             DeactiveIndicator.SetActive(false);
-            transitionAnim.Play(stateName);
             WearVest.SetActive(true);
-            activateObject.SetActive(true);
             AudioManager.Instance.PlayInspectSound();
             Invoke("WaitAnimation", timetowait);
             objectiveText1.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);
