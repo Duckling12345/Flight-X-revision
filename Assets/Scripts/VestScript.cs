@@ -6,37 +6,35 @@ using UnityEngine.EventSystems;
 
 public class VestScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
+    [SerializeField] Animator transitionAnim;
+    [SerializeField] Animator popupAnimator;
     public GameObject ObjectToWear;
     public GameObject ExitStopper;
-    public bool wearPressed;
+    
     public TMP_Text objectiveText1;
     public FixedInflateButton fixbutton;
     public GameObject disableButton;
     public ObjectiveScript objective;
-    public int objectiveID;
+    
     public GameObject activateEnd;
     public GameObject ActivateIndicator;
     public GameObject DeactiveIndicator;
     public GameObject WearVest;
     public GameObject activateObject;
-    [SerializeField] Animator transitionAnim;
+    
+    
+    public int objectiveID;
     public string stateName;
+    public float timetowait;
+    public bool wearPressed;
+
+
 
 
 
     private void Update()
     {
         if (fixbutton.Pressed == true && objective.objectivesDone == objectiveID)
-        {
-            Wear();
-            objectiveText1.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);
-        }
-    }
-
-
-    void Wear()
-    {
-        if (wearPressed)
         {
             ObjectToWear.SetActive(false);
             disableButton.SetActive(false);
@@ -48,10 +46,16 @@ public class VestScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             WearVest.SetActive(true);
             activateObject.SetActive(true);
             AudioManager.Instance.PlayInspectSound();
+            Invoke("WaitAnimation", timetowait);
+            objectiveText1.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);
         }
- 
     }
 
+    public void WaitAnimation()
+    {
+        popupAnimator.Play("PopUpAnimation");
+
+    }
     void IPointerDownHandler.OnPointerDown(PointerEventData eventData)
     {
         wearPressed = true;

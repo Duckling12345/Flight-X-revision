@@ -7,7 +7,7 @@ public class NPCDestination : MonoBehaviour
 {
     public GameObject passenger1;
     public GameObject passenger4;
-
+    public GameObject remove;
 
     void OnTriggerEnter(Collider collision)
     {
@@ -16,6 +16,9 @@ public class NPCDestination : MonoBehaviour
             Debug.Log("ay natrigger");
             passenger1.SetActive(false);
             passenger4.SetActive(false); 
+            remove.SetActive(false);
+            
+
         }
         else
         {

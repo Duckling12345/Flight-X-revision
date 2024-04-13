@@ -23,8 +23,9 @@ public class LastCheck : MonoBehaviour
     public GameObject ActivateIndicator;
     public GameObject DeactiveIndicator;
     public GameObject removeNPC;
+    public float timetowait;
 
-
+    [SerializeField] Animator popupAnimator;
     public GameObject ActivateFirstAid;
 
     private void OnTriggerEnter(Collider other)
@@ -46,7 +47,13 @@ public class LastCheck : MonoBehaviour
 
                 removeNPC.SetActive(false);
                 ActivateFirstAid.SetActive(true);
-            }
-        
-    
+                Invoke("WaitAnimation", timetowait);
+
+    }
+
+    public void WaitAnimation()
+    {
+        popupAnimator.Play("PopUpAnimation");
+
+    }
 }

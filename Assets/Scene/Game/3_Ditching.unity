@@ -14063,6 +14063,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7959172845899526850, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
   m_PrefabInstance: {fileID: 484786694}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &686907482 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8411025752569456832, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+  m_PrefabInstance: {fileID: 484786694}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &689724743
 GameObject:
   m_ObjectHideFlags: 0
@@ -22429,8 +22434,9 @@ MonoBehaviour:
   objectiveText2: {fileID: 484786697}
   objective: {fileID: 1825425661}
   objectiveID: 1
-  openDoor: {fileID: 1000881760}
   statetoPlay: DitchingOpen
+  openDoor: {fileID: 1000881760}
+  popupAnimator: {fileID: 686907482}
   ActivateIndicator: {fileID: 237376664}
   DeactivateIndicator: {fileID: 1299040163}
 --- !u!114 &1000881759
@@ -30399,6 +30405,8 @@ MonoBehaviour:
   ActivateIndicator: {fileID: 700758811}
   DeactiveIndicator: {fileID: 237376664}
   removeNPC: {fileID: 1002282343}
+  timetowait: 1
+  popupAnimator: {fileID: 686907482}
   ActivateFirstAid: {fileID: 925235497}
 --- !u!1 &1407007170
 GameObject:
@@ -31236,6 +31244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   passenger1: {fileID: 919132148516947582}
   passenger4: {fileID: 919132148040866320}
+  remove: {fileID: 1460975283}
 --- !u!1 &1462246598
 GameObject:
   m_ObjectHideFlags: 0
@@ -59326,21 +59335,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3417c6415f2907f41abcef062dbf3a6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transitionAnim: {fileID: 1193012503}
+  popupAnimator: {fileID: 686907482}
   ObjectToWear: {fileID: 5404446116304915079}
   ExitStopper: {fileID: 1407007170}
-  wearPressed: 0
   objectiveText1: {fileID: 384817500}
   fixbutton: {fileID: 896998523}
   disableButton: {fileID: 896998518}
   objective: {fileID: 1825425661}
-  objectiveID: 4
   activateEnd: {fileID: 1114317046}
   ActivateIndicator: {fileID: 1842882543}
   DeactiveIndicator: {fileID: 143972936}
   WearVest: {fileID: 848894453}
   activateObject: {fileID: 272670555}
-  transitionAnim: {fileID: 1193012503}
+  objectiveID: 4
   stateName: FadeIn
+  timetowait: 3
+  wearPressed: 0
 --- !u!4 &5413964703646568124
 Transform:
   m_ObjectHideFlags: 0

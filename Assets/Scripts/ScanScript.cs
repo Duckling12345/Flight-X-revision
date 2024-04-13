@@ -26,8 +26,10 @@ public class ScanScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
     public TMP_Text objectiveText2;
     public ObjectiveScript objective;
     public int objectiveID;
-    [SerializeField] Animator openDoor;
     public string statetoPlay;
+
+    [SerializeField] Animator openDoor;
+    [SerializeField] Animator popupAnimator;
 
     public GameObject ActivateIndicator;
     public GameObject DeactivateIndicator;
@@ -95,6 +97,12 @@ public class ScanScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
     void PlayAnimationLate()
     {
         openDoor.Play(statetoPlay);
+        popupAnimator.Play("PopUpAnimation");
+    }
+
+    public void WaitAnimation()
+    {
+
     }
 
     private void OnTriggerExit(Collider other)
