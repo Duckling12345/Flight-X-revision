@@ -18,6 +18,10 @@ public class SequenceCheck : MonoBehaviour
     [SerializeField] AudioClip outro;
     [SerializeField] AudioClip failedSound;
 
+    public GameObject ActivateBelt;
+    public GameObject ActivateVest;
+    public GameObject ActivateOxygen;
+
     public string stateName;
     public string stateName2;
     public string stateName3;
@@ -41,18 +45,22 @@ public class SequenceCheck : MonoBehaviour
             case "LifeVest":
                 currentSequence += 1;
                 NPCanimation.Play(stateName);
+                ActivateVest.SetActive(true);
+                ActivateBelt.SetActive(false);
                 StartCoroutine(PlayVestIntro());
                 break;
 
             case "Seatbelt":
                 currentSequence += 2;
                 NPCanimation.Play(stateName2);
+                ActivateBelt.SetActive(true);
                 StartCoroutine(PlaySeatbeltIntro());
                 break;
 
             case "Oxygen":
                 currentSequence += 3;
                 NPCanimation.Play(stateName3);
+                ActivateOxygen.SetActive(true);
                 StartCoroutine(PlayOxygenIntro());
                 break;
         }
