@@ -35,6 +35,9 @@ public class QuizManager : MonoBehaviour
     }
 
     public void GameOver() {
+        PlayerPrefs.SetInt("QuizScore", score); 
+        PlayerPrefs.Save();
+
         Quizpanel.SetActive(false);
         GoPanel.SetActive(true);
         slider.value = score;

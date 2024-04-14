@@ -24,11 +24,20 @@ public class LevelManager : MonoBehaviour
     {
         SceneManager.LoadScene("About");
     }
+
+    public void gotoSummaryOfScores()
+    {
+        SceneManager.LoadScene("Summary");
+    }
     public void backtoMenu()
     {
         SceneManager.LoadScene("MainMenu");
     }
 
+    public void backtoLevelSelection()
+    {
+        SceneManager.LoadScene("Level Modules");
+    }
     public void quitGame ()
     {
         Application.Quit();
