@@ -8,8 +8,6 @@ public class LoadSceneAfter : MonoBehaviour
 {
 
     private VideoPlayer player;
-    public int buildIndex;
-    public UnlockDoor sceneMove;
 
 
     private void Awake() 
@@ -23,6 +21,6 @@ public class LoadSceneAfter : MonoBehaviour
 
     void CheckOver(UnityEngine.Video.VideoPlayer vp)
     {
-        sceneMove.NextLevel();
+        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
