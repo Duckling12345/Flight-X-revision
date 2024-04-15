@@ -33,7 +33,7 @@ public class NPCScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         StartConversation();
     }
 
-    void StartConversation()
+   public void StartConversation()
     {
         if (talkPressed)
         {
