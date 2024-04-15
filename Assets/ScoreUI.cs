@@ -24,7 +24,8 @@ public class ScoreUI : MonoBehaviour
 
     void DisplayScore(string quizLvl)
     {
-       int score = PlayerPrefs.GetInt("QuizScore", 0);
+        string scoreKey = quizLvl + "Score";
+        int score = PlayerPrefs.GetInt(scoreKey, 0);
 
         string quizNumber = quizLvl.Substring("Quiz".Length);
 
