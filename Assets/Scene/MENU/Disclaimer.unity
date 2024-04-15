@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 30.389, y: 175}
+  m_AnchoredPosition: {x: 30.389, y: 178}
   m_SizeDelta: {x: 1413.5, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &690278872
@@ -180,8 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'By accessing and using our simulation game, you agree to comply with these
-    conditions:'
+  m_text: 'By accessing our simulation game, these are things you should know:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3c399d287f7490c449c29039a82711ee, type: 2}
   m_sharedMaterial: {fileID: -3015122423470148846, guid: 3c399d287f7490c449c29039a82711ee, type: 2}
@@ -208,8 +207,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 37
-  m_fontSizeBase: 37
+  m_fontSize: 43
+  m_fontSizeBase: 43
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -244,7 +243,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 11.425079, y: 0, z: 15.278469, w: 0}
+  m_margin: {x: 11.425079, y: 0, z: -1.6708107, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1220,7 +1219,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 39.092106, y: 47}
+  m_AnchoredPosition: {x: 39.092106, y: 29}
   m_SizeDelta: {x: 1396.0527, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1898978915
@@ -1243,23 +1242,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'This game is intended solely for entertainment and educational purposes.
+  m_text: "This game is intended solely for entertainment and educational purposes.
     It is not a substitute for formal education or certification in professional
-    contexts.
-
-
-    This application is not affiliated with any aircraft organization
-    and should not be relied upon encountering real-life scenarios. Consult with
-    verified and official sources to comply with aviation standards.
-
-
-    Any unlawful
-    use of the game, such as hacking, cheating, or taking advantage of loopholes,
-    is strictly forbidden.
-
-
-    Violation of these terms and conditions may result
-    in suspension or termination of access to the game.'
+    contexts.\n\nThis application is not affiliated with any aircraft organization
+    and should not be relied upon encountering real-life scenarios. \n\nConsult with
+    verified and official sources to comply with aviation standards.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4c41be3721296094098dcfc868c6f87e, type: 2}
   m_sharedMaterial: {fileID: -7727011910826303001, guid: 4c41be3721296094098dcfc868c6f87e, type: 2}
@@ -1286,8 +1273,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 31
-  m_fontSizeBase: 31
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1393,7 +1380,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I AGREE
+  m_text: OK!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8b69cb9661d59a440b3bc9e0ff1eab8a, type: 2}
   m_sharedMaterial: {fileID: 5767788990938898048, guid: 8b69cb9661d59a440b3bc9e0ff1eab8a, type: 2}
