@@ -97,6 +97,12 @@ public class QuizManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+    public void exit()
+    {
+        SceneManager.LoadScene("Level Modules");
+    }
+
+
     public void proceed()
     {
         SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);

@@ -2928,7 +2928,7 @@ GameObject:
   - component: {fileID: 1831555583}
   - component: {fileID: 1831555582}
   m_Layer: 5
-  m_Name: ProceedButton
+  m_Name: ExitButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3000,7 +3000,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1763764256}
         m_TargetAssemblyTypeName: QuizManager, Assembly-CSharp
-        m_MethodName: proceed
+        m_MethodName: exit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
