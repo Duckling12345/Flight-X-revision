@@ -35,7 +35,34 @@ public class QuizManager : MonoBehaviour
     }
 
     public void GameOver() {
-        PlayerPrefs.SetInt("QuizScore", score); 
+
+        string activeSceneName = SceneManager.GetActiveScene().name;
+
+        if (activeSceneName == "0_QuestionsScene (HTP)")
+        {
+            PlayerPrefs.SetInt("htpScore", score);
+        }
+
+        else if (activeSceneName == "1_QuestionsScene (LOP)")
+        {
+            PlayerPrefs.SetInt("lopScore", score);
+        }
+
+        else if (activeSceneName == "2_QuestionsScene (Fire)")
+        {
+            PlayerPrefs.SetInt("fobScore", score);
+        }
+
+        else if (activeSceneName == "3_QuestionsScene (Ditching)")
+        {
+            PlayerPrefs.SetInt("wlScore", score);
+        }
+
+        else
+        {
+            Debug.LogError("Unknown scene name: " + activeSceneName);
+        }
+
         PlayerPrefs.Save();
 
         Quizpanel.SetActive(false);
