@@ -1498,26 +1498,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 9.587489, y: 16.71196, z: 9.89077}
   m_Center: {x: -0.23502813, y: 7.855978, z: 3.6813428}
---- !u!114 &49122384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132149090428101}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95cebd414df40a54e9a4703bcee4bdef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myConversation: {fileID: 0}
-  talkPressed: 0
-  talkButton: {fileID: 86594102874646000}
-  objectiveText: {fileID: 3480894983170752145}
-  objectiveText1: {fileID: 6221332237238951383}
-  objectiveText2: {fileID: 0}
-  obstacle: {fileID: 5233112405622865500}
-  removeImage: {fileID: 1136556288}
 --- !u!1 &50030721
 GameObject:
   m_ObjectHideFlags: 0
@@ -1543,13 +1523,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50030721}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 213.48587, y: 15.143036, z: 703.4721}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.250885, y: 1.5003538, z: 0.7585449}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1093231963}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1708231687}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &50030723
 MonoBehaviour:
@@ -1564,9 +1544,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 2
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":98,\"yPos\":154},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Welcome
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":-64,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Welcome
     to your first flight. Before we take off, it\u2019s important to demonstrate
-    the proper usage of our safety equipment. \",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Annie\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.5},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":98,\"yPos\":292.2},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Your
+    the proper usage of our safety equipment. \",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Annie\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":4,\"Volume\":0.5},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-65,\"yPos\":160.200012},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Your
     task is to observe and memorize the sequence of the three procedures I\u2019m
     going to show the passengers. Get into position as I start the demonstration.
     \",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Annie\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.5}]}"
@@ -20721,7 +20701,7 @@ MonoBehaviour:
   _FixedClipboardButton: {fileID: 1976866295}
   _PopupWindow: {fileID: 4242350796648433291}
   _FixedTalkButton: {fileID: 872544756}
-  _NPCScript: {fileID: 49122384}
+  _NPCScript: {fileID: 858845361}
 --- !u!143 &784449592
 CharacterController:
   m_ObjectHideFlags: 0
@@ -23018,7 +22998,7 @@ MonoBehaviour:
   talkButton: {fileID: 872544754}
   objectiveText: {fileID: 3480894983170752145}
   objectiveText1: {fileID: 6221332237238951383}
-  objectiveText2: {fileID: 6221332237238951383}
+  objectiveText2: {fileID: 1195432647}
   obstacle: {fileID: 5233112405622865500}
   removeImage: {fileID: 1136556288}
 --- !u!4 &858845362
@@ -23056,7 +23036,6 @@ MonoBehaviour:
   objectIndicator: {fileID: 171559825}
   startLevelObject: {fileID: 1862609846}
   talkButton: {fileID: 872544756}
-  npc: {fileID: 858845361}
   popupAnimator: {fileID: 567213611666588922}
 --- !u!64 &859542484
 MeshCollider:
@@ -34011,6 +33990,140 @@ Transform:
   - {fileID: 1034913948}
   m_Father: {fileID: 595035953}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1195432647
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1195432648}
+  - component: {fileID: 1195432650}
+  - component: {fileID: 1195432649}
+  m_Layer: 5
+  m_Name: ObjectiveText (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1195432648
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195432647}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7993609837994281148}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -6, y: -40}
+  m_SizeDelta: {x: 302.12, y: 35.6837}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1195432649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195432647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4279703320
+  m_fontColor: {r: 0.09433961, g: 0.09202562, b: 0.09202562, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 18
+  m_fontSizeBase: 18
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 1
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1195432650
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195432647}
+  m_CullTransparentMesh: 1
 --- !u!64 &1195755605
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -37156,7 +37269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4533449660980142709, guid: 730e7b62fa8cd1f4f8f2706e82c45a68, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6867935344451985052, guid: 730e7b62fa8cd1f4f8f2706e82c45a68, type: 3}
       propertyPath: m_IsActive
@@ -47257,8 +47370,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1084589309014340909}
-  - {fileID: 543450653630758527}
   - {fileID: 1769169588}
+  - {fileID: 543450653630758527}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1676884545
@@ -47989,6 +48102,7 @@ Transform:
   m_Children:
   - {fileID: 1582249602}
   - {fileID: 858845362}
+  - {fileID: 50030722}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1708356995
@@ -49508,6 +49622,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1769169588}
   - component: {fileID: 1769169589}
+  - component: {fileID: 1769169590}
   m_Layer: 0
   m_Name: Sound Player
   m_TagString: Untagged
@@ -49626,6 +49741,29 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1769169590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769169587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca15007065d359b43b8033e97e83c16d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objective: 'Observe how Ms. Annie will demonstrate the proper usage of the safety
+    equipment. '
+  objective2: 'Follow the sequence: '
+  objective3: Seatbelt -> Vest -> Oxygen
+  changeText: {fileID: 3480894983170752145}
+  changeText2: {fileID: 5754473187037661971}
+  changeText3: {fileID: 1195432649}
+  Buttons: {fileID: 7677441606403121206}
+  soundSource: {fileID: 1769169589}
+  Intro: {fileID: 8300000, guid: 0159795eb9a9e5c4bb62c31ffb2f137d, type: 3}
+  popupAnimator: {fileID: 567213611666588922}
 --- !u!64 &1771136228
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -67460,7 +67598,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 543450653630758527}
-  - component: {fileID: 49122384}
   - component: {fileID: 919132149090428104}
   - component: {fileID: 49122383}
   - component: {fileID: 919132149090428103}
@@ -72021,7 +72158,7 @@ MonoBehaviour:
   _FixedClipboardButton: {fileID: 3737478540646655607}
   _PopupWindow: {fileID: 4242350796648433291}
   _FixedTalkButton: {fileID: 5809612637541490069}
-  _NPCScript: {fileID: 49122384}
+  _NPCScript: {fileID: 858845361}
 --- !u!1 &1537494236143479696
 GameObject:
   m_ObjectHideFlags: 0
@@ -93574,6 +93711,7 @@ MonoBehaviour:
   objectiveList:
   - Object: Talk to Ms. Annie regarding the next step.
   - Object: Go to your position to start the demonstration
+  - Object: 
   texts: []
   clipPressed: 0
 --- !u!1 &4242571076324670791
@@ -104535,7 +104673,7 @@ MonoBehaviour:
   m_text: new text here
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: -3015122423470148846, guid: 3c399d287f7490c449c29039a82711ee, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -119428,7 +119566,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &7684676134472233040
 GameObject:
   m_ObjectHideFlags: 0
@@ -121603,6 +121741,7 @@ RectTransform:
   m_Children:
   - {fileID: 7807640199186204376}
   - {fileID: 8767162646171288127}
+  - {fileID: 1195432648}
   m_Father: {fileID: 5588320174747848007}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -130421,5 +130560,4 @@ SceneRoots:
   - {fileID: 1040292158}
   - {fileID: 56476828}
   - {fileID: 543450653390341991}
-  - {fileID: 50030722}
   - {fileID: 1862609850}

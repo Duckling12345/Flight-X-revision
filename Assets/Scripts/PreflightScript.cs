@@ -10,7 +10,6 @@ public class PreflightScript : MonoBehaviour
     public GameObject startLevelObject;
 
     public FixedTalkButton talkButton;
-    public NPCScript npc;
 
     [SerializeField] Animator popupAnimator;
 
@@ -20,7 +19,6 @@ public class PreflightScript : MonoBehaviour
         {
             objectIndicator.SetActive(true);
             startLevelObject.SetActive(true);
-            npc.StartConversation();
             popupAnimator.Play("PopUpAnimation");
 
         }

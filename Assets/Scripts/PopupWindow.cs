@@ -50,7 +50,7 @@ public class PopupWindow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
                 ShowPopup("Level 4 | Water Ditching");
                 break;
             default:
-                ShowPopup("Level 1| In-Flight Safety Demonstration");
+                ShowPopup("Level 1| In-Flight Safety Demo");
                 break;
         }
 
@@ -77,7 +77,7 @@ public class PopupWindow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         }
         else if(clipPressed)
         {
-            ShowPopup("Level 1| In-Flight Safety Demonstration");
+            ShowPopup("Level 1| In-Flight Safety Demo");
         }
     }
 
