@@ -13,17 +13,18 @@ public class ScoreUI : MonoBehaviour
     //public ScoreManager scoreManager;
     public int totalQuizzes = 4;
 
-    void OnEnable()
+    void Start()
     {
         for (int i = 1; i <= totalQuizzes; i++)
         {
-            DisplayScore("Quiz" + i); 
+            DisplayScore("Quiz" + i);
+            
         }
     }
 
     void DisplayScore(string quizLvl)
     {
-        int score = PlayerPrefs.GetInt(quizLvl + "Score", 0);
+       int score = PlayerPrefs.GetInt("QuizScore", 0);
 
         string quizNumber = quizLvl.Substring("Quiz".Length);
 
@@ -31,5 +32,6 @@ public class ScoreUI : MonoBehaviour
         row.rank.text = quizNumber;
         row.levelname.text = "Quiz Name"; 
         row.score.text = score.ToString();
+        Debug.Log(score);
     }
 }
