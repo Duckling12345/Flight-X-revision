@@ -9,13 +9,16 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
     public FixedSitButton fixedSitbutton;
     public Camera mainCamera;
     public Camera sittingCamera;
-     public  bool Pressed;
     public GameObject player; // The player GameObject
     public GameObject sittingPlayer; // The sitting player GameObject
+    public GameObject mask;
     public Shake shaker;
     private Vector3 lastPlayerPosition; // Store the last position of the player before sitting
-    public GameObject mask;
+
+    [SerializeField] AudioSource source;
+    [SerializeField] AudioClip clip;
     [SerializeField] Animator wear;
+
     public UnlockDoor sceneMover;
     public GameObject EndSound;
     public GameObject deactivateCurrent;
@@ -24,15 +27,19 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
     public GameObject playerUI;
     public GameObject timer;
 
+    public bool Pressed;
+
+
+
     private void Update()
     {
         if (fixedSitbutton.Pressed)
         {
             Sit();
-            AudioManager.Instance.PlayOxygenSound();
             shaker.ShakeScreen();
             Invoke("playSound", 2f);
             Invoke("playAnimation", 15f);
+            Invoke("playOxygen", 1f);
             deactivateCurrent.SetActive(false);
         }
     }
@@ -64,6 +71,13 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
     {
         EndSound.SetActive(true);
     }
+
+
+    public void playOxygen()
+    {
+        source.PlayOneShot(clip);
+    }
+
 
     void LevelResult()
     {
