@@ -6,6 +6,7 @@ using UnityEngine;
 public class NPCDestination : MonoBehaviour
 {
     public GameObject passenger1;
+    public GameObject addedpassenger;
     public GameObject passenger4;
     public GameObject remove;
 
@@ -15,10 +16,10 @@ public class NPCDestination : MonoBehaviour
         {
             Debug.Log("ay natrigger");
             passenger1.SetActive(false);
+            addedpassenger.SetActive(false);
             passenger4.SetActive(false); 
             remove.SetActive(false);
-            
-
+           
         }
         else
         {
