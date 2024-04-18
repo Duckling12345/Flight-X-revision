@@ -6069,6 +6069,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 789562958677822316, guid: 54a5a73a68f629e4f98e976f68422762, type: 3}
   m_PrefabInstance: {fileID: 115531883}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &115531885 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 423455538901370588, guid: 54a5a73a68f629e4f98e976f68422762, type: 3}
+  m_PrefabInstance: {fileID: 115531883}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &116277648
 GameObject:
   m_ObjectHideFlags: 0
@@ -18560,6 +18565,8 @@ MonoBehaviour:
   objectiveText2: {fileID: 1244202152}
   obstacle: {fileID: 817578317}
   removeImage: {fileID: 1292526094}
+  okayButton: {fileID: 115531885}
+  timetowait: 15
 --- !u!65 &375874053
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -77632,7 +77639,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 2
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":-65,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"The
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":-65,"yPos":23},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"The
     aircraft is currently experiencing a drop in oxygen. Our responsibility is to
     assist passengers in securing their seatbelts.","parentUIDs":[],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Annie","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3.5,"Volume":0.5},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-63.80002,"yPos":161.2},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Don''t
     forget to also wear an oxygen mask. Within 90 seconds, complete the provided

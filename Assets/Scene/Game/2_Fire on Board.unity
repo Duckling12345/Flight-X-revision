@@ -3945,6 +3945,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 789562958677822316, guid: 54a5a73a68f629e4f98e976f68422762, type: 3}
   m_PrefabInstance: {fileID: 882157021}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &882157024 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 423455538901370588, guid: 54a5a73a68f629e4f98e976f68422762, type: 3}
+  m_PrefabInstance: {fileID: 882157021}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &900841942 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4376703330661181225, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
@@ -45499,6 +45504,8 @@ MonoBehaviour:
   objectiveText2: {fileID: 1429166143}
   obstacle: {fileID: 1884752917838336467}
   removeImage: {fileID: 882157022}
+  okayButton: {fileID: 882157024}
+  timetowait: 7
 --- !u!65 &4157820365798656480
 BoxCollider:
   m_ObjectHideFlags: 0

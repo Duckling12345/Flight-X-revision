@@ -21,6 +21,9 @@ public class NPCScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public GameObject obstacle;
     private GameOverManager gameOver;
     public GameObject removeImage;
+    public GameObject okayButton;
+    public float timetowait;
+
 
     void Start()
     {
@@ -41,6 +44,8 @@ public class NPCScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             ShowText();
             RemoveText();
             removeImage.SetActive(true);
+            okayButton.SetActive(false);
+            Invoke("endConvo", timetowait);
         }
     }
 
@@ -62,6 +67,14 @@ public class NPCScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         objectiveText1.SetActive(true);
         objectiveText2.SetActive(true);
     }
+
+    public  void endConvo()
+    {
+        ConversationManager.Instance.EndConversation();
+    }
+
+
+
 
     //temporary fix
     private void OnTriggerExit(Collider other)
