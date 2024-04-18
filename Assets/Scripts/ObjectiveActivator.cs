@@ -7,7 +7,7 @@ public class ObjectiveActivator : MonoBehaviour
     private ObjectiveScript objectiveScript;
     private bool ObjectiveActive = false;
     public GameObject InteractButton;
-    public GameObject DestroyOnExit;
+    //public GameObject DestroyOnExit;
     
     // Start is called before the first frame update
     void Start()
@@ -19,7 +19,7 @@ public class ObjectiveActivator : MonoBehaviour
    public void ActivateObjective()
     {
         ObjectiveActive = true;
-        DestroyOnExit.SetActive(true);
+        //DestroyOnExit.SetActive(true);
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -36,7 +36,6 @@ public class ObjectiveActivator : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         Debug.Log("Player Exited");
-        InteractButton.SetActive(false);
-        DestroyOnExit.GetComponent<BoxCollider>().enabled =false;
+        //DestroyOnExit.GetComponent<BoxCollider>().enabled =false;
     }
 }

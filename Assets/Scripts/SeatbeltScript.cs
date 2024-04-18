@@ -17,6 +17,9 @@ public class SeatbeltScript : MonoBehaviour, IPointerUpHandler, IPointerDownHand
     public GameObject activateNext;
     public GameObject deactivateCurrent;
     public GameObject seatbeltObject;
+    public GameObject InteractButton;
+    public GameObject DestroyOnExit;
+
     void Update()
     {
         if (fixedSeatbelt.Pressed)
@@ -33,13 +36,19 @@ public class SeatbeltScript : MonoBehaviour, IPointerUpHandler, IPointerDownHand
         deactivateCurrent.SetActive(false);
         seatbeltObject.SetActive(true);
         AudioManager.Instance.PlayBuckleSound();
+        Invoke("destroyObjects", 4f);
     }
 
-    private void OnTriggerExit(Collider other)
+
+    public void destroyObjects()
     {
+        DestroyOnExit.GetComponent<BoxCollider>().enabled = false;
         CameraAnimation.SetActive(false);
         tempDisable.SetActive(true);
+        InteractButton.SetActive(false);
     }
+
+   
 
     void IPointerDownHandler.OnPointerDown(PointerEventData eventData)
     {

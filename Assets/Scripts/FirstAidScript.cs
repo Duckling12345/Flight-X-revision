@@ -22,6 +22,7 @@ public class FirstAidScript : MonoBehaviour
         {
             inactive.SetActive(false);
             active.SetActive(true);
+            activateVest.SetActive(true);
             disableButton.SetActive(false);
             ActivateIndicator.SetActive(true);
             DeactiveIndicator.SetActive(false);

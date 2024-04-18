@@ -9372,7 +9372,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InteractButton: {fileID: 6811448917328162198}
-  DestroyOnExit: {fileID: 5006660478134161947}
 --- !u!65 &871321635
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9392,8 +9391,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1273.0226, y: 1588.32, z: 1262.6544}
-  m_Center: {x: 325.66504, y: -154.42612, z: 19.897503}
+  m_Size: {x: 1273.0226, y: 1054.4869, z: 1262.6544}
+  m_Center: {x: 325.66504, y: -248.41464, z: 19.897503}
 --- !u!64 &873026628
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -62816,7 +62815,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bc5ba0781b24234683f4b0f7b77a852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionAnim: {fileID: 0}
   activate: {fileID: 1568345859}
   deactivate: {fileID: 7101956818296910499}
   activateNext: {fileID: 2108025825}
@@ -62828,6 +62826,8 @@ MonoBehaviour:
   pouchAnimation: {fileID: 489753383}
   cameraStateName: InspectChair
   pouchStateName: CheckPouch
+  DestroyOnExit: {fileID: 5006660478134161947}
+  InteractButton: {fileID: 6811448917328162198}
 --- !u!1 &5007767762203829556
 GameObject:
   m_ObjectHideFlags: 0
@@ -66682,7 +66682,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InteractButton: {fileID: 6811448917328162198}
-  DestroyOnExit: {fileID: 318105776330187361}
 --- !u!65 &5532807414968636709
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66716,7 +66715,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bc5ba0781b24234683f4b0f7b77a852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionAnim: {fileID: 0}
   activate: {fileID: 1568345859}
   deactivate: {fileID: 7101956818296910499}
   activateNext: {fileID: 1399343862}
@@ -66728,6 +66726,8 @@ MonoBehaviour:
   pouchAnimation: {fileID: 1241680515}
   cameraStateName: InspectLastChair
   pouchStateName: CheckNextPouch
+  DestroyOnExit: {fileID: 318105776330187361}
+  InteractButton: {fileID: 6811448917328162198}
 --- !u!114 &5532807414968636711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87595,7 +87595,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InteractButton: {fileID: 2457751789838402640}
-  DestroyOnExit: {fileID: 8288847800413237728}
 --- !u!65 &8288847800413237730
 BoxCollider:
   m_ObjectHideFlags: 0

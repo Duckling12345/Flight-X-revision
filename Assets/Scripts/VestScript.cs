@@ -24,7 +24,6 @@ public class VestScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public GameObject ActivateIndicator;
     public GameObject DeactiveIndicator;
     public GameObject WearVest;
-    public GameObject activateObject;
     
     
    

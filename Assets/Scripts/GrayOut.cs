@@ -12,6 +12,8 @@ public class GrayOut : MonoBehaviour
     public int objectiveID;
     [SerializeField] Animator popupAnimator;
     public float timetowait;
+
+
     private void Update()
     {
        if (fixbutton.Pressed == true && objective.objectivesDone == objectiveID)
@@ -24,7 +26,6 @@ public class GrayOut : MonoBehaviour
     public void WaitAnimation()
     {
         popupAnimator.Play("PopUpAnimation");
-
     }
 
 }

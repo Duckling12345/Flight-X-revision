@@ -22,6 +22,9 @@ public class LastPassenger : MonoBehaviour
     public Shake shaker;
     public GameObject activateNext;
     public GameObject deactivateCurrent;
+    public GameObject DestroyOnExit;
+    public GameObject InteractButton;
+
 
     private void Update()
     {
@@ -38,19 +41,23 @@ public class LastPassenger : MonoBehaviour
             activateNext.SetActive(true);
             deactivateCurrent.SetActive(false);
             AudioManager.Instance.PlayBuckleSound();
+            Invoke("destroyObjects", 4f);
         }
     }
 
     public void WaitAnimation()
     {
         popupAnimator.Play("PopUpAnimation");
-
     }
 
-    private void OnTriggerExit(Collider other)
+
+    public void destroyObjects()
     {
+        DestroyOnExit.GetComponent<BoxCollider>().enabled = false;
         CameraAnimation.SetActive(false);
         tempDisable.SetActive(true);
+        InteractButton.SetActive(false);
     }
+
 
 }
