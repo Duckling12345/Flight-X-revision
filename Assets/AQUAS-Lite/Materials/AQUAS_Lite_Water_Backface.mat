@@ -23,8 +23,8 @@ Material:
   - _USEAOFROMMAINPROPERTIES_ON
   - _USEEMISSIONFROMMAINPROPERTIES_ON
   m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 1
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
@@ -149,13 +149,13 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _NormalStrength: 1
-    - _NormalTiling: 0.25
+    - _NormalTiling: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _ProbeReflectionIntensity: 0.578
     - _RealtimeReflectionIntensity: 1
     - _ReflectionIntensity: 0.385
-    - _Refraction: 0.4
+    - _Refraction: 0.255
     - _RefractionDistance: 10
     - _RefractionFalloff: 1
     - _Saturation: 0
@@ -178,13 +178,13 @@ Material:
     - _UseBaseColorAlpha: 0
     - _UseEmissionFromMainProperties: 1
     - _VisualizeMask: 0
-    - _WaveSpeed: 0.1
+    - _WaveSpeed: 0.4
     - _ZTest: 4
     - _ZWrite: 1
     - __dirty: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _DeepWaterColor: {r: 0.06763973, g: 0.11615724, b: 0.1509434, a: 1}
+    - _DeepWaterColor: {r: 0.05639017, g: 0.1616437, b: 0.2264151, a: 1}
     - _DetailColor: {r: 1, g: 1, b: 1, a: 0}
     - _DetailSpecularColor: {r: 1, g: 1, b: 1, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
