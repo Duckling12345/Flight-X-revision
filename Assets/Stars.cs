@@ -14,11 +14,11 @@ public class Stars : MonoBehaviour
 
     private void Update()
     {
-        starsAchieved();
+        StarsAchieved();
     }
 
 
-    public async void starsAchieved()
+    public void StarsAchieved()
     {
         if (timer.remainingTime >= 1f && timer.remainingTime <= 15f)
         {
