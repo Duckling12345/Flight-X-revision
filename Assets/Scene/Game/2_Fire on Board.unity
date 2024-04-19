@@ -5365,6 +5365,11 @@ Transform:
   - {fileID: 2125093131}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1227980470 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8128070805566674011, guid: c14f0fc9e72d7854ca4ff4fbe98febfd, type: 3}
+  m_PrefabInstance: {fileID: 1563176233}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1252993872
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80715,6 +80720,7 @@ MonoBehaviour:
   levelResult: {fileID: 821546601}
   playerUI: {fileID: 7677441605818994117}
   timer: {fileID: 1054514439}
+  stars: {fileID: 1227980470}
 --- !u!114 &9149842193823408358
 MonoBehaviour:
   m_ObjectHideFlags: 0

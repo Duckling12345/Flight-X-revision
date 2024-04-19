@@ -11,6 +11,7 @@ public class ExitScene : MonoBehaviour
     public GameObject levelResult;
     public GameObject playerUI;
     public GameObject timer;
+    public GameObject stars; 
 
     void LevelResult()
     {
@@ -18,6 +19,7 @@ public class ExitScene : MonoBehaviour
         playerUI.SetActive(false);
         GetComponent<StarsHandler>().starsAchieved();
         timer.SetActive(false);
+        stars.SetActive(false);
     }
     private void OnTriggerEnter(Collider other)
     {

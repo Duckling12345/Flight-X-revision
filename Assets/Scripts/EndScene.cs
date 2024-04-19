@@ -12,6 +12,7 @@ public class EndScene : MonoBehaviour
     public GameObject levelResult;
     public GameObject playerUI;
     public GameObject timer;
+    public GameObject stars;
 
     // Update is called once per frame
     void Update()
@@ -24,6 +25,7 @@ public class EndScene : MonoBehaviour
         playerUI.SetActive(false);
         GetComponent<StarsHandler>().starsAchieved();
         timer.SetActive(false);
+        stars.SetActive(false);
     }
     private void FadetoBlack()
     {

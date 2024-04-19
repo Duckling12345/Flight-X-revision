@@ -26,6 +26,7 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
     public GameObject levelResult;
     public GameObject playerUI;
     public GameObject timer;
+    public GameObject stars;
 
     public bool Pressed;
 
@@ -85,6 +86,7 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
         playerUI.SetActive(false);
         GetComponent<StarsHandler>().starsAchieved();
         timer.SetActive(false);    
+        stars.SetActive(false);
     }
 
     void IPointerDownHandler.OnPointerDown(PointerEventData eventData)
