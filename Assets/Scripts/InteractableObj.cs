@@ -14,6 +14,8 @@ public class InteractableObj : MonoBehaviour, IInteractable
     public FixedButton fixbutton;
     public ObjectiveScript objectives;
     public int objectivesID;
+    public TMP_Text inspectObjectiveText;
+    public string inspectObjective;
     [SerializeField] Animator cameraAnimation;
     [SerializeField] Animator pouchAnimation;
     public string cameraStateName;
@@ -28,6 +30,7 @@ public class InteractableObj : MonoBehaviour, IInteractable
         { 
             Interact();
             Invoke("destroyObjects", 4f);
+            inspectObjectiveText.text = inspectObjective;
         }
     }
     public void Interact()

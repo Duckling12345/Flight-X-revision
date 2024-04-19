@@ -26,6 +26,7 @@ public class Stars : MonoBehaviour
             stars[0].SetActive(true);
             stars[1].SetActive(false);
             stars[2].SetActive(false);
+            soundSource.Play();
             soundSource.PlayOneShot(errorClip);
             Invoke("MuteAudio", 2f);
             //temporary sound
@@ -38,6 +39,7 @@ public class Stars : MonoBehaviour
             stars[0].SetActive(true);
             stars[1].SetActive(true);
             stars[2].SetActive(false);
+            soundSource.Play();
             soundSource.PlayOneShot(errorClip);
             Invoke("MuteAudio", 2f);
         }
