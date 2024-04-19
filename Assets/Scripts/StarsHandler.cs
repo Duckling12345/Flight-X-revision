@@ -24,12 +24,19 @@ public class StarsHandler : MonoBehaviour
             stars[0].SetActive(true);
             stars[1].SetActive(true);
         }
-        else
+        else if (timer.remainingTime >= 45f)
         {
-            // Three stars dagdag condition
+            // Three stars
             stars[0].SetActive(true);
             stars[1].SetActive(true);
             stars[2].SetActive(true);
+        }
+
+        else
+        {
+            stars[0].SetActive(false);
+            stars[1].SetActive(false);
+            stars[2].SetActive(false);
         }
 
         // Remaining time 

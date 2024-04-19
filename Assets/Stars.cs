@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 
@@ -7,6 +9,8 @@ public class Stars : MonoBehaviour
 {
     public GameObject[] stars;
     public GameOverManager timer;
+    [SerializeField] AudioSource soundSource;
+    [SerializeField] AudioClip errorClip;
 
     private void Update()
     {
@@ -14,8 +18,7 @@ public class Stars : MonoBehaviour
     }
 
 
-
-    public void starsAchieved()
+    public async void starsAchieved()
     {
         if (timer.remainingTime >= 1f && timer.remainingTime <= 15f)
         {
@@ -23,6 +26,11 @@ public class Stars : MonoBehaviour
             stars[0].SetActive(true);
             stars[1].SetActive(false);
             stars[2].SetActive(false);
+            soundSource.PlayOneShot(errorClip);
+            Invoke("MuteAudio", 2f);
+            //temporary sound
+
+
         }
         else if (timer.remainingTime >= 16f && timer.remainingTime <= 44f)
         {
@@ -30,13 +38,28 @@ public class Stars : MonoBehaviour
             stars[0].SetActive(true);
             stars[1].SetActive(true);
             stars[2].SetActive(false);
+            soundSource.PlayOneShot(errorClip);
+            Invoke("MuteAudio", 2f);
         }
-        else
+        else if (timer.remainingTime >= 45f)
         {
             // Three stars
             stars[0].SetActive(true);
             stars[1].SetActive(true);
             stars[2].SetActive(true);
         }
+
+        else
+        {
+            stars[0].SetActive(false);
+            stars[1].SetActive(false);
+            stars[2].SetActive(false);
+        }
     }
+
+    void MuteAudio()
+    {
+        soundSource.Stop();
+    }
+
 }
