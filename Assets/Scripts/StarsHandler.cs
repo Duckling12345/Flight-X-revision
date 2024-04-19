@@ -26,7 +26,7 @@ public class StarsHandler : MonoBehaviour
         }
         else
         {
-            // Three stars
+            // Three stars dagdag condition
             stars[0].SetActive(true);
             stars[1].SetActive(true);
             stars[2].SetActive(true);
