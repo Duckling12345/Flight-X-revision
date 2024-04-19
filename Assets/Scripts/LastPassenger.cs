@@ -24,6 +24,8 @@ public class LastPassenger : MonoBehaviour
     public GameObject deactivateCurrent;
     public GameObject DestroyOnExit;
     public GameObject InteractButton;
+    public TMP_Text fastenObjectiveText;
+    public string fastenObjective;
 
 
     private void Update()
@@ -42,6 +44,7 @@ public class LastPassenger : MonoBehaviour
             deactivateCurrent.SetActive(false);
             AudioManager.Instance.PlayBuckleSound();
             Invoke("destroyObjects", 4f);
+            fastenObjectiveText.text = fastenObjective;
         }
     }
 
