@@ -17,7 +17,6 @@ public class Stars : MonoBehaviour
         StarsAchieved();
     }
 
-
     public void StarsAchieved()
     {
         if (timer.remainingTime >= 1f && timer.remainingTime <= 15f)
