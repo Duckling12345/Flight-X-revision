@@ -26,12 +26,9 @@ public class Stars : MonoBehaviour
             stars[0].SetActive(true);
             stars[1].SetActive(false);
             stars[2].SetActive(false);
-            soundSource.Play();
-            soundSource.PlayOneShot(errorClip);
-            Invoke("MuteAudio", 2f);
-            //temporary sound
-
-
+            PlayErrorSound();
+            //soundSource.PlayOneShot(errorClip);
+            //Invoke("MuteAudio", 1f);
         }
         else if (timer.remainingTime >= 16f && timer.remainingTime <= 44f)
         {
@@ -39,9 +36,8 @@ public class Stars : MonoBehaviour
             stars[0].SetActive(true);
             stars[1].SetActive(true);
             stars[2].SetActive(false);
-            soundSource.Play();
-            soundSource.PlayOneShot(errorClip);
-            Invoke("MuteAudio", 2f);
+            PlayErrorSound();
+            //Invoke("MuteAudio", 1f);
         }
         else if (timer.remainingTime >= 45f)
         {
@@ -53,10 +49,15 @@ public class Stars : MonoBehaviour
 
         else
         {
+            // No stars
             stars[0].SetActive(false);
             stars[1].SetActive(false);
             stars[2].SetActive(false);
         }
+    }
+    void PlayErrorSound()
+    {
+        soundSource.PlayOneShot(errorClip);
     }
 
     void MuteAudio()

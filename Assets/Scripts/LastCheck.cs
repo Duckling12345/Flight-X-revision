@@ -28,6 +28,9 @@ public class LastCheck : MonoBehaviour
     [SerializeField] Animator popupAnimator;
     public GameObject ActivateFirstAid;
 
+    public AudioSource soundSource;
+    public AudioClip checkpoint; 
+
     private void OnTriggerEnter(Collider other)
     {
             
@@ -48,6 +51,8 @@ public class LastCheck : MonoBehaviour
                 removeNPC.SetActive(false);
                 ActivateFirstAid.SetActive(true);
                 Invoke("WaitAnimation", timetowait);
+
+                soundSource.PlayOneShot(checkpoint);
 
     }
 
