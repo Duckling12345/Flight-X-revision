@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Stars : MonoBehaviour
 {
     public GameObject[] stars;
     public GameOverManager timer;
-    [SerializeField] AudioSource soundSource;
-    [SerializeField] AudioClip errorClip;
+    public AudioSource soundSource;
+    public AudioClip errorClip;
 
+ 
     private void Update()
     {
         StarsAchieved();
@@ -23,9 +25,8 @@ public class Stars : MonoBehaviour
         {
             // One star
             stars[0].SetActive(true);
-            stars[1].SetActive(false);
-            stars[2].SetActive(false);
-            PlayErrorSound();
+            stars[0].SetActive(false);
+            stars[0].SetActive(false);
             //soundSource.PlayOneShot(errorClip);
             //Invoke("MuteAudio", 1f);
         }
@@ -35,7 +36,6 @@ public class Stars : MonoBehaviour
             stars[0].SetActive(true);
             stars[1].SetActive(true);
             stars[2].SetActive(false);
-            PlayErrorSound();
             //Invoke("MuteAudio", 1f);
         }
         else if (timer.remainingTime >= 45f)
@@ -45,7 +45,6 @@ public class Stars : MonoBehaviour
             stars[1].SetActive(true);
             stars[2].SetActive(true);
         }
-
         else
         {
             // No stars
@@ -53,10 +52,6 @@ public class Stars : MonoBehaviour
             stars[1].SetActive(false);
             stars[2].SetActive(false);
         }
-    }
-    void PlayErrorSound()
-    {
-        soundSource.PlayOneShot(errorClip);
     }
 
     void MuteAudio()
