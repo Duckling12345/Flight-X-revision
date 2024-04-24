@@ -25992,6 +25992,7 @@ GameObject:
   - component: {fileID: 5532807414968636710}
   - component: {fileID: 5532807414968636711}
   - component: {fileID: 5532807414968636712}
+  - component: {fileID: 5532807414968636713}
   m_Layer: 0
   m_Name: ObjectiveChair
   m_TagString: Untagged
@@ -62803,6 +62804,7 @@ GameObject:
   - component: {fileID: 871321635}
   - component: {fileID: 871321634}
   - component: {fileID: 5006660478134161948}
+  - component: {fileID: 5006660478134161949}
   m_Layer: 0
   m_Name: ObjectiveChair
   m_TagString: Untagged
@@ -62837,6 +62839,24 @@ MonoBehaviour:
   pouchStateName: CheckPouch
   DestroyOnExit: {fileID: 5006660478134161947}
   InteractButton: {fileID: 6811448917328162198}
+--- !u!114 &5006660478134161949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5006660478134161947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0.9602171, g: 1, b: 0, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &5007767762203829556
 GameObject:
   m_ObjectHideFlags: 0
@@ -66778,6 +66798,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5532807414968636713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318105776330187361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0.9607843, g: 1, b: 0, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &5535450777651496061
 GameObject:
   m_ObjectHideFlags: 0
@@ -87586,6 +87624,7 @@ GameObject:
   - component: {fileID: 8288847800413237729}
   - component: {fileID: 8288847800413237731}
   - component: {fileID: 8288847800413237732}
+  - component: {fileID: 8288847800413237733}
   m_Layer: 7
   m_Name: Door
   m_TagString: Untagged
@@ -87662,6 +87701,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8288847800413237733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8288847800413237728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0.9607843, g: 1, b: 0, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!33 &8295052816776116730
 MeshFilter:
   m_ObjectHideFlags: 0

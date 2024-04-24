@@ -12,7 +12,7 @@ public class StartLevelScript : MonoBehaviour
     public GameObject objectIndicator;
 
     public FixedButton fixedButton;
- 
+
 
     // Update is called once per frame
     void Update()
