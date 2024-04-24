@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class InteractableObj : MonoBehaviour, IInteractable
 {
+    public GameObject defaultChair;
+    public GameObject hideDefaultChair;
     public GameObject activate;
     public GameObject deactivate;
     public GameObject activateNext;
@@ -56,6 +58,8 @@ public class InteractableObj : MonoBehaviour, IInteractable
         activate.SetActive(false);
         deactivate.SetActive(true);
         InteractButton.SetActive(false);
+        defaultChair.SetActive(true);
+        hideDefaultChair.SetActive(false);
     }
 
 
@@ -63,6 +67,8 @@ public class InteractableObj : MonoBehaviour, IInteractable
     {
         activate.SetActive(false);
         deactivate.SetActive(true);
-        InteractButton.SetActive(false);
+        InteractButton.SetActive(false); 
+        defaultChair.SetActive(true);
+        hideDefaultChair.SetActive(false);
     }
 }
