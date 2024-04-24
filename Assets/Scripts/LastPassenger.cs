@@ -26,6 +26,8 @@ public class LastPassenger : MonoBehaviour
     public GameObject InteractButton;
     public TMP_Text fastenObjectiveText;
     public string fastenObjective;
+    public GameObject defaultChair;
+    public GameObject hideDefaultChair;
 
 
     private void Update()
@@ -60,6 +62,8 @@ public class LastPassenger : MonoBehaviour
         CameraAnimation.SetActive(false);
         tempDisable.SetActive(true);
         InteractButton.SetActive(false);
+        defaultChair.SetActive(true);
+        hideDefaultChair.SetActive(false);
     }
 
 

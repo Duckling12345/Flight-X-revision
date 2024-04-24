@@ -5688,6 +5688,7 @@ GameObject:
   - component: {fileID: 1274419793}
   - component: {fileID: 1274419792}
   - component: {fileID: 1274419791}
+  - component: {fileID: 1274419796}
   m_Layer: 0
   m_Name: PBE
   m_TagString: Untagged
@@ -5822,6 +5823,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1274419789}
   m_Mesh: {fileID: -4994483318804348304, guid: 62eeaf6a3de75244c95023dea4731eb2, type: 3}
+--- !u!114 &1274419796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274419789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 1, b: 0.106297255, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1001 &1293424941
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7277,6 +7296,7 @@ GameObject:
   - component: {fileID: 1525581170}
   - component: {fileID: 1525581169}
   - component: {fileID: 1525581168}
+  - component: {fileID: 1525581174}
   m_Layer: 0
   m_Name: Fire Extinguisher (1)
   m_TagString: Untagged
@@ -7430,6 +7450,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1525581165}
   m_Mesh: {fileID: 2490877780449444852, guid: d258afcdeda12e34eb3d52197e8ef0cc, type: 3}
+--- !u!114 &1525581174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525581165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0.9607843, g: 1, b: 0, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &1534505064
 GameObject:
   m_ObjectHideFlags: 0

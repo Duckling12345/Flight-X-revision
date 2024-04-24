@@ -22,6 +22,8 @@ public class SeatbeltScript : MonoBehaviour, IPointerUpHandler, IPointerDownHand
     public GameObject DestroyOnExit;
     public TMP_Text fastenObjectiveText;
     public string fastenObjective;
+    public GameObject defaultChair;
+    public GameObject hideDefaultChair;
 
     void Update()
     {
@@ -50,6 +52,8 @@ public class SeatbeltScript : MonoBehaviour, IPointerUpHandler, IPointerDownHand
         CameraAnimation.SetActive(false);
         tempDisable.SetActive(true);
         InteractButton.SetActive(false);
+        defaultChair.SetActive(true);
+        hideDefaultChair.SetActive(false);
     }
 
    
