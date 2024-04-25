@@ -5689,6 +5689,7 @@ GameObject:
   - component: {fileID: 1274419792}
   - component: {fileID: 1274419791}
   - component: {fileID: 1274419796}
+  - component: {fileID: 1274419797}
   m_Layer: 0
   m_Name: PBE
   m_TagString: Untagged
@@ -5841,6 +5842,28 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!64 &1274419797
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274419789}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4994483318804348304, guid: 62eeaf6a3de75244c95023dea4731eb2, type: 3}
 --- !u!1001 &1293424941
 PrefabInstance:
   m_ObjectHideFlags: 0

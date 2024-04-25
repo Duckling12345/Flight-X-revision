@@ -17,13 +17,15 @@ public class StarsHandler : MonoBehaviour
         {
             // One star
             stars[0].SetActive(true);
+            stars[1].SetActive(false);
+            stars[2].SetActive(false);
         }
         else if (timer.remainingTime >= 16f && timer.remainingTime <= 44f)
         {
             // Two stars
             stars[0].SetActive(true);
             stars[1].SetActive(true);
-        }
+            stars[2].SetActive(false);        }
         else if (timer.remainingTime >= 45f)
         {
             // Three stars
