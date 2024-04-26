@@ -65,10 +65,6 @@ public class InteractableObj : MonoBehaviour, IInteractable
 
     private void OnTriggerExit(Collider other)
     {
-        activate.SetActive(false);
-        deactivate.SetActive(true);
         InteractButton.SetActive(false); 
-        defaultChair.SetActive(true);
-        hideDefaultChair.SetActive(false);
     }
 }
