@@ -52849,6 +52849,7 @@ GameObject:
   - component: {fileID: 5866666020878864544}
   - component: {fileID: 5866666020878864546}
   - component: {fileID: 5866666020878864545}
+  - component: {fileID: 5866666020878864547}
   m_Layer: 0
   m_Name: Running Passenger
   m_TagString: Untagged
@@ -52871,6 +52872,7 @@ GameObject:
   - component: {fileID: 5866666020878654161}
   - component: {fileID: 5866666020878654162}
   - component: {fileID: 5866666020878654163}
+  - component: {fileID: 5866666020878654164}
   m_Layer: 0
   m_Name: Passenger
   m_TagString: NPC
@@ -52908,6 +52910,7 @@ GameObject:
   - component: {fileID: 1586533995}
   - component: {fileID: 1586533998}
   - component: {fileID: 5866666020406757055}
+  - component: {fileID: 5866666020406757056}
   m_Layer: 0
   m_Name: Passenger
   m_TagString: NPC
@@ -65827,6 +65830,23 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &5866666020406757056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148516947582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6be4feecb296f7b4d996e675de46cea4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcs:
+  - {fileID: 919132148516947582}
+  - {fileID: 919132148040866320}
+  - {fileID: 919132148040683614}
+  destination: {fileID: 1460975283}
 --- !u!95 &5866666020878654160
 Animator:
   serializedVersion: 5
@@ -65918,6 +65938,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5866666020878654164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148040866320}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6be4feecb296f7b4d996e675de46cea4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcs: []
+  destination: {fileID: 0}
 --- !u!95 &5866666020878864542
 Animator:
   serializedVersion: 5
@@ -66017,6 +66051,20 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &5866666020878864547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148040683614}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6be4feecb296f7b4d996e675de46cea4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcs: []
+  destination: {fileID: 0}
 --- !u!1 &5879981008593513934
 GameObject:
   m_ObjectHideFlags: 0
