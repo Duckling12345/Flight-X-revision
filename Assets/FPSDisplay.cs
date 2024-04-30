@@ -36,7 +36,7 @@ public class FPSDisplay : MonoBehaviour
 
         style.alignment = TextAnchor.LowerRight;
         style.fontSize = fontSize;
-        style.normal.textColor = fpsAvg > lowFpsThreshold ? textColor : Color.red;
+        style.normal.textColor = fpsAvg > lowFpsThreshold ? textColor : Color.black;
         style.font = font; 
 
         string text = $"{fpsAvg:0.} FPS ({msecAvg:0.0}ms)";
