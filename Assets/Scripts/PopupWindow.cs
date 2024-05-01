@@ -39,14 +39,14 @@ public class PopupWindow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
                 ShowPopup("Level 1 | Pre-flight Checking");
                 break;
 
-            case 10:
+            case 12:
                 ShowPopup("Level 2 | Loss of Pressurization");
                 break;
 
-            case 12:
+            case 16:
                 ShowPopup("Level 3 | Fire on Board");
                 break;
-            case 14:
+            case 20:
                 ShowPopup("Level 4 | Water Landing");
                 break;
             default:
