@@ -62,7 +62,7 @@ public class AudioManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "0_How to Play" || scene.name == "0_Pre-flight_Demo" || scene.name == "0_Prologue" || scene.name == "1_Loss of Pressurization" || scene.name == "2_Fire on Board" || scene.name == "3_Ditching")
+        if (scene.name == "1_Pre-flight Checking" || scene.name == "1_Pre-flight_Demo" || scene.name == "1_Prologue" || scene.name == "2_LOP Intro" || scene.name == "2_Loss of Pressurization" || scene.name == "3_FOB Intro" || scene.name == "3_Fire on Board" || scene.name == "4_Water Intro" || scene.name == "4_Ditching")
         {
             musicSource.Stop(); 
             return;
@@ -85,7 +85,7 @@ public class AudioManager : MonoBehaviour
             }
         }
 
-        else if (scene.name == "0_QuestionsScene (HTP)" || scene.name == "1_QuestionsScene (LOP)" || scene.name == "2_QuestionsScene (Fire)" || scene.name == "3_QuestionsScene (Ditching)")
+        else if (scene.name == "1_QuestionsScene (PFD)" || scene.name == "2_QuestionsScene (LOP)" || scene.name == "3_QuestionsScene (Fire)" || scene.name == "4_QuestionsScene (Ditching)")
         {
             if (!musicSource.isPlaying || musicSource.clip != quizMusic)
             {
