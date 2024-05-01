@@ -28803,9 +28803,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 3
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":38.2000122,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Attention,
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":306,"yPos":76.0000153},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Attention,
     all cabin crew and passengers, this is your captain speaking, we are having a
-    loss in cabin pressure.","parentUIDs":[],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Captain","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3.5,"Volume":0.5},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":38,"yPos":135.2},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Remain
+    loss in cabin pressure.","parentUIDs":[],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Captain","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0.5},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":305.799927,"yPos":189.200012},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Remain
     calm and please fasten your seatbelts and breathe through the oxygen masks. We
     will keep you updated. ","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Captain","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
@@ -41608,7 +41608,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 0
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: f71c0dc03d067a342aa16a51674f6507, type: 3}
+  Icon: {fileID: 21300000, guid: b5ff3f067813cbd418b2aea1d3f045c6, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &847508244
 MonoBehaviour:
@@ -41661,7 +41661,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 2
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: f71c0dc03d067a342aa16a51674f6507, type: 3}
+  Icon: {fileID: 21300000, guid: b5ff3f067813cbd418b2aea1d3f045c6, type: 3}
   Audio: {fileID: 0}
 --- !u!1 &850809985
 GameObject:
@@ -58816,6 +58816,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shaker: {fileID: 1500110046}
   shaker2: {fileID: 682147829}
+  myConversation: {fileID: 596984868}
+  DialogueButton: {fileID: 115531885}
+  playerJoystick: {fileID: 86702891323970218}
 --- !u!1 &1212655379
 GameObject:
   m_ObjectHideFlags: 0
@@ -63419,7 +63422,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 2
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: f71c0dc03d067a342aa16a51674f6507, type: 3}
+  Icon: {fileID: 21300000, guid: b5ff3f067813cbd418b2aea1d3f045c6, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1311408448
 MonoBehaviour:
@@ -63472,7 +63475,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 0
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: f71c0dc03d067a342aa16a51674f6507, type: 3}
+  Icon: {fileID: 21300000, guid: b5ff3f067813cbd418b2aea1d3f045c6, type: 3}
   Audio: {fileID: 0}
 --- !u!1 &1314067250
 GameObject:
@@ -87613,9 +87616,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 3
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":36,"yPos":48},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Attention,
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":125,"yPos":52},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Attention,
     all cabin crew and passengers, this is your captain speaking, we are heading
-    towards safe altitude. ","parentUIDs":[],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Captain","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3.5,"Volume":0.5},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":34,"yPos":162.2},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Please
+    towards safe altitude. ","parentUIDs":[],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Captain","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0.5},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":123,"yPos":166.2},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Please
     remain calm and coordinate with our cabin crew if you need further assistance.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Captain","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
@@ -107173,6 +107176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2132566867}
   - component: {fileID: 2132566866}
+  - component: {fileID: 2132566868}
   m_Layer: 0
   m_Name: End
   m_TagString: Untagged
@@ -107291,6 +107295,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1685026174}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2132566868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132566865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba01a767db7027b46ab950a208659333, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myConversation: {fileID: 1773429274}
+  optionsButton: {fileID: 115531885}
+  CaptainSprite: {fileID: 1292526094}
 --- !u!1 &2136458911
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,38 +8,19 @@ using UnityEngine.Video;
 
 public class StartStop : MonoBehaviour
 {
-    private VideoPlayer player;
-    public Button button;
-    public GameObject DisclaimerUI;
-    public int buildIndex;
+    [SerializeField] Animator transitionAnim;
+
 
     private void Start()
     {
-        player = GetComponent<VideoPlayer>();
+
     }
 
-
-    private void Update()
+    public void SkipPrologue()
     {
-        
-    }
+        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+        asyncOperation.allowSceneActivation = true;
+        transitionAnim.SetTrigger("End");
 
-    public void StartPlay()
-    {
-        if (player.isPlaying == false)
-        {
-            player.Play();
-            DisclaimerUI.SetActive(false);
-            player.loopPointReached += CheckOver;
-        }
-        else
-        {
-            player.Pause();
-        }
-    }
-
-    void CheckOver(UnityEngine.Video.VideoPlayer vp)
-    {
-        SceneManager.LoadScene(buildIndex); ;//the scene that you want to load after the video has ended.
     }
 }

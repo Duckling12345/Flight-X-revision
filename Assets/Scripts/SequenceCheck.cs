@@ -17,6 +17,7 @@ public class SequenceCheck : MonoBehaviour
     [SerializeField] AudioClip []vestIntro;
     [SerializeField] AudioClip outro;
     [SerializeField] AudioClip failedSound;
+    [SerializeField] Animator transitionAnim;
 
     public GameObject ActivateBelt;
     public GameObject ActivateVest;
@@ -78,7 +79,7 @@ public class SequenceCheck : MonoBehaviour
         } else if (currentSequence == correctSequence)
         {
             currentSequence = "";
-            Invoke("OutroSound", 15f);
+            Invoke("OutroSound", 14f);
             Invoke("DelayTransition", delayTime);
         }
 
@@ -86,7 +87,9 @@ public class SequenceCheck : MonoBehaviour
 
     void DelayTransition()
     {
-        sceneMover.NextLevel();
+        transitionAnim.SetTrigger("End");
+        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+        asyncOperation.allowSceneActivation = true;
     }
 
     void OutroSound()

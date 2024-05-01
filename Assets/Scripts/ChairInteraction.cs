@@ -60,6 +60,7 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
         player.SetActive(false);
         mask.SetActive(true);
         removeButton.SetActive(false);
+        timer.SetActive(false);
 
     }
 
