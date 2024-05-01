@@ -51,13 +51,13 @@ public class LevelLoader : MonoBehaviour
             case 6:
                 loadingScreen0.SetActive(true);
                 break;
-            case 10:
+            case 11:
                 loadingScreen1.SetActive(true);
                 break;
-            case 12:
+            case 14:
                 loadingScreen3.SetActive(true);
                 break;
-            case 14:
+            case 17:
                 loadingScreen2.SetActive(true);
                 break;
         }
