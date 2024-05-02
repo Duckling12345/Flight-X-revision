@@ -1,3 +1,4 @@
+using DialogueEditor;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -17,7 +18,8 @@ public class StartDemo : MonoBehaviour
     [SerializeField] AudioSource soundSource;
     [SerializeField] AudioClip Intro;
     [SerializeField] Animator popupAnimator;
-
+    public NPCConversation myConversation;
+    public GameObject sprite;
 
 
 
@@ -30,10 +32,10 @@ public class StartDemo : MonoBehaviour
 
         changeText2.text = objective2;
         changeText3.text = objective3;
-
-        
+        ConversationManager.Instance.StartConversation(myConversation);
+        Invoke("EndConversation", 14f);
+        sprite.SetActive(true);
     }
-
 
     IEnumerator DelayButtons() { 
     
@@ -54,6 +56,12 @@ public class StartDemo : MonoBehaviour
         popupAnimator.Play("PopUpAnimation");
     }
 
+   void EndConversation()
+    {
+        ConversationManager.Instance.EndConversation();
+        sprite.SetActive(false);
+
+    }
 
 
 }

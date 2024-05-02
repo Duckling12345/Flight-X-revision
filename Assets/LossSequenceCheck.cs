@@ -1,11 +1,9 @@
-using DialogueEditor;
 using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SequenceCheck : MonoBehaviour
+public class LossSequenceCheck : MonoBehaviour
 {
     [SerializeField]
 
@@ -13,21 +11,16 @@ public class SequenceCheck : MonoBehaviour
     public UnlockDoor sceneMover;
     [SerializeField] Animator NPCanimation;
     [SerializeField] AudioSource soundSource;
-    [SerializeField] AudioClip []seatbeltIntro;
-    [SerializeField] AudioClip []oxyIntro;
-    [SerializeField] AudioClip []vestIntro;
+    [SerializeField] AudioClip[] seatbeltIntro;
+    [SerializeField] AudioClip[] oxyIntro;
+    [SerializeField] AudioClip[] vestIntro;
     [SerializeField] AudioClip outro;
     [SerializeField] AudioClip failedSound;
     [SerializeField] Animator transitionAnim;
-    public NPCConversation lifevestConversation;
-    public NPCConversation seatbeltConversation;
-    public NPCConversation oxygenConversation;
-    public NPCConversation outroConversation;
-    public GameObject sprite;
     public GameObject ActivateBelt;
     public GameObject ActivateVest;
     public GameObject ActivateOxygen;
-    
+
     public string stateName;
     public string stateName2;
     public string stateName3;
@@ -48,38 +41,31 @@ public class SequenceCheck : MonoBehaviour
     {
         switch (buttonColor)
         {
-            case "LifeVest":
+            case "Brace":
                 currentSequence += 1;
-                NPCanimation.Play(stateName);
+                NPCanimation.Play(stateName); //Player Animation
                 ActivateVest.SetActive(true);
                 ActivateBelt.SetActive(false);
                 StartCoroutine(PlayVestIntro());
-                sprite.SetActive(true);
-                ConversationManager.Instance.StartConversation(lifevestConversation);
 
                 break;
 
             case "Seatbelt":
                 currentSequence += 2;
-                NPCanimation.Play(stateName2);
+                NPCanimation.Play(stateName2); //Player Animation
                 ActivateBelt.SetActive(true);
                 StartCoroutine(PlaySeatbeltIntro());
-                sprite.SetActive(true);
-                ConversationManager.Instance.StartConversation(seatbeltConversation);
                 break;
 
             case "Oxygen":
                 currentSequence += 3;
-                NPCanimation.Play(stateName3);
+                NPCanimation.Play(stateName3); //Player Animation
                 ActivateOxygen.SetActive(true);
                 StartCoroutine(PlayOxygenIntro());
-                sprite.SetActive(true);
-                ConversationManager.Instance.StartConversation(oxygenConversation);
-
                 break;
         }
 
-        if(currentSequence != correctSequence.Substring(0, currentSequence.Length))
+        if (currentSequence != correctSequence.Substring(0, currentSequence.Length))
         {
             currentSequence = "";
             Debug.Log("Incorrect");
@@ -89,7 +75,8 @@ public class SequenceCheck : MonoBehaviour
                 soundSource.PlayOneShot(failedSound);
                 Invoke("Incorrect", 5f);
             }
-        } else if (currentSequence == correctSequence)
+        }
+        else if (currentSequence == correctSequence)
         {
             currentSequence = "";
             Invoke("OutroSound", 14f);
@@ -108,7 +95,6 @@ public class SequenceCheck : MonoBehaviour
     void OutroSound()
     {
         soundSource.PlayOneShot(outro);
-        ConversationManager.Instance.StartConversation(outroConversation);
     }
 
     void Incorrect()
@@ -128,8 +114,8 @@ public class SequenceCheck : MonoBehaviour
                 yield return null;
             }
         }
-    } 
-    
+    }
+
     IEnumerator PlaySeatbeltIntro()
     {
         for (int i = 0; i < seatbeltIntro.Length; i++)
@@ -144,8 +130,8 @@ public class SequenceCheck : MonoBehaviour
                 yield return null;
             }
         }
-    } 
-    
+    }
+
     IEnumerator PlayOxygenIntro()
     {
         for (int i = 0; i < oxyIntro.Length; i++)
@@ -161,9 +147,6 @@ public class SequenceCheck : MonoBehaviour
             }
         }
     }
-
-
-
 
 
     private void OnDestroy()
