@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -313,8 +313,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'The game is based on how efficiently players complete these time-based
-    challenges. '
+  m_text: 'The game is based on how efficiently players complete time-based challenges. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f1d02f8523692b4469f589fabf8e281b, type: 2}
   m_sharedMaterial: {fileID: 3358995831323606883, guid: f1d02f8523692b4469f589fabf8e281b, type: 2}
@@ -1340,8 +1339,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1635165231}
   m_HandleRect: {fileID: 1635165230}
   m_Direction: 0
-  m_Value: -0.00000006568242
-  m_Size: 0.329
+  m_Value: 0.5
+  m_Size: 0.516049
   m_NumberOfSteps: 1
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1612,8 +1611,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: As the time decrease, player loses star. Faster completion times result
-    in a higher star rating.
+  m_text: As time decreases, the player will lose a star. Faster completion time
+    results in a higher star rating.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f1d02f8523692b4469f589fabf8e281b, type: 2}
   m_sharedMaterial: {fileID: 3358995831323606883, guid: f1d02f8523692b4469f589fabf8e281b, type: 2}
@@ -2062,7 +2061,7 @@ GameObject:
   - component: {fileID: 1175941659}
   - component: {fileID: 1175941658}
   m_Layer: 0
-  m_Name: Ojective
+  m_Name: Objective
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2084,7 +2083,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 60.995, y: 83.642}
+  m_AnchoredPosition: {x: 115, y: 83.642}
   m_SizeDelta: {x: 1905.6, y: 117.5239}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1175941658
@@ -2107,7 +2106,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You will receive guidance from Head Cabin Crew Annie and Carlo. Use the
+  m_text: You will receive guidance from Cabin Crew Head Annie and Carlo. Use the
     game controls to complete tasks in each level and familiarize yourself with the
     procedures.
   m_isRightToLeft: 0
@@ -2172,7 +2171,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 88.800964, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2824,7 +2823,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 929.2464, y: -5.4932}
+  m_AnchoredPosition: {x: 0, y: -5.4932}
   m_SizeDelta: {x: 0, y: 495.78}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1804582292
