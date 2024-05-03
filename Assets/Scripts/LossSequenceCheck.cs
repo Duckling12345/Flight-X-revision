@@ -9,17 +9,16 @@ public class LossSequenceCheck : MonoBehaviour
 
     private string correctSequence, currentSequence;
     public UnlockDoor sceneMover;
-    [SerializeField] Animator NPCanimation;
-    [SerializeField] AudioSource soundSource;
-    [SerializeField] AudioClip[] seatbeltIntro;
-    [SerializeField] AudioClip[] oxyIntro;
-    [SerializeField] AudioClip[] vestIntro;
-    [SerializeField] AudioClip outro;
+    [SerializeField] Animator PlayerAnimation;
+    //[SerializeField] AudioSource soundSource;
+   // [SerializeField] AudioClip outro;
     [SerializeField] AudioClip failedSound;
     [SerializeField] Animator transitionAnim;
-    public GameObject ActivateBelt;
-    public GameObject ActivateVest;
-    public GameObject ActivateOxygen;
+
+   /*  [SerializeField] AudioClip[] seatbeltIntro;
+    [SerializeField] AudioClip[] oxyIntro;
+    [SerializeField] AudioClip[] vestIntro;
+   */
 
     public string stateName;
     public string stateName2;
@@ -43,25 +42,18 @@ public class LossSequenceCheck : MonoBehaviour
         {
             case "Brace":
                 currentSequence += 1;
-                NPCanimation.Play(stateName); //Player Animation
-                ActivateVest.SetActive(true);
-                ActivateBelt.SetActive(false);
-                StartCoroutine(PlayVestIntro());
+                PlayerAnimation.Play(stateName); //Player Animation
 
                 break;
 
             case "Seatbelt":
                 currentSequence += 2;
-                NPCanimation.Play(stateName2); //Player Animation
-                ActivateBelt.SetActive(true);
-                StartCoroutine(PlaySeatbeltIntro());
+                PlayerAnimation.Play(stateName2); //Player Animation
                 break;
 
             case "Oxygen":
                 currentSequence += 3;
-                NPCanimation.Play(stateName3); //Player Animation
-                ActivateOxygen.SetActive(true);
-                StartCoroutine(PlayOxygenIntro());
+                PlayerAnimation.Play(stateName3); //Player Animation
                 break;
         }
 
@@ -69,12 +61,12 @@ public class LossSequenceCheck : MonoBehaviour
         {
             currentSequence = "";
             Debug.Log("Incorrect");
-            if (soundSource.isPlaying)
+         /*   if (soundSource.isPlaying)
             {
-                soundSource.Stop();
-                soundSource.PlayOneShot(failedSound);
+                //soundSource.Stop();
+               // soundSource.PlayOneShot(failedSound);
                 Invoke("Incorrect", 5f);
-            }
+            } */
         }
         else if (currentSequence == correctSequence)
         {
@@ -94,14 +86,14 @@ public class LossSequenceCheck : MonoBehaviour
 
     void OutroSound()
     {
-        soundSource.PlayOneShot(outro);
+        //soundSource.PlayOneShot(outro);
     }
 
     void Incorrect()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-    IEnumerator PlayVestIntro()
+    /*IEnumerator PlayVestIntro()
     {
         for (int i = 0; i < vestIntro.Length; i++)
         {
@@ -146,7 +138,7 @@ public class LossSequenceCheck : MonoBehaviour
                 yield return null;
             }
         }
-    }
+    } */
 
 
     private void OnDestroy()

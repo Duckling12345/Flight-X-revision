@@ -7300,7 +7300,6 @@ GameObject:
   - component: {fileID: 147443996}
   - component: {fileID: 147444000}
   - component: {fileID: 147443999}
-  - component: {fileID: 147444002}
   - component: {fileID: 147444001}
   m_Layer: 5
   m_Name: Seatbelt_Button
@@ -7392,7 +7391,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e2b5dd77a9dbfee4dbf8c30048bdac53, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 690b76bcd3af99e4fb172fcfe6786e99, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7465,19 +7464,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &147444002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 147443994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!1 &155768006
 GameObject:
   m_ObjectHideFlags: 0
@@ -21436,7 +21422,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 433804153}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64e8c103ebda4a84d95f0029328fed63, type: 3}
   m_Name: 
@@ -21444,17 +21430,10 @@ MonoBehaviour:
   correctSequence: 
   currentSequence: 
   sceneMover: {fileID: 0}
-  NPCanimation: {fileID: 0}
+  PlayerAnimation: {fileID: 0}
   soundSource: {fileID: 0}
-  seatbeltIntro: []
-  oxyIntro: []
-  vestIntro: []
-  outro: {fileID: 0}
   failedSound: {fileID: 0}
   transitionAnim: {fileID: 0}
-  ActivateBelt: {fileID: 0}
-  ActivateVest: {fileID: 0}
-  ActivateOxygen: {fileID: 0}
   stateName: 
   stateName2: 
   stateName3: 
@@ -34062,7 +34041,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e2b5dd77a9dbfee4dbf8c30048bdac53, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 63774b1af85c33e4f885c7847779c07e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -76503,7 +76482,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e2b5dd77a9dbfee4dbf8c30048bdac53, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ebc3cd7b5adf81f4abf16ac4d8faf64a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
