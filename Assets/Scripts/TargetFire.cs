@@ -10,11 +10,13 @@ public class TargetFire : MonoBehaviour
     public float extinguishRate = 15f;
 
     public Camera FPSCam;
+    public Transform crosshair; // Reference to the crosshair object
+
     private float nextTimeToExtinguish = 0f;
 
     private void Update()
     {
-        if (Input.GetButtonDown("WildFire (test)") && Time.time >= nextTimeToExtinguish)
+        if (Input.GetButtonDown("Fire1") && Time.time >= nextTimeToExtinguish)
         {
             nextTimeToExtinguish = Time.time + 1f / extinguishRate;
             Target();
@@ -28,14 +30,25 @@ public class TargetFire : MonoBehaviour
         {
             Debug.Log(hit.transform.name);
 
-            if (hit.rigidbody != null) 
-            { 
+            if (hit.rigidbody != null)
+            {
                 hit.rigidbody.AddForce(-hit.normal * impactForce);
             }
-            Target target = hit.transform.GetComponent<Target>();
-            if (target != null ) 
+
+            // Check if the crosshair is aligned with the fire extinguisher
+            if (hit.transform == crosshair)
             {
-                target.TakeDamage(damage);
+                // Extinguish the fire by stopping the emission
+                hit.transform.GetComponent<ParticleSystem>().Stop();
+            }
+            else
+            {
+                // Apply damage if it's not the fire particle system
+                Target target = hit.transform.GetComponent<Target>();
+                if (target != null)
+                {
+                    target.TakeDamage(damage);
+                }
             }
         }
     }
