@@ -16,10 +16,26 @@ public class UnlockDoor : MonoBehaviour
         StartCoroutine(LoadLevel());
     }
 
+    public void NextLevelDelay()
+    {
+        StartCoroutine(LoadLevelDelay());
+    }
+
+
+
     IEnumerator LoadLevel()
     {
         transitionAnim.SetTrigger("End");
         yield return new WaitForSeconds(3);
+        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+        asyncOperation.allowSceneActivation = true;
+        transitionAnim.SetTrigger("Start");
+    }
+
+    IEnumerator LoadLevelDelay()
+    {
+        yield return new WaitForSeconds(3);
+        transitionAnim.SetTrigger("End");
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
         asyncOperation.allowSceneActivation = true;
         transitionAnim.SetTrigger("Start");
