@@ -12,6 +12,7 @@ public class QuizManager : MonoBehaviour
     public GameObject[] options;
     public int currentQuestion;
     public int number;
+    public Button proceedButton;
 
     public Slider slider;
     public GameObject Quizpanel;
@@ -105,8 +106,15 @@ public class QuizManager : MonoBehaviour
 
     public void proceed()
     {
-        SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);
-        UnlockNew();
+        if (score >= 3)
+        {
+            proceedButton.interactable = true;
+            SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);
+            UnlockNew();
+        }
+        else {
+            proceedButton.interactable = false;
+        }
     }
 
     //Unlock Level
