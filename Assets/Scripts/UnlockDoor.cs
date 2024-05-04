@@ -36,6 +36,7 @@ public class UnlockDoor : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
         transitionAnim.SetTrigger("End");
+        yield return new WaitForSeconds(2);
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
         asyncOperation.allowSceneActivation = true;
         transitionAnim.SetTrigger("Start");

@@ -24,6 +24,8 @@ public class SequenceCheck : MonoBehaviour
     public NPCConversation oxygenConversation;
     public NPCConversation outroConversation;
     public GameObject sprite;
+    public GameObject button;
+    public RectTransform moveDialoguePosition;
     public GameObject ActivateBelt;
     public GameObject ActivateVest;
     public GameObject ActivateOxygen;
@@ -38,12 +40,17 @@ public class SequenceCheck : MonoBehaviour
 
     private void Start()
     {
+        moveDialoguePosition.anchoredPosition = new Vector3(19, 104, -3);
+        button.SetActive(false);
         Buttons.SendColorValue += AddValueAndCheckSequence;
         correctSequence = "213";
         currentSequence = "";
     }
 
-
+    private void Update()
+    {
+        button.SetActive(false);
+    }
     private void AddValueAndCheckSequence(string buttonColor)
     {
         switch (buttonColor)
@@ -55,8 +62,8 @@ public class SequenceCheck : MonoBehaviour
                 ActivateBelt.SetActive(false);
                 StartCoroutine(PlayVestIntro());
                 sprite.SetActive(true);
+                button.SetActive(false);
                 ConversationManager.Instance.StartConversation(lifevestConversation);
-
                 break;
 
             case "Seatbelt":
@@ -65,6 +72,7 @@ public class SequenceCheck : MonoBehaviour
                 ActivateBelt.SetActive(true);
                 StartCoroutine(PlaySeatbeltIntro());
                 sprite.SetActive(true);
+                button.SetActive(false);
                 ConversationManager.Instance.StartConversation(seatbeltConversation);
                 break;
 
@@ -74,6 +82,7 @@ public class SequenceCheck : MonoBehaviour
                 ActivateOxygen.SetActive(true);
                 StartCoroutine(PlayOxygenIntro());
                 sprite.SetActive(true);
+                button.SetActive(false);
                 ConversationManager.Instance.StartConversation(oxygenConversation);
 
                 break;

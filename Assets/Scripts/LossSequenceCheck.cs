@@ -9,16 +9,19 @@ public class LossSequenceCheck : MonoBehaviour
 
     private string correctSequence, currentSequence;
     public UnlockDoor sceneMover;
+    public Shake shaker;
     [SerializeField] Animator PlayerAnimation;
-    //[SerializeField] AudioSource soundSource;
-   // [SerializeField] AudioClip outro;
-    [SerializeField] AudioClip failedSound;
     [SerializeField] Animator transitionAnim;
+    //[SerializeField] AudioSource soundSource;
+    // [SerializeField] AudioClip outro;
+    /*  [SerializeField] AudioClip[] seatbeltIntro;
+     [SerializeField] AudioClip[] oxyIntro;
+     [SerializeField] AudioClip[] vestIntro;
+     [SerializeField] AudioClip failedSound;
+    */
 
-   /*  [SerializeField] AudioClip[] seatbeltIntro;
-    [SerializeField] AudioClip[] oxyIntro;
-    [SerializeField] AudioClip[] vestIntro;
-   */
+
+
 
     public string stateName;
     public string stateName2;
@@ -26,6 +29,12 @@ public class LossSequenceCheck : MonoBehaviour
 
 
     public int delayTime;
+
+    public void Awake()
+    {
+        shaker.ShakeScreen();
+    }
+
 
 
     private void Start()

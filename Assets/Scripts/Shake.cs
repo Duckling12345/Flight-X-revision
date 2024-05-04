@@ -11,11 +11,6 @@ public class Shake : MonoBehaviour
     private Vector3 initialPosition;
     private float currentShakeDuration;
 
-    //add indicator that in 30 second mark intensity + .2
-    //figure out how to make the shake continous rather than on press only;
-    // on sit remove shake/disable shake;
-
-    // if sitbutton.pressed == true then shake set inactive;
 
     void Start()
     {

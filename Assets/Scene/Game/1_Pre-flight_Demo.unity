@@ -36995,6 +36995,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -292
       objectReference: {fileID: 0}
+    - target: {fileID: 423455538901370588, guid: 54a5a73a68f629e4f98e976f68422762, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 423455539149178031, guid: 54a5a73a68f629e4f98e976f68422762, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -32
@@ -37105,6 +37109,11 @@ Transform:
 --- !u!1 &1136556290 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 423455538901370588, guid: 54a5a73a68f629e4f98e976f68422762, type: 3}
+  m_PrefabInstance: {fileID: 1136556287}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1136556292 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 423455538677343027, guid: 54a5a73a68f629e4f98e976f68422762, type: 3}
   m_PrefabInstance: {fileID: 1136556287}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1138521693
@@ -45017,6 +45026,8 @@ MonoBehaviour:
   oxygenConversation: {fileID: 794728153}
   outroConversation: {fileID: 965412028}
   sprite: {fileID: 1136556288}
+  button: {fileID: 1136556290}
+  moveDialoguePosition: {fileID: 1136556292}
   ActivateBelt: {fileID: 1513507708}
   ActivateVest: {fileID: 189526352}
   ActivateOxygen: {fileID: 364647837}
@@ -75875,7 +75886,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &919132149090428103
 Animator:
   serializedVersion: 5
@@ -75933,6 +75944,8 @@ MonoBehaviour:
   oxygenConversation: {fileID: 794728153}
   outroConversation: {fileID: 965412028}
   sprite: {fileID: 1136556288}
+  button: {fileID: 1136556290}
+  moveDialoguePosition: {fileID: 0}
   ActivateBelt: {fileID: 955145079}
   ActivateVest: {fileID: 1065749305}
   ActivateOxygen: {fileID: 1016588279}

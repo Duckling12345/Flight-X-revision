@@ -21429,11 +21429,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctSequence: 
   currentSequence: 
-  sceneMover: {fileID: 0}
+  sceneMover: {fileID: 1381748869}
+  shaker: {fileID: 844427590}
   PlayerAnimation: {fileID: 0}
-  soundSource: {fileID: 0}
-  failedSound: {fileID: 0}
-  transitionAnim: {fileID: 0}
+  transitionAnim: {fileID: 1381748872}
   stateName: 
   stateName2: 
   stateName3: 
@@ -40568,6 +40567,7 @@ GameObject:
   - component: {fileID: 844427588}
   - component: {fileID: 844427590}
   - component: {fileID: 844427591}
+  - component: {fileID: 844427592}
   m_Layer: 0
   m_Name: Sitting Camera
   m_TagString: Untagged
@@ -40679,6 +40679,40 @@ MonoBehaviour:
   PlayerBody: {fileID: 433804154}
   LockAxis: {x: 0, y: 0}
   Sensitivity: 2
+--- !u!114 &844427592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844427586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowDebugText: 0
+  m_ShowCameraFrustum: 1
+  m_IgnoreTimeScale: 0
+  m_WorldUpOverride: {fileID: 0}
+  m_UpdateMethod: 2
+  m_BlendUpdateMethod: 1
+  m_DefaultBlend:
+    m_Style: 1
+    m_Time: 2
+    m_CustomCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  m_CustomBlends: {fileID: 0}
+  m_CameraCutEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_CameraActivatedEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &850809985
 GameObject:
   m_ObjectHideFlags: 0
@@ -66127,6 +66161,11 @@ MonoBehaviour:
 --- !u!4 &1381748871 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7063089816218150408, guid: 730e7b62fa8cd1f4f8f2706e82c45a68, type: 3}
+  m_PrefabInstance: {fileID: 836572220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1381748872 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 857379632816680314, guid: 730e7b62fa8cd1f4f8f2706e82c45a68, type: 3}
   m_PrefabInstance: {fileID: 836572220}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1389170633
@@ -102976,7 +103015,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2106876148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102990,7 +103029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 511448349}
-  remainingTime: 90
+  remainingTime: 1000
   PlayerUI: {fileID: 7677441607108472253}
   GameOverMenu: {fileID: 1710828447}
   Timer: {fileID: 2106876147}
@@ -104709,7 +104748,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2138774627
 RectTransform:
   m_ObjectHideFlags: 0
