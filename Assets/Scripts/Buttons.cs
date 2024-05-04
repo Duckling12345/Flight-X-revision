@@ -13,7 +13,7 @@ public class Buttons : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     public void ButtonClicked()
     {
-        SendColorValue(name.Substring(0, name.IndexOf("_")));
+        SendColorValue(name.Substring(0, name.IndexOf("_")));   
         Debug.Log("pressed and sent");
     }
 
