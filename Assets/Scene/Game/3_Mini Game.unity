@@ -11076,6 +11076,64 @@ Transform:
   - {fileID: 1848486917}
   m_Father: {fileID: 408487341}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &949949591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 949949593}
+  - component: {fileID: 949949592}
+  m_Layer: 0
+  m_Name: fobConversation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &949949592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949949591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentIDCounter: 2
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":23,"yPos":33},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Whatever","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Carlo","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.5}]}'
+  saveVersion: 110
+  DefaultName: 
+  DefaultSprite: {fileID: 0}
+  DefaultFont: {fileID: 0}
+  NodeSerializedDataList:
+  - {fileID: 1013154788}
+  ContinueFont: {fileID: 0}
+  EndConversationFont: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &949949593
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949949591}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 578.35297, y: 185.09128, z: 327.59488}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1013154789}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &957692199
 GameObject:
   m_ObjectHideFlags: 0
@@ -11336,6 +11394,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 991428732}
   m_CullTransparentMesh: 1
+--- !u!1 &1013154787
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1013154789}
+  - component: {fileID: 1013154788}
+  m_Layer: 0
+  m_Name: ConversationEventInfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1013154788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013154787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 0
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 21300000, guid: afb92b1290978fe4a9d168e9c21bdb56, type: 3}
+  Audio: {fileID: 8300000, guid: e83ce42a0e9715445aed6d21b944b24f, type: 3}
+--- !u!4 &1013154789
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013154787}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -578.35297, y: -185.09128, z: -327.59488}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 949949593}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1022214918
 GameObject:
   m_ObjectHideFlags: 0
@@ -11502,7 +11611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 382750009}
-  remainingTime: 15
+  remainingTime: 30
   PlayerUI: {fileID: 7677441605818994117}
   GameOverMenu: {fileID: 1436372011}
   Timer: {fileID: 1054514439}
@@ -18225,12 +18334,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1429166144 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6076027503749943484, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+  m_PrefabInstance: {fileID: 1429166141}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1429166145 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2679727714808082925, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+  m_PrefabInstance: {fileID: 1429166141}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1429166146 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3233516841238655136, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
   m_PrefabInstance: {fileID: 1429166141}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1429166144}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -18780,13 +18899,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1525581165}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0056141256, y: -0.6502463, z: -0.06299151, w: -0.75708675}
-  m_LocalPosition: {x: 0.5810361, y: -0.8239974, z: 0.47299495}
+  m_LocalRotation: {x: -0.006070002, y: -0.49987, z: -0.06294921, w: -0.8637885}
+  m_LocalPosition: {x: 0.592, y: -0.692, z: 0.349}
   m_LocalScale: {x: 0.04620193, y: 0.030513372, z: 0.046201926}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7791561796890458869}
-  m_LocalEulerAnglesHint: {x: -5.188, y: 81.087, z: 5.074}
+  m_LocalEulerAnglesHint: {x: -3.006, y: 59.942, z: 6.602}
 --- !u!65 &1525581169
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18898,7 +19017,7 @@ MonoBehaviour:
   range: 100
   extinguishRate: 15
   FPSCam: {fileID: 581820908476173654}
-  crosshair: {fileID: 0}
+  crosshair: {fileID: 46452405}
 --- !u!1 &1543392117
 GameObject:
   m_ObjectHideFlags: 0
@@ -20308,7 +20427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f60a3eed135a51541a88944acbb82e55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Level: {fileID: 0}
+  Level: {fileID: 1304250767}
   npc: {fileID: 1743287745}
   activateFirstObj: {fileID: 0}
 --- !u!95 &1743287743
@@ -20345,8 +20464,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npc: {fileID: 1743287745}
-  timer: {fileID: 0}
-  Level: {fileID: 0}
+  timer: {fileID: 1054514439}
+  Level: {fileID: 1304250767}
 --- !u!114 &1743287745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20359,13 +20478,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95cebd414df40a54e9a4703bcee4bdef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myConversation: {fileID: 0}
+  myConversation: {fileID: 949949592}
   talkPressed: 0
-  talkButton: {fileID: 0}
-  objectiveText: {fileID: 0}
-  objectiveText1: {fileID: 0}
-  objectiveText2: {fileID: 0}
-  obstacle: {fileID: 0}
+  talkButton: {fileID: 977859549}
+  objectiveText: {fileID: 1429166143}
+  objectiveText1: {fileID: 1429166145}
+  objectiveText2: {fileID: 1429166144}
+  obstacle: {fileID: 2556954010441368905}
   removeImage: {fileID: 0}
   okayButton: {fileID: 0}
   timetowait: 7
@@ -20399,7 +20518,7 @@ Transform:
   m_GameObject: {fileID: 1743287741}
   serializedVersion: 2
   m_LocalRotation: {x: -0.001429824, y: -0.9993157, z: -0.0019699915, w: 0.036908533}
-  m_LocalPosition: {x: 602.195, y: 191.348, z: 253.839}
+  m_LocalPosition: {x: 570.88, y: 191.33, z: 253.77}
   m_LocalScale: {x: 0.17622308, y: 0.17622308, z: 0.17622308}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -90039,3 +90158,4 @@ SceneRoots:
   - {fileID: 1232344969}
   - {fileID: 904285187}
   - {fileID: 1743287747}
+  - {fileID: 949949593}

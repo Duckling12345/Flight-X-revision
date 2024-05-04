@@ -10,13 +10,14 @@ public class TargetFire : MonoBehaviour
     public float extinguishRate = 15f;
 
     public Camera FPSCam;
-    public Transform crosshair; // Reference to the crosshair object
+    public Transform crosshair;
 
     private float nextTimeToExtinguish = 0f;
 
     private void Update()
     {
-        if (Input.GetButtonDown("Fire1") && Time.time >= nextTimeToExtinguish)
+        // Check if the "JoystickButton1" (or any other button) is pressed
+        if (Input.GetButtonDown("JoystickButton1") && Time.time >= nextTimeToExtinguish)
         {
             nextTimeToExtinguish = Time.time + 1f / extinguishRate;
             Target();
