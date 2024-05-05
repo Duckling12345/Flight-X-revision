@@ -32686,7 +32686,6 @@ GameObject:
   - component: {fileID: 1713199245}
   - component: {fileID: 1713199250}
   - component: {fileID: 1713199246}
-  - component: {fileID: 1713199243}
   m_Layer: 0
   m_Name: Fire Extinguisher
   m_TagString: Untagged
@@ -32709,24 +32708,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1304250768}
   m_LocalEulerAnglesHint: {x: 0, y: -1.635, z: 0}
---- !u!114 &1713199243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1713199241}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.9607843, g: 1, b: 0, a: 1}
-  outlineWidth: 10
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!65 &1713199245
 BoxCollider:
   m_ObjectHideFlags: 0
