@@ -25,7 +25,7 @@ public class Target : MonoBehaviour
         if (isTargetFlame == true)
         {
             health = defaultHealth;
-            gameObject.transform.position = new Vector3(Random.Range(-418, 418), 300, 400);
+            gameObject.transform.position = new Vector3(Random.Range(1, -1.5f), 0.58f, 0.56f);
         }
         else
         {

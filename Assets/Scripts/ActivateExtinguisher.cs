@@ -8,6 +8,7 @@ public class ActivateExtinguisher : MonoBehaviour
     public ExtinguisherScript extinguisher;
     public FixedWearButton fixedWear;
     public WearScript wear;
+    public MiniGamePBE wearr;
     
     void Start()
     {
@@ -18,6 +19,6 @@ public class ActivateExtinguisher : MonoBehaviour
     void Update()
     {
         extinguisher.Pressed = fixedExtinguish.buttonPressed;
-        wear.wearPressed = fixedWear.Pressed;
+        wearr.wearPressed = fixedWear.Pressed;
     }
 }

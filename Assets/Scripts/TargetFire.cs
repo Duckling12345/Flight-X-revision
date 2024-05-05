@@ -10,46 +10,40 @@ public class TargetFire : MonoBehaviour
     public float extinguishRate = 15f;
 
     public Camera FPSCam;
-    public Transform crosshair;
+    public GameObject crosshair; // Change type to GameObject
 
     private float nextTimeToExtinguish = 0f;
 
     private void Update()
     {
-        // Check if the "JoystickButton1" (or any other button) is pressed
-        if (Input.GetButtonDown("JoystickButton1") && Time.time >= nextTimeToExtinguish)
+        // Check for touch input
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && Time.time >= nextTimeToExtinguish)
         {
             nextTimeToExtinguish = Time.time + 1f / extinguishRate;
             Target();
         }
     }
 
-    void Target()
+    public void Target()
     {
         RaycastHit hit;
         if (Physics.Raycast(FPSCam.transform.position, FPSCam.transform.forward, out hit, range))
         {
-            Debug.Log(hit.transform.name);
+            Debug.Log("Hit object: " + hit.transform.name); // Debug log to check the object hit by the raycast
 
             if (hit.rigidbody != null)
             {
                 hit.rigidbody.AddForce(-hit.normal * impactForce);
             }
 
-            // Check if the crosshair is aligned with the fire extinguisher
-            if (hit.transform == crosshair)
+            if (hit.transform.gameObject == crosshair) // Check if the hit object is the crosshair GameObject
             {
-                // Extinguish the fire by stopping the emission
-                hit.transform.GetComponent<ParticleSystem>().Stop();
+                // Extinguish the fire by deactivating its GameObject
+                hit.transform.gameObject.SetActive(false);
             }
             else
             {
-                // Apply damage if it's not the fire particle system
-                Target target = hit.transform.GetComponent<Target>();
-                if (target != null)
-                {
-                    target.TakeDamage(damage);
-                }
+                // Additional actions if needed
             }
         }
     }
