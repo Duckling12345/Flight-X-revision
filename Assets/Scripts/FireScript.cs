@@ -70,6 +70,7 @@ public class FireScript : MonoBehaviour
     {
         isLit = false;
         enabled = false;
+        //DisableFire();
     }
 
     private void ChangeIntensity()
@@ -80,5 +81,11 @@ public class FireScript : MonoBehaviour
             emission.rateOverTime = currentIntensity * startIntensities[i];
         }
     }
+
+    //test lang
+    //private void DisableFire()
+    //{
+    //gameObject.SetActive(false);
+    //}
 }
 

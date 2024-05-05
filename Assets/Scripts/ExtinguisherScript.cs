@@ -14,6 +14,8 @@ public class ExtinguisherScript : MonoBehaviour, IPointerDownHandler, IPointerUp
     [Space, Header("Steam")]
     [SerializeField] private GameObject steamObject = null;
 
+    public GameObject extinguisherEffect;
+
 
     private bool IsRaycastingSomething(out RaycastHit hit) => Physics.Raycast(raycastOrigin.position, raycastOrigin.forward, out hit, 100f);
 
@@ -33,11 +35,13 @@ public class ExtinguisherScript : MonoBehaviour, IPointerDownHandler, IPointerUp
     private void Update()
     {
         if (IsRaycastingFire(out FireScript fire))
+        {
             ExtinguishFire(fire);
-       
-        else if (steamObject.activeSelf)
-            steamObject.SetActive(false);
-        //AudioManager.Instance.PlayExtinguishSound();
+        }
+        else
+        {
+            extinguisherEffect.SetActive(false);
+        }
     }
 
     private void ExtinguishFire(FireScript fire)
