@@ -16,7 +16,7 @@ public class MiniGameFire : MonoBehaviour
 
     private void Update()
     {
-        if (fixbutton.Pressed == true)
+        if (fixbutton.Pressed == true && objective.objectivesDone == objectiveID)
         {
             inactive.SetActive(false);
             active.SetActive(true);

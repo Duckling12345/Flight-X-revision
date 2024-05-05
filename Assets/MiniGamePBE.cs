@@ -22,7 +22,7 @@ public class MiniGamePBE : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     private void Update()
     {
-        if (fixbutton.Pressed == true)
+        if (fixbutton.Pressed == true && objective.objectivesDone == objectiveID)
         {
             WearPBE();
             objectiveText1.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);

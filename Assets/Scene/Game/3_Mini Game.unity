@@ -13073,7 +13073,7 @@ GameObject:
   - component: {fileID: 607730581}
   - component: {fileID: 607730580}
   - component: {fileID: 607730579}
-  - component: {fileID: 607730578}
+  - component: {fileID: 607730583}
   - component: {fileID: 607730582}
   - component: {fileID: 607730576}
   - component: {fileID: 607730575}
@@ -13139,19 +13139,6 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!114 &607730578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 607730573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3becd4d295ee75438cb563ebfb02891, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InteractButton: {fileID: 238901398}
 --- !u!65 &607730579
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13249,6 +13236,19 @@ MonoBehaviour:
   activate: {fileID: 9031266298428100320}
   popupAnimator: {fileID: 859384722}
   timetowait: 2
+--- !u!114 &607730583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607730573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3becd4d295ee75438cb563ebfb02891, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InteractButton: {fileID: 1889154616}
 --- !u!1 &616340186
 GameObject:
   m_ObjectHideFlags: 0
@@ -33075,7 +33075,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fixedExtinguish: {fileID: 6019915763898676062}
   Extinguish: {fileID: 853125438}
-  deactivateCurrent: {fileID: 0}
+  deactivateCurrent: {fileID: 2556954010441368905}
 --- !u!114 &1769317678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33108,8 +33108,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 6.5987244, y: 1, z: 6.5298195}
-  m_Center: {x: 0.17248505, y: 0, z: 2.7649176}
+  m_Size: {x: 4.5765934, y: 1, z: 4.215977}
+  m_Center: {x: -0.83857507, y: 0, z: 1.6079916}
 --- !u!23 &1769317680
 MeshRenderer:
   m_ObjectHideFlags: 0
