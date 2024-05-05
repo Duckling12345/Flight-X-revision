@@ -7,8 +7,7 @@ using UnityEngine.EventSystems;
 
 public class MiniGamePBE : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
-    public GameObject ObjectToWear;
-    public GameObject PBEWorn;
+   
     public bool wearPressed;
     public TMP_Text objectiveText1;
     public FixedWearButton fixbutton;
@@ -40,9 +39,7 @@ public class MiniGamePBE : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {
         if (wearPressed)
         {
-            ObjectToWear.SetActive(false);
             disableButton.SetActive(false);
-            PBEWorn.SetActive(true);
             AudioManager.Instance.PlayInspectSound();
         }
     }
