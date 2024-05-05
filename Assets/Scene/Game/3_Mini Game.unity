@@ -13075,7 +13075,6 @@ GameObject:
   - component: {fileID: 607730579}
   - component: {fileID: 607730583}
   - component: {fileID: 607730582}
-  - component: {fileID: 607730576}
   - component: {fileID: 607730575}
   m_Layer: 0
   m_Name: PBE
@@ -13121,24 +13120,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4994483318804348304, guid: 62eeaf6a3de75244c95023dea4731eb2, type: 3}
---- !u!114 &607730576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 607730573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.19361663, a: 1}
-  outlineWidth: 10
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!65 &607730579
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18861,7 +18842,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ea0fb0e38c576aa448e5ecfebe85b3f4, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -32722,7 +32703,7 @@ Transform:
   m_GameObject: {fileID: 1713199241}
   serializedVersion: 2
   m_LocalRotation: {x: -0.00000003774511, y: -0.014265593, z: 5.385164e-10, w: 0.99989825}
-  m_LocalPosition: {x: 1.31, y: 0.11595154, z: -1.85}
+  m_LocalPosition: {x: 1.324, y: 0.11595154, z: -2.358}
   m_LocalScale: {x: 0.049599994, y: 0.049599998, z: 0.049599994}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -33108,8 +33089,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.5765934, y: 1, z: 4.215977}
-  m_Center: {x: -0.83857507, y: 0, z: 1.6079916}
+  m_Size: {x: 4.20105, y: 1, z: 5.028783}
+  m_Center: {x: -1.0263387, y: 0, z: 2.0143917}
 --- !u!23 &1769317680
 MeshRenderer:
   m_ObjectHideFlags: 0
