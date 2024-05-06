@@ -21,8 +21,15 @@ public class MiniGameResult : MonoBehaviour
     {
         int seconds = Mathf.FloorToInt(timer.remainingTime);
         int objCount = Mathf.FloorToInt(ObjectiveScript.objectivesDone);
+        int rewardCount = Mathf.FloorToInt(ObjectiveScript.objectivesDone);
+
         TimeLeft.text = seconds.ToString() + " seconds";
-        FireLeft.text = objCount.ToString() + " done";
+        FireLeft.text = objCount.ToString() + "/2" + " flames";
+        Rewards.text = rewardCount.ToString() + " point/s";
     }
-    
+
+    public void Proceed()
+    {
+        SceneMover.NextLevel();
+    }
 }
