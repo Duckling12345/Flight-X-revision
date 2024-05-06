@@ -11,12 +11,16 @@ public class MiniGameFire_2 : MonoBehaviour
     public TMP_Text extObjectiveText;
     public string extObjective;
     public int objectiveID;
-    [SerializeField] Animator popupAnimator;
-
     public GameObject removeButton;
+    public GameObject removeJoystick;
     public GameObject levelResult;
     public GameObject playerUI;
     public GameObject timer;
+    public GameObject stopAnimation;
+    [SerializeField] Animator popupAnimator;
+
+    public FireScript fireScript;
+    public ParticleSystem partikol;
 
     private void Update()
     {
@@ -26,6 +30,7 @@ public class MiniGameFire_2 : MonoBehaviour
             extObjectiveText.text = extObjective;
             Invoke("WaitAnimation", 1f);
             Invoke("playAnimation", 5f);
+            FadetoBlack();
         }
     }
     public void WaitAnimation()
@@ -43,5 +48,16 @@ public class MiniGameFire_2 : MonoBehaviour
         levelResult.SetActive(true);
         playerUI.SetActive(false);
         timer.SetActive(false);
+        removeJoystick.SetActive(false);
+    }
+
+    private void FadetoBlack()
+    {
+        int numbers = partikol.particleCount;
+        if (fireScript.isLit == false && numbers == 0)
+        {
+            timer.SetActive(false);
+            stopAnimation.SetActive(false);
+        }
     }
 }

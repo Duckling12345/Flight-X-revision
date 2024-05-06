@@ -15,6 +15,7 @@ public class FireScript : MonoBehaviour
     float nextRegenTime = 0;
     [SerializeField] private float regenDelay = 2.5f;
     [SerializeField] private float regenRate = .1f;
+    public GameObject Oven;
     
     [SerializeField] private ParticleSystem[] fireParticleSystems = new ParticleSystem[0];
 
@@ -70,7 +71,7 @@ public class FireScript : MonoBehaviour
     {
         isLit = false;
         enabled = false;
-        //DisableFire();
+        Oven.GetComponent<BoxCollider>().enabled = false;
     }
 
     private void ChangeIntensity()
@@ -82,10 +83,5 @@ public class FireScript : MonoBehaviour
         }
     }
 
-    //test lang
-    //private void DisableFire()
-    //{
-    //gameObject.SetActive(false);
-    //}
 }
 

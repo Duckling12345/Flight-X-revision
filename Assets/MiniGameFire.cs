@@ -25,6 +25,5 @@ public class MiniGameFire : MonoBehaviour
     public void WaitAnimation()
     {
         popupAnimator.Play("PopUpAnimation");
-
     }
 }
