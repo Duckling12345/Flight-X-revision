@@ -9,6 +9,7 @@ public class MiniGameFire : MonoBehaviour
     public ObjectiveScript objective;
     public TMP_Text objectiveText1;
     public string extObjective;
+    public TMP_Text extObjectiveText;
     public int objectiveID;
     [SerializeField] Animator popupAnimator;
 
@@ -16,7 +17,7 @@ public class MiniGameFire : MonoBehaviour
     {
         if (fixedExtinguish.buttonPressed == true && objective.objectivesDone == objectiveID)
         {
-            objectiveText1.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);
+            extObjectiveText.text = extObjective;
             Invoke("WaitAnimation", 1f);
         }
     }
