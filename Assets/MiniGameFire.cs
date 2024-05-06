@@ -5,18 +5,17 @@ using UnityEngine;
 
 public class MiniGameFire : MonoBehaviour
 {
-    public FixedButton fixbutton;
-    public GameObject disableButton;
-    public TMP_Text objectiveText1;
+    public FixedExtinguishButton fixedExtinguish;
     public ObjectiveScript objective;
+    public TMP_Text objectiveText1;
+    public string extObjective;
     public int objectiveID;
     [SerializeField] Animator popupAnimator;
 
     private void Update()
     {
-        if (fixbutton.Pressed == true && objective.objectivesDone == objectiveID)
+        if (fixedExtinguish.buttonPressed == true && objective.objectivesDone == objectiveID)
         {
-            disableButton.SetActive(false);
             objectiveText1.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);
             Invoke("WaitAnimation", 1f);
         }
