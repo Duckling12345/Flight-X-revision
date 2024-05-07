@@ -16,7 +16,8 @@ public class QuizManager : MonoBehaviour
 
     public Slider slider;
     public GameObject Quizpanel;
-    public GameObject  GoPanel;    
+    public GameObject  GoPanel;  
+    public GameObject TryAgainPanel;
     public TMP_Text QuestionTxt;
     public Text ScoreTxt;
     public TMP_Text QuestionNum;
@@ -114,6 +115,11 @@ public class QuizManager : MonoBehaviour
         }
         else {
             proceedButton.interactable = false;
+
+            if (TryAgainPanel != null)
+            {
+                TryAgainPanel.SetActive(true);
+            }
         }
     }
 
