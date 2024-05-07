@@ -14,16 +14,19 @@ public class QuizManager : MonoBehaviour
     public int number;
     public Button proceedButton;
 
-    public Slider slider;
+    public Slider testSlider;
+    public Slider simSlider;
     public GameObject Quizpanel;
     public GameObject  GoPanel;  
     public GameObject TryAgainPanel;
     public TMP_Text QuestionTxt;
     public Text ScoreTxt;
+    public Text SimScoreTxt;
     public TMP_Text QuestionNum;
 
     int totalQuestions = 0;
     public int score;
+    public int simScore;
     public int sceneBuildIndex;
 
     public void Start()
@@ -69,8 +72,10 @@ public class QuizManager : MonoBehaviour
 
         Quizpanel.SetActive(false);
         GoPanel.SetActive(true);
-        slider.value = score;
+        testSlider.value = score;
+        simSlider.value = simScore;
         ScoreTxt.text =  score + "/" + totalQuestions;
+        SimScoreTxt.text = simScore + "/" + simScore;
     }
 
     public void correct()
