@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class OvenActivator : MonoBehaviour
@@ -26,4 +27,11 @@ public class OvenActivator : MonoBehaviour
         Debug.Log("Player Exited");
         extinguishButton.SetActive(false);
     }
+
+    private void OnDisable()
+    {
+        extinguishButton.SetActive(false);
+
+    }
+
 }

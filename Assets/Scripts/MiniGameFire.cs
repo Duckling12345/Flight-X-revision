@@ -12,6 +12,9 @@ public class MiniGameFire : MonoBehaviour
     public TMP_Text extObjectiveText;
     public int objectiveID;
     [SerializeField] Animator popupAnimator;
+    public GameObject Oven;
+    public FireScript fireScript;
+    public ParticleSystem partikol;
 
     private void Update()
     {
@@ -25,5 +28,16 @@ public class MiniGameFire : MonoBehaviour
     public void WaitAnimation()
     {
         popupAnimator.Play("PopUpAnimation");
+        FadetoBlack();
+    }
+
+
+    private void FadetoBlack()
+    {
+        int numbers = partikol.particleCount;
+        if (fireScript.isLit == false && numbers == 0)
+        {
+            Oven.SetActive(false);
+        }
     }
 }

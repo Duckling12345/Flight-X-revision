@@ -11649,6 +11649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a02a9aa8ddf80b04984ba7f65462f0e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 1054514440}
   fixedExtinguish: {fileID: 269301057}
   objective: {fileID: 1304250769}
   objectiveText1: {fileID: 1429166143}
@@ -24089,7 +24090,7 @@ ParticleSystem:
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
   emitterVelocityMode: 1
-  looping: 0
+  looping: 1
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
@@ -35054,6 +35055,9 @@ MonoBehaviour:
   extObjectiveText: {fileID: 1429166143}
   objectiveID: 1
   popupAnimator: {fileID: 859384722}
+  Oven: {fileID: 1769317676}
+  fireScript: {fileID: 1068440051}
+  partikol: {fileID: 1068440053}
 --- !u!1001 &1113155877
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85338,7 +85342,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30

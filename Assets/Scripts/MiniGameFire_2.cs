@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class MiniGameFire_2 : MonoBehaviour
 {
+    public GameOverManager manager;
     public FixedExtinguishButton fixedExtinguish;
     public ObjectiveScript objective;
     public TMP_Text objectiveText1;
@@ -54,10 +55,15 @@ public class MiniGameFire_2 : MonoBehaviour
     private void FadetoBlack()
     {
         int numbers = partikol.particleCount;
-        if (fireScript.isLit == false && numbers == 0)
+        if (fireScript.isLit == false && numbers == 0 && manager.remainingTime > 0)
         {
             timer.SetActive(false);
             stopAnimation.SetActive(false);
+        }
+        else
+        {
+            levelResult.SetActive(false);
+            Debug.Log("GameOver");
         }
     }
 }
