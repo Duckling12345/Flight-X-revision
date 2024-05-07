@@ -737,7 +737,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &120364688
 RectTransform:
   m_ObjectHideFlags: 0
@@ -746,16 +746,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 120364687}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -351.91803}
+  m_LocalScale: {x: 2.38698, y: 2.38698, z: 2.38698}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1207113167}
-  m_Father: {fileID: 1295666290}
+  m_Father: {fileID: 537724003}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 370.2, y: 26}
+  m_AnchoredPosition: {x: 894.64386, y: 50.98108}
   m_SizeDelta: {x: 236.0627, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &120364689
@@ -6551,7 +6551,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.999994, y: -44.300007}
+  m_AnchoredPosition: {x: 100.99997, y: -44.300007}
   m_SizeDelta: {x: 236.0627, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &253422231
@@ -12092,7 +12092,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5, y: 34}
+  m_AnchoredPosition: {x: 101, y: 34}
   m_SizeDelta: {x: 236.0627, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &349816732
@@ -17733,6 +17733,7 @@ Transform:
   - {fileID: 1113155879}
   - {fileID: 1960591544}
   - {fileID: 1054514441}
+  - {fileID: 120364688}
   - {fileID: 821546602}
   - {fileID: 1436372012}
   - {fileID: 1400656029}
@@ -40562,7 +40563,6 @@ RectTransform:
   - {fileID: 1161017470}
   - {fileID: 349816731}
   - {fileID: 253422230}
-  - {fileID: 120364688}
   m_Father: {fileID: 1903083792}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}

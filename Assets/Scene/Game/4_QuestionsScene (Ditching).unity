@@ -3226,7 +3226,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: EXIT
+  m_Text: CONTINUE
 --- !u!222 &1474885805
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4078,7 +4078,7 @@ MonoBehaviour:
   QuestionNum: {fileID: 197745482}
   score: 0
   simScore: 5
-  sceneBuildIndex: 5
+  sceneBuildIndex: 25
 --- !u!4 &1763764257
 Transform:
   m_ObjectHideFlags: 0
@@ -4186,7 +4186,7 @@ GameObject:
   - component: {fileID: 1831555583}
   - component: {fileID: 1831555582}
   m_Layer: 5
-  m_Name: ExitButton
+  m_Name: ProceedButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4258,7 +4258,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1763764256}
         m_TargetAssemblyTypeName: QuizManager, Assembly-CSharp
-        m_MethodName: exit
+        m_MethodName: proceed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

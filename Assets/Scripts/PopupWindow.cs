@@ -43,12 +43,26 @@ public class PopupWindow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
                 ShowPopup("Level 2 | Loss of Pressurization");
                 break;
 
-            case 16:
+            case 13:
+                ShowPopup("Level 2 | Mini Game");
+                break;
+
+            case 17:
                 ShowPopup("Level 3 | Fire on Board");
                 break;
-            case 20:
+
+            case 18:
+                ShowPopup("Level 3 | Mini Game");
+                break;
+
+            case 22:
                 ShowPopup("Level 4 | Water Landing");
                 break;
+
+            case 23:
+                ShowPopup("Level 4 | Mini Game");
+                break;
+
             default:
                 ShowPopup("Level 1 | In-Flight Safety Demo");
                 break;
@@ -62,18 +76,32 @@ public class PopupWindow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         {
             ShowPopup("Level 1 | Pre-flight Checking");
         }
-        else if (clipPressed && scene.buildIndex == 10)
+        else if (clipPressed && scene.buildIndex == 12)
         {
             ShowPopup("Level 2 | Loss of Pressurization");
         }
-        else if (clipPressed && scene.buildIndex == 12)
+        else if (clipPressed && scene.buildIndex == 13)
+        {
+            ShowPopup("Level 2 | Mini Game");
+        }
+        else if (clipPressed && scene.buildIndex == 17)
         {
             ShowPopup("Level 3 | Fire on Board");
 
         }
-        else if (clipPressed && scene.buildIndex == 14)
+        else if (clipPressed && scene.buildIndex == 18)
+        {
+            ShowPopup("Level 3 | Mini Game");
+
+        }
+        else if (clipPressed && scene.buildIndex == 22)
         {
             ShowPopup("Level 4 | Water Landing");
+        }
+        else if (clipPressed && scene.buildIndex == 23)
+        {
+            ShowPopup("Level 4 | Mini Game");
+
         }
         else if(clipPressed)
         {
