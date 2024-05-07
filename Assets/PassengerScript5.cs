@@ -9,6 +9,7 @@ public class PassengerScript5 : MonoBehaviour, IPointerUpHandler, IPointerDownHa
     //public string stateName;
     public int objectiveID;
     public GameObject vestButton;
+    public GameObject lifeVest;
     public GameObject disableCurrentIndicator;
     public GameObject levelResult;
     //[SerializeField] Animator playerAnimation;
@@ -22,15 +23,22 @@ public class PassengerScript5 : MonoBehaviour, IPointerUpHandler, IPointerDownHa
 
     void Update()
     {
-           if(Pressed == true && objectiveID == 6)
+        if (Pressed == true && objectiveID == 6)
         {
             disableCurrentIndicator.SetActive(false);
-            levelResult.SetActive(true);
+            lifeVest.SetActive(true);
+            Invoke("DisableButton", 1f);
         }
-        
+
     }
 
-    
+    void DisableButton()
+    {
+        vestButton.SetActive(false);
+        this.gameObject.GetComponent<BoxCollider>().enabled = false;
+
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         vestButton.SetActive(true);

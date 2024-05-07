@@ -10,6 +10,7 @@ public class PassengerScript : MonoBehaviour, IPointerUpHandler, IPointerDownHan
     public int objectiveID;
     public GameObject vestButton;
     public GameObject disableCurrentIndicator;
+    public GameObject lifeVest;
     //[SerializeField] Animator playerAnimation;
     
 
@@ -24,11 +25,24 @@ public class PassengerScript : MonoBehaviour, IPointerUpHandler, IPointerDownHan
            if(Pressed == true && objectiveID == 1)
         {
             disableCurrentIndicator.SetActive(false);
+            lifeVest.SetActive(true);
+            Invoke("DisableButton", 1f);
         }
-        
+
     }
 
-    
+
+
+
+    void DisableButton()
+    {
+        vestButton.SetActive(false);
+        this.gameObject.GetComponent<BoxCollider>().enabled = false;
+
+    }
+
+
+
     private void OnTriggerEnter(Collider other)
     {
         vestButton.SetActive(true);
