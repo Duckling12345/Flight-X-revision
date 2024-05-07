@@ -10,8 +10,9 @@ public class PassengerScript5 : MonoBehaviour, IPointerUpHandler, IPointerDownHa
     public int objectiveID;
     public GameObject vestButton;
     public GameObject disableCurrentIndicator;
+    public GameObject levelResult;
     //[SerializeField] Animator playerAnimation;
-    
+
 
 
     void Start()
@@ -24,6 +25,7 @@ public class PassengerScript5 : MonoBehaviour, IPointerUpHandler, IPointerDownHa
            if(Pressed == true && objectiveID == 6)
         {
             disableCurrentIndicator.SetActive(false);
+            levelResult.SetActive(true);
         }
         
     }

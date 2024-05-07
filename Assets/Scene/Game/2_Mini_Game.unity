@@ -40858,7 +40858,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Fire onboard | Mini game
+  m_text: loss of pressurization | Mini game
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 16806facce1c5e74b8ab05d6cd12a50c, type: 2}
   m_sharedMaterial: {fileID: 828406689421002274, guid: 16806facce1c5e74b8ab05d6cd12a50c, type: 2}
@@ -90150,8 +90150,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MiniGameResult, Assembly-CSharp
+      - m_Target: {fileID: 433804164}
+        m_TargetAssemblyTypeName: MiniGameResult_LOP, Assembly-CSharp
         m_MethodName: Proceed
         m_Mode: 1
         m_Arguments:
