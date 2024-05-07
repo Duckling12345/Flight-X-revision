@@ -45,22 +45,22 @@ public class QuizManager : MonoBehaviour
 
         string activeSceneName = SceneManager.GetActiveScene().name;
 
-        if (activeSceneName == "0_QuestionsScene (HTP)")
+        if (activeSceneName == "1_QuestionsScene (PFD)")
         {
             PlayerPrefs.SetInt("htpScore", score);
         }
 
-        else if (activeSceneName == "1_QuestionsScene (LOP)")
+        else if (activeSceneName == "2_QuestionsScene (LOP)")
         {
             PlayerPrefs.SetInt("lopScore", score);
         }
 
-        else if (activeSceneName == "2_QuestionsScene (Fire)")
+        else if (activeSceneName == "3_QuestionsScene (Fire)")
         {
             PlayerPrefs.SetInt("fobScore", score);
         }
 
-        else if (activeSceneName == "3_QuestionsScene (Ditching)")
+        else if (activeSceneName == "4_QuestionsScene (Ditching)")
         {
             PlayerPrefs.SetInt("wlScore", score);
         }
