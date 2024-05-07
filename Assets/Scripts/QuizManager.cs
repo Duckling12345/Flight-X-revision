@@ -78,7 +78,7 @@ public class QuizManager : MonoBehaviour
 
         //percentage results
         float scorePercentage = ((float)score / (float)totalQuestions) * 100f;
-        float simScorePercentage = ((float)simScore / (float)totalQuestions) * 100f;
+        float simScorePercentage = ((float)simScore / (float)simScore) * 100f;
         ScoreTxt.text = Mathf.RoundToInt(scorePercentage) + "%";
         SimScoreTxt.text = Mathf.RoundToInt(simScorePercentage) + "%";
 
