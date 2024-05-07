@@ -67,12 +67,9 @@ public class LossSequenceCheck : MonoBehaviour
         {
             currentSequence = "";
             Debug.Log("Incorrect");
-           if (soundSource.isPlaying)
-            {
-                soundSource.Stop();
-                soundSource.PlayOneShot(failedSound);
-                Invoke("Incorrect", 5f);
-            } 
+           soundSource.PlayOneShot(failedSound);
+
+            
         }
         else if (currentSequence == correctSequence)
         {

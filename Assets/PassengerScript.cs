@@ -11,8 +11,10 @@ public class PassengerScript : MonoBehaviour, IPointerUpHandler, IPointerDownHan
     public GameObject vestButton;
     public GameObject disableCurrentIndicator;
     public GameObject lifeVest;
+    public GameObject levelResult;
+
     //[SerializeField] Animator playerAnimation;
-    
+
 
 
     void Start()
@@ -26,6 +28,7 @@ public class PassengerScript : MonoBehaviour, IPointerUpHandler, IPointerDownHan
         {
             disableCurrentIndicator.SetActive(false);
             lifeVest.SetActive(true);
+            levelResult.SetActive(true);
             Invoke("DisableButton", 1f);
         }
 

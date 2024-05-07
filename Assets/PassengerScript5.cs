@@ -11,7 +11,6 @@ public class PassengerScript5 : MonoBehaviour, IPointerUpHandler, IPointerDownHa
     public GameObject vestButton;
     public GameObject lifeVest;
     public GameObject disableCurrentIndicator;
-    public GameObject levelResult;
     //[SerializeField] Animator playerAnimation;
 
 
