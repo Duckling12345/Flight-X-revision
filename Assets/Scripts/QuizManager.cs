@@ -72,10 +72,20 @@ public class QuizManager : MonoBehaviour
 
         Quizpanel.SetActive(false);
         GoPanel.SetActive(true);
+
         testSlider.value = score;
         simSlider.value = simScore;
-        ScoreTxt.text =  score + "/" + totalQuestions;
-        SimScoreTxt.text = simScore + "/" + simScore;
+
+        //percentage results
+        float scorePercentage = ((float)score / (float)totalQuestions) * 100f;
+        float simScorePercentage = ((float)simScore / (float)totalQuestions) * 100f;
+        ScoreTxt.text = Mathf.RoundToInt(scorePercentage) + "%";
+        SimScoreTxt.text = Mathf.RoundToInt(simScorePercentage) + "%";
+
+        //prev code
+        //ScoreTxt.text =  score + "/" + totalQuestions;
+        //SimScoreTxt.text = simScore + "/" + simScore;
+
     }
 
     public void correct()
