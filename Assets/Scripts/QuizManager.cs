@@ -10,7 +10,7 @@ public class QuizManager : MonoBehaviour
 {
     public List<QuestionsAndAnswers> QnA;
     public GameObject[] options;
-    public GameObject[] correctAnswerImages;
+    public GameObject correctAnswerImage;
     public int currentQuestion;
     public int number;
     public Button proceedButton;
@@ -92,26 +92,10 @@ public class QuizManager : MonoBehaviour
 
     public void correct()
     {
-        if (options[currentQuestion].GetComponent<AnswerScript>().isCorrect)
-        {
-            score += 1;
-            //QnA.RemoveAt(currentQuestion);
-            StartCoroutine(ShowCorrectFeedback());
-            Debug.Log("Current Score" + score);
-        }
-        else
-        {
-            StartCoroutine(WaitForNext());
-        }
-    }
-
-    IEnumerator ShowCorrectFeedback()
-    {
-        correctAnswerImages[currentQuestion].SetActive(true);
-        yield return new WaitForSeconds(1);
-        correctAnswerImages[currentQuestion].SetActive(false);
+        score += 1;
         QnA.RemoveAt(currentQuestion);
         StartCoroutine(WaitForNext());
+        Debug.Log("Current Score" + score);
     }
     public void wrong()
     {
@@ -198,18 +182,19 @@ public class QuizManager : MonoBehaviour
     }
     void generateQuestions()
     {
-        if (number <= 5 && QnA.Count > 0)
+        if (QnA.Count > 0)
         {
             currentQuestion = Random.Range(0, QnA.Count);
+
             QuestionTxt.text = QnA[currentQuestion].Questions;
             SetAnswers();
-            QuestionNum.text = "Question " + number.ToString() + "/" + totalQuestions;
         }
         else
         {
-            Debug.Log("Out of questions or reached the limit");
+            Debug.Log("Out of questions");
             GameOver();
         }
+
     }
 
 }
