@@ -10,15 +10,12 @@ public class LossSequenceCheck : MonoBehaviour
     private string correctSequence, currentSequence;
     public UnlockDoor sceneMover;
     public Shake shaker;
+    public GameObject levelResults;
+    public GameObject buttons;
     [SerializeField] Animator PlayerAnimation;
     [SerializeField] Animator transitionAnim;
-    //[SerializeField] AudioSource soundSource;
-    // [SerializeField] AudioClip outro;
-    /*  [SerializeField] AudioClip[] seatbeltIntro;
-     [SerializeField] AudioClip[] oxyIntro;
-     [SerializeField] AudioClip[] vestIntro;
-     [SerializeField] AudioClip failedSound;
-    */
+    [SerializeField] AudioSource soundSource;
+    [SerializeField] AudioClip failedSound;
 
 
 
@@ -60,7 +57,7 @@ public class LossSequenceCheck : MonoBehaviour
                 PlayerAnimation.Play(stateName2); //Player Animation
                 break;
 
-            case "Oxygen":
+            case "Last":
                 currentSequence += 3;
                 PlayerAnimation.Play(stateName3); //Player Animation
                 break;
@@ -70,85 +67,30 @@ public class LossSequenceCheck : MonoBehaviour
         {
             currentSequence = "";
             Debug.Log("Incorrect");
-         /*   if (soundSource.isPlaying)
+           if (soundSource.isPlaying)
             {
-                //soundSource.Stop();
-               // soundSource.PlayOneShot(failedSound);
+                soundSource.Stop();
+                soundSource.PlayOneShot(failedSound);
                 Invoke("Incorrect", 5f);
-            } */
+            } 
         }
         else if (currentSequence == correctSequence)
         {
             currentSequence = "";
-            Invoke("OutroSound", 14f);
+            levelResults.SetActive(true);
+            buttons.SetActive(false);
             Invoke("DelayTransition", delayTime);
         }
 
     }
 
-    void DelayTransition()
-    {
-        transitionAnim.SetTrigger("End");
-        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
-        asyncOperation.allowSceneActivation = true;
-    }
 
-    void OutroSound()
-    {
-        //soundSource.PlayOneShot(outro);
-    }
 
     void Incorrect()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-    /*IEnumerator PlayVestIntro()
-    {
-        for (int i = 0; i < vestIntro.Length; i++)
-        {
-            soundSource.clip = vestIntro[i];
-
-            soundSource.Play();
-
-            while (soundSource.isPlaying)
-            {
-                yield return null;
-            }
-        }
-    }
-
-    IEnumerator PlaySeatbeltIntro()
-    {
-        for (int i = 0; i < seatbeltIntro.Length; i++)
-        {
-            soundSource.clip = seatbeltIntro[i];
-
-            soundSource.Play();
-
-
-            while (soundSource.isPlaying)
-            {
-                yield return null;
-            }
-        }
-    }
-
-    IEnumerator PlayOxygenIntro()
-    {
-        for (int i = 0; i < oxyIntro.Length; i++)
-        {
-            soundSource.clip = oxyIntro[i];
-
-            soundSource.Play();
-
-
-            while (soundSource.isPlaying)
-            {
-                yield return null;
-            }
-        }
-    } */
-
+    
 
     private void OnDestroy()
     {
