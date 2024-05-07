@@ -99,7 +99,7 @@ public class QuizManager : MonoBehaviour
             StartCoroutine(ShowCorrectFeedback());
             Debug.Log("Current Score" + score);
         }
-        else 
+        else
         {
             StartCoroutine(WaitForNext());
         }
@@ -208,7 +208,7 @@ public class QuizManager : MonoBehaviour
         else
         {
             Debug.Log("Out of questions or reached the limit");
-            GameOver(); 
+            GameOver();
         }
     }
 
