@@ -106,9 +106,20 @@ public class QuizManager : MonoBehaviour
 
     public void exit()
     {
-        SceneManager.LoadScene("Level Modules");
-    }
+        if (score >= 3)
+        {
+            proceedButton.interactable = true;
+            SceneManager.LoadScene("Level Modules");
+        }
+        else {
+            proceedButton.interactable = false;
 
+            if (TryAgainPanel != null)
+            {
+                TryAgainPanel.SetActive(true);
+            }
+        }
+    }
 
     public void proceed()
     {
