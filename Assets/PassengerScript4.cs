@@ -21,7 +21,7 @@ public class PassengerScript4 : MonoBehaviour, IPointerUpHandler, IPointerDownHa
 
     void Update()
     {
-           if(Pressed == true && objectiveID == 1)
+           if(Pressed == true && objectiveID == 5)
         {
             disableCurrentIndicator.SetActive(false);
         }
