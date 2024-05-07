@@ -857,7 +857,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Try again and get a test score of 75%
+  m_text: Try again and get a test score of 60%.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 16806facce1c5e74b8ab05d6cd12a50c, type: 2}
   m_sharedMaterial: {fileID: 828406689421002274, guid: 16806facce1c5e74b8ab05d6cd12a50c, type: 2}
@@ -1552,11 +1552,7 @@ MonoBehaviour:
   - {fileID: 1494574200}
   - {fileID: 1387640512}
   - {fileID: 1403151973}
-  correctAnswerImages:
-  - {fileID: 1321888039}
-  - {fileID: 1892105730}
-  - {fileID: 816875828}
-  - {fileID: 1314137931}
+  correctAnswerImage: {fileID: 0}
   currentQuestion: 0
   number: 0
   proceedButton: {fileID: 1895910320}
