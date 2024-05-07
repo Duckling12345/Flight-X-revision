@@ -10,6 +10,7 @@ public class QuizManager : MonoBehaviour
 {
     public List<QuestionsAndAnswers> QnA;
     public GameObject[] options;
+    public GameObject[] correctAnswerImages;
     public int currentQuestion;
     public int number;
     public Button proceedButton;
@@ -17,7 +18,7 @@ public class QuizManager : MonoBehaviour
     public Slider testSlider;
     public Slider simSlider;
     public GameObject Quizpanel;
-    public GameObject  GoPanel;  
+    public GameObject GoPanel;
     public GameObject TryAgainPanel;
     public TMP_Text QuestionTxt;
     public Text ScoreTxt;
@@ -39,7 +40,8 @@ public class QuizManager : MonoBehaviour
         Debug.Log("Current number:" + number);
     }
 
-    public void GameOver() {
+    public void GameOver()
+    {
 
         string activeSceneName = SceneManager.GetActiveScene().name;
 
@@ -90,10 +92,26 @@ public class QuizManager : MonoBehaviour
 
     public void correct()
     {
-        score += 1;
+        if (options[currentQuestion].GetComponent<AnswerScript>().isCorrect)
+        {
+            score += 1;
+            //QnA.RemoveAt(currentQuestion);
+            StartCoroutine(ShowCorrectFeedback());
+            Debug.Log("Current Score" + score);
+        }
+        else 
+        {
+            StartCoroutine(WaitForNext());
+        }
+    }
+
+    IEnumerator ShowCorrectFeedback()
+    {
+        correctAnswerImages[currentQuestion].SetActive(true);
+        yield return new WaitForSeconds(1);
+        correctAnswerImages[currentQuestion].SetActive(false);
         QnA.RemoveAt(currentQuestion);
         StartCoroutine(WaitForNext());
-        Debug.Log("Current Score" + score);
     }
     public void wrong()
     {
@@ -121,7 +139,8 @@ public class QuizManager : MonoBehaviour
             proceedButton.interactable = true;
             SceneManager.LoadScene("Level Modules");
         }
-        else {
+        else
+        {
             proceedButton.interactable = false;
 
             if (TryAgainPanel != null)
@@ -139,7 +158,8 @@ public class QuizManager : MonoBehaviour
             SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);
             UnlockNew();
         }
-        else {
+        else
+        {
             proceedButton.interactable = false;
 
             if (TryAgainPanel != null)
@@ -163,32 +183,33 @@ public class QuizManager : MonoBehaviour
     void SetAnswers()
     {
 
-        for (int i = 0; i < options.Length; i++) {
+        for (int i = 0; i < options.Length; i++)
+        {
             options[i].GetComponent<AnswerScript>().isCorrect = false;
             options[i].GetComponent<Image>().color = options[i].GetComponent<AnswerScript>().startColor;
             options[i].transform.GetChild(0).GetComponent<Text>().text = QnA[currentQuestion].Answers[i];
 
             if (QnA[currentQuestion].CorrectAnswer == i + 1)
             {
-                options[i].GetComponent<AnswerScript>().isCorrect = true;       
+                options[i].GetComponent<AnswerScript>().isCorrect = true;
             }
-        
+
         }
     }
     void generateQuestions()
     {
-        if(QnA.Count > 0) {
+        if (number <= 5 && QnA.Count > 0)
+        {
             currentQuestion = Random.Range(0, QnA.Count);
-         
             QuestionTxt.text = QnA[currentQuestion].Questions;
             SetAnswers();
+            QuestionNum.text = "Question " + number.ToString() + "/" + totalQuestions;
         }
         else
         {
-            Debug.Log("Out of questions");
+            Debug.Log("Out of questions or reached the limit");
             GameOver(); 
         }
-       
     }
 
 }
