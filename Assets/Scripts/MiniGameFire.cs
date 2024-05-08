@@ -15,12 +15,15 @@ public class MiniGameFire : MonoBehaviour
     public GameObject Oven;
     public FireScript fireScript;
     public ParticleSystem partikol;
+    public GameObject Oven2;
+ 
 
     private void Update()
     {
         if (fixedExtinguish.buttonPressed == true && objective.objectivesDone == objectiveID)
         {
             extObjectiveText.text = extObjective;
+            FadetoBlack();
             Invoke("WaitAnimation", 1f);
         }
     }
@@ -28,7 +31,6 @@ public class MiniGameFire : MonoBehaviour
     public void WaitAnimation()
     {
         popupAnimator.Play("PopUpAnimation");
-        FadetoBlack();
     }
 
 
@@ -37,7 +39,11 @@ public class MiniGameFire : MonoBehaviour
         int numbers = partikol.particleCount;
         if (fireScript.isLit == false && numbers == 0)
         {
+            Oven2.GetComponent<BoxCollider>().enabled = true;
             Oven.SetActive(false);
         }
     }
+
+
+
 }

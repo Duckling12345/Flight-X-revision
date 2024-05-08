@@ -26515,6 +26515,7 @@ MonoBehaviour:
   disableCurrentIndicator: {fileID: 2126280309}
   lifeVest: {fileID: 1575822821}
   levelResult: {fileID: 1892434775}
+  disableTimer: {fileID: 1941394886}
 --- !u!1 &1108769936
 GameObject:
   m_ObjectHideFlags: 0
@@ -52483,9 +52484,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 1941394887}
-  disableTimer: {fileID: 1941394886}
   SceneMover: {fileID: 873437456}
-  TimeLeft: {fileID: 245854995}
+  TimeLeft: {fileID: 838618750}
   LifeVestGiven: {fileID: 1719299195}
 --- !u!1 &919132148461399041
 GameObject:
@@ -63559,7 +63559,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 1941394887}
-  disableTimer: {fileID: 1941394886}
   SceneMover: {fileID: 873437456}
   TimeLeft: {fileID: 838618750}
   LifeVestGiven: {fileID: 1719299195}

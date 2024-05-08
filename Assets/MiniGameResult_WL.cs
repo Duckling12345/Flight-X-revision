@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 public class MiniGameResult_WL : MonoBehaviour
 {
     public GameOverManager timer;
-    public GameObject disableTimer;
     public UnlockDoor SceneMover;
     public TMP_Text TimeLeft;
     public TMP_Text LifeVestGiven;
@@ -23,7 +22,6 @@ public class MiniGameResult_WL : MonoBehaviour
 
         TimeLeft.text = seconds.ToString() + " seconds";
         LifeVestGiven.text = obj.ToString() + " given";
-        disableTimer.SetActive(false);
     }
 
     public void Proceed()
