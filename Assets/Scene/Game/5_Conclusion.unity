@@ -2996,6 +2996,7 @@ GameObject:
   - component: {fileID: 246125632}
   - component: {fileID: 246125631}
   - component: {fileID: 246125628}
+  - component: {fileID: 246125633}
   m_Layer: 0
   m_Name: male character
   m_TagString: Untagged
@@ -3068,8 +3069,38 @@ Transform:
   - {fileID: 2132037151}
   - {fileID: 1189944153}
   - {fileID: 713806914}
+  - {fileID: 2032938710}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0.084, y: 685.644, z: -0.266}
+--- !u!114 &246125633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246125626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentIDCounter: 2
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":82,"yPos":47},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":null,"parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":null,"OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":88,"yPos":167.2},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    agree. Your passion and determination to acquaint yourself with the proper procedures
+    in common flight emergencies is outstanding. You have proven yourself a valuable
+    asset to our cabin crew. As such, we are looking forward to working with you.\r","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Carlo","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.5}]}'
+  saveVersion: 110
+  DefaultName: Carlo
+  DefaultSprite: {fileID: 21300000, guid: afb92b1290978fe4a9d168e9c21bdb56, type: 3}
+  DefaultFont: {fileID: 0}
+  NodeSerializedDataList:
+  - {fileID: 2032938711}
+  - {fileID: 2032938709}
+  ContinueFont: {fileID: 0}
+  EndConversationFont: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &247716864
 GameObject:
   m_ObjectHideFlags: 0
@@ -13769,6 +13800,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54a5a73a68f629e4f98e976f68422762, type: 3}
+--- !u!1 &1136556288 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 423455539150551263, guid: 54a5a73a68f629e4f98e976f68422762, type: 3}
+  m_PrefabInstance: {fileID: 1136556287}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1136556289 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 789562958677822316, guid: 54a5a73a68f629e4f98e976f68422762, type: 3}
@@ -20687,6 +20723,77 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -257278029260952120, guid: 32188e4d73be93240b4895385cb19d22, type: 3}
+--- !u!1 &1637892667
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1637892669}
+  - component: {fileID: 1637892670}
+  - component: {fileID: 1637892668}
+  m_Layer: 0
+  m_Name: ConversationEventInfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1637892668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637892667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 1
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 21300000, guid: d1757d4849dc3f4469c8b0eb273a10b2, type: 3}
+  Audio: {fileID: 8300000, guid: 7a3e867ff3273834da22cede0ef7fdc1, type: 3}
+--- !u!4 &1637892669
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637892667}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.39460716, z: -0, w: -0.91884995}
+  m_LocalPosition: {x: 1158.0072, y: -0.44827625, z: -2112.4692}
+  m_LocalScale: {x: 3.4482753, y: 3.4482758, z: 3.4482753}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6236886718803117610}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1637892670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637892667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 0
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
 --- !u!64 &1639095549
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25060,6 +25167,77 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2228417370725966487, guid: 32188e4d73be93240b4895385cb19d22, type: 3}
+--- !u!1 &2032938708
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2032938710}
+  - component: {fileID: 2032938711}
+  - component: {fileID: 2032938709}
+  m_Layer: 0
+  m_Name: ConversationEventInfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2032938709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032938708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 1
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 21300000, guid: afb92b1290978fe4a9d168e9c21bdb56, type: 3}
+  Audio: {fileID: 8300000, guid: 9f4d426a47df4f1409dda91b8f1f1846, type: 3}
+--- !u!4 &2032938710
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032938708}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.0013869373, y: 0.2953417, z: 0.0020004166, w: 0.9553886}
+  m_LocalPosition: {x: -2103.186, y: -12.865017, z: -1621.8668}
+  m_LocalScale: {x: 3.7957354, y: 3.7957363, z: 3.7957358}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 246125632}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2032938711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032938708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 0
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
 --- !u!64 &2033010911
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -74335,6 +74513,7 @@ Transform:
   - {fileID: 6235693095717283275}
   - {fileID: 6420230850445960718}
   - {fileID: 2057257609191277315}
+  - {fileID: 1637892669}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -313.517, z: 0}
 --- !u!23 &6238837940015474676
@@ -78802,6 +78981,7 @@ GameObject:
   - component: {fileID: 30948751172525136}
   - component: {fileID: 6757105615609060499}
   - component: {fileID: 6757105615609060500}
+  - component: {fileID: 6757105615609060501}
   m_Layer: 0
   m_Name: Annie
   m_TagString: Untagged
@@ -78842,14 +79022,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95cebd414df40a54e9a4703bcee4bdef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myConversation: {fileID: 0}
+  myConversation: {fileID: 6757105615609060501}
   talkPressed: 0
-  talkButton: {fileID: 0}
+  talkButton: {fileID: 86594102874646000}
   objectiveText: {fileID: 0}
   objectiveText1: {fileID: 0}
   objectiveText2: {fileID: 0}
   obstacle: {fileID: 0}
-  removeImage: {fileID: 0}
+  removeImage: {fileID: 1136556288}
   okayButton: {fileID: 0}
   timetowait: 0
 --- !u!114 &6757105615609060500
@@ -78871,6 +79051,35 @@ MonoBehaviour:
   timetoWait: 0
   showConclusionTime: 0
   transitionAnim: {fileID: 1319838111}
+--- !u!114 &6757105615609060501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6757105615609060496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentIDCounter: 4
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":38.2000122,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":null,"parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":null,"OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":42,"yPos":149.2},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"You
+    have shown us exceptional skills and adaptability throughout the training process.
+    Your performance is remarkable and truly reflects the high-quality standards
+    of FLIGHTX Airways. ","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Annie","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.5}]}'
+  saveVersion: 110
+  DefaultName: Annie
+  DefaultSprite: {fileID: 21300000, guid: d1757d4849dc3f4469c8b0eb273a10b2, type: 3}
+  DefaultFont: {fileID: 0}
+  NodeSerializedDataList:
+  - {fileID: 1637892670}
+  - {fileID: 1637892668}
+  ContinueFont: {fileID: 0}
+  EndConversationFont: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &6758144272544614956
 Transform:
   m_ObjectHideFlags: 0
