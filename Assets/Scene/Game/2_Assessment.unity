@@ -29266,7 +29266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53fe44676457d1744b7f4f8b6e7bfbce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectiveText1: {fileID: 1486944459}
+  objectiveText1: {fileID: 911397211}
   fixbutton: {fileID: 577062110}
   objective: {fileID: 21444180}
   objectiveID: 2
@@ -29283,7 +29283,7 @@ MonoBehaviour:
   deactivateCurrent: {fileID: 25174393}
   DestroyOnExit: {fileID: 515623409}
   InteractButton: {fileID: 577062108}
-  fastenObjectiveText: {fileID: 1486944459}
+  fastenObjectiveText: {fileID: 911397211}
   fastenObjective: Assist passengers to fasten their seatbelts. (2/2)
   defaultChair: {fileID: 308885081}
   hideDefaultChair: {fileID: 515623409}
@@ -29294,7 +29294,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 515623409}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -46915,6 +46915,7 @@ MonoBehaviour:
   timer: {fileID: 2106876147}
   stars: {fileID: 1606782013}
   Pressed: 0
+  timeToWait: 15
 --- !u!114 &834232690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47050,7 +47051,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834232682}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -67302,6 +67303,7 @@ MonoBehaviour:
   myConversation: {fileID: 596984868}
   DialogueButton: {fileID: 115531885}
   playerJoystick: {fileID: 86702891323970218}
+  npcIcon: {fileID: 1292526094}
 --- !u!1 &1208284301
 GameObject:
   m_ObjectHideFlags: 0
@@ -70807,7 +70809,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1296486146
 Transform:
   m_ObjectHideFlags: 0
@@ -82168,17 +82170,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2679727714808082925, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
   m_PrefabInstance: {fileID: 1828772947}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1486944459 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4376703330661181225, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
-  m_PrefabInstance: {fileID: 1828772947}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1486944457}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1488280765
 GameObject:
   m_ObjectHideFlags: 0
@@ -102658,7 +102649,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2679727714808082925, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3233516841238655136, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: m_fontSize
@@ -102730,15 +102721,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: objectiveList.Array.data[0].Object
-      value: 'Approach Flight Attendant Annie to get a grasp on the situation. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
-      propertyPath: objectiveList.Array.data[1].Object
       value: Assist passengers to fasten their seatbelts. (0/2)
       objectReference: {fileID: 0}
     - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
-      propertyPath: objectiveList.Array.data[2].Object
+      propertyPath: objectiveList.Array.data[1].Object
       value: 'Take a seat and wear an oxygen mask to keep yourself safe. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+      propertyPath: objectiveList.Array.data[2].Object
+      value: Wait for the Captain's announcement
       objectReference: {fileID: 0}
     - target: {fileID: 5514481620993882267, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: m_text
@@ -102786,7 +102777,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6076027503749943484, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9115571081633994796, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -111678,7 +111669,7 @@ MonoBehaviour:
   seatbeltObject: {fileID: 5184647976002160255}
   InteractButton: {fileID: 577062108}
   DestroyOnExit: {fileID: 1996033551}
-  fastenObjectiveText: {fileID: 1486944459}
+  fastenObjectiveText: {fileID: 911397211}
   fastenObjective: Assist passengers to fasten their seatbelts. (1/2)
   defaultChair: {fileID: 669274780}
   hideDefaultChair: {fileID: 1996033551}
@@ -111689,7 +111680,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1996033551}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 

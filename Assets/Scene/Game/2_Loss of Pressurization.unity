@@ -11622,7 +11622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npc: {fileID: 200112355}
-  timer: {fileID: 2106876147}
+  timer: {fileID: 21444178}
   Level: {fileID: 21444178}
 --- !u!1 &200784921
 GameObject:
@@ -46915,6 +46915,7 @@ MonoBehaviour:
   timer: {fileID: 2106876147}
   stars: {fileID: 1606782013}
   Pressed: 0
+  timeToWait: 5
 --- !u!114 &834232690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67302,6 +67303,7 @@ MonoBehaviour:
   myConversation: {fileID: 596984868}
   DialogueButton: {fileID: 115531885}
   playerJoystick: {fileID: 86702891323970218}
+  npcIcon: {fileID: 1292526094}
 --- !u!1 &1208284301
 GameObject:
   m_ObjectHideFlags: 0
@@ -135691,6 +135693,7 @@ GameObject:
   - component: {fileID: 4493237118167946695}
   - component: {fileID: 1500110045}
   - component: {fileID: 1500110046}
+  - component: {fileID: 8938472869619462743}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: Untagged
@@ -138954,6 +138957,19 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7101956817918852904}
   m_Enabled: 1
+--- !u!114 &8938472869619462743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7101956817918852904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86b6ed7a22a318f4dabc550d4b855581, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shaker: {fileID: 1500110046}
 --- !u!1 &8943681074671446081
 GameObject:
   m_ObjectHideFlags: 0

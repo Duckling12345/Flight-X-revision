@@ -29,7 +29,7 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
     public GameObject stars;
 
     public bool Pressed;
-
+    public int timeToWait;
 
 
     private void Update()
@@ -39,7 +39,7 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
             Sit();
             shaker.ShakeScreen();
             Invoke("playSound", 2f);
-            Invoke("playAnimation", 15f);
+            Invoke("playAnimation", timeToWait);
             Invoke("playOxygen", 1f);
             deactivateCurrent.SetActive(false);
         }
