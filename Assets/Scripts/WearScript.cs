@@ -21,7 +21,7 @@ public class WearScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public GameObject deactivateCurrent;
     [SerializeField] Animator popupAnimator;
     public float timetowait;
-
+    public GameObject fireExtinguisher;
 
     private void Update()
     {
@@ -30,6 +30,7 @@ public class WearScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             WearPBE();
             objectiveText1.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);
             Invoke("WaitAnimation", timetowait);
+            fireExtinguisher.GetComponent<BoxCollider>().enabled = true;
         }
     }
     public void WaitAnimation()
@@ -49,6 +50,15 @@ public class WearScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             AudioManager.Instance.PlayInspectSound();
         }
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if(objective.objectivesDone == 2) { 
+            objective.objectivesDone = -1;
+        }
+        disableButton.SetActive(false);
+    }
+
 
     void IPointerDownHandler.OnPointerDown(PointerEventData eventData)
     {

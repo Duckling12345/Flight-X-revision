@@ -2427,140 +2427,6 @@ Transform:
   - {fileID: 862176173}
   m_Father: {fileID: 1217948233}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &198335656
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 198335657}
-  - component: {fileID: 198335659}
-  - component: {fileID: 198335658}
-  m_Layer: 5
-  m_Name: ObjectiveText (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &198335657
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 198335656}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1264720268}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.7, y: -64.2}
-  m_SizeDelta: {x: 302.1226, y: 35.6837}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &198335658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 198335656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: new text here
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4279703320
-  m_fontColor: {r: 0.09433961, g: 0.09202562, b: 0.09202562, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: -20.645493, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &198335659
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 198335656}
-  m_CullTransparentMesh: 1
 --- !u!1 &202240591
 GameObject:
   m_ObjectHideFlags: 0
@@ -10798,7 +10664,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1054514440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10812,7 +10678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 382750009}
-  remainingTime: 70
+  remainingTime: 60
   PlayerUI: {fileID: 7677441605818994117}
   GameOverMenu: {fileID: 1436372011}
   Timer: {fileID: 1054514439}
@@ -12773,11 +12639,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0006093979, y: 0.067646764, z: -0.0011563059}
     m_Extent: {x: 0.6650351, y: 0.08099411, z: 0.05840324}
   m_DirtyAABB: 0
---- !u!224 &1264720268 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 2128464666219799686, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
-  m_PrefabInstance: {fileID: 1429166141}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1274419789
 GameObject:
   m_ObjectHideFlags: 0
@@ -12831,7 +12692,7 @@ MonoBehaviour:
   ObjectToWear: {fileID: 1274419789}
   PBEWorn: {fileID: 175685917}
   wearPressed: 0
-  objectiveText1: {fileID: 900841942}
+  objectiveText1: {fileID: 1429166145}
   fixbutton: {fileID: 1837594020}
   disableButton: {fileID: 1837594016}
   objective: {fileID: 1304250769}
@@ -12841,6 +12702,7 @@ MonoBehaviour:
   deactivateCurrent: {fileID: 1192442991}
   popupAnimator: {fileID: 859384722}
   timetowait: 3
+  fireExtinguisher: {fileID: 1525581165}
 --- !u!114 &1274419792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13181,7 +13043,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1304250768
 Transform:
   m_ObjectHideFlags: 0
@@ -15124,7 +14986,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2679727714808082925, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3233516841238655136, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: m_fontSize
@@ -15200,19 +15062,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: objectiveList.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: objectiveList.Array.data[0].Object
-      value: 'Communicate with Flight Attendant Carlo for instructions.  '
-      objectReference: {fileID: 0}
-    - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
-      propertyPath: objectiveList.Array.data[1].Object
       value: 'Find and wear PBE to stabilize your vitals. '
       objectReference: {fileID: 0}
     - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
-      propertyPath: objectiveList.Array.data[2].Object
+      propertyPath: objectiveList.Array.data[1].Object
       value: 'Locate the fire extinguisher to prevent the spread of fire. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+      propertyPath: objectiveList.Array.data[2].Object
+      value: Extinguish the fire.
       objectReference: {fileID: 0}
     - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: objectiveList.Array.data[3].Object
@@ -15272,10 +15134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 2128464666219799686, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 198335657}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
 --- !u!114 &1429166142 stripped
@@ -15305,17 +15164,6 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 1429166141}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1429166146 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3233516841238655136, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
-  m_PrefabInstance: {fileID: 1429166141}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1429166143}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -16420,12 +16268,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97d44d1f2cf54904982ccc55b0688e1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missingObjective: {fileID: 198335656}
+  missingObjective: {fileID: 1429166143}
   fixbutton: {fileID: 2749211637320827651}
   active: {fileID: 8331713792647184917}
   inactive: {fileID: 1525581165}
   disableButton: {fileID: 6811448917893529701}
-  objectiveText1: {fileID: 1429166146}
+  objectiveText1: {fileID: 900841942}
   objective: {fileID: 1304250769}
   objectiveID: 2
   activateNext: {fileID: 1534505064}
@@ -16449,7 +16297,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 49.005905, y: 68.4552, z: 37.31249}
   m_Center: {x: -12.252171, y: 8.676325, z: 15.690286}
@@ -44895,7 +44743,7 @@ MonoBehaviour:
   extinguishRate: 1
   raycastOrigin: {fileID: 6512883987800104113}
   steamObject: {fileID: 1690066995}
-  extinguisherEffect: {fileID: 0}
+  extinguisherEffect: {fileID: 1690066995}
 --- !u!82 &199347862590893204
 AudioSource:
   m_ObjectHideFlags: 0
@@ -65713,7 +65561,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &4157820365798656479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90630,7 +90478,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 0.012203807, y: 0.010710253, z: 0.000980166}
   m_Center: {x: -0.000012280936, y: 0.0015693964, z: 0.0017639503}
@@ -108192,7 +108040,7 @@ MonoBehaviour:
   currentIntensity: 1
   regenDelay: 2.5
   regenRate: 0.1
-  Oven: {fileID: 0}
+  Oven: {fileID: 778033545}
   fireParticleSystems:
   - {fileID: 8949815002408175681}
   - {fileID: 8956071098281026915}
@@ -108684,9 +108532,9 @@ SceneRoots:
   - {fileID: 537724003}
   - {fileID: 1304250768}
   - {fileID: 9031266298428100319}
+  - {fileID: 3672785806925239140}
   - {fileID: 2077352541}
   - {fileID: 66262408}
-  - {fileID: 3672785806925239140}
   - {fileID: 1207145050}
   - {fileID: 7811873283841752178}
   - {fileID: 389946695}
