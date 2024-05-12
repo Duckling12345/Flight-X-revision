@@ -39,11 +39,15 @@ public class PopupWindow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
                 ShowPopup("Level 1 | Pre-flight Checking");
                 break;
 
-            case 12:
+            case 11:
                 ShowPopup("Level 2 | Loss of Pressurization");
                 break;
 
             case 13:
+                ShowPopup("Level 2 | Loss of Pressurization");
+                break;
+
+            case 14:
                 ShowPopup("Level 2 | Mini Game");
                 break;
 
@@ -51,15 +55,23 @@ public class PopupWindow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
                 ShowPopup("Level 3 | Fire on Board");
                 break;
 
-            case 18:
+            case 19:
                 ShowPopup("Level 3 | Mini Game");
                 break;
 
-            case 22:
-                ShowPopup("Level 4 | Water Landing");
+            case 20:
+                ShowPopup("Level 3 | Fire on Board");
                 break;
 
             case 23:
+                ShowPopup("Level 4 | Water Landing");
+                break;
+
+            case 25:
+                ShowPopup("Level 4 | Water Landing");
+                break;
+
+            case 26:
                 ShowPopup("Level 4 | Mini Game");
                 break;
 
