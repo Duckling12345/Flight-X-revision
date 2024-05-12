@@ -29125,7 +29125,6 @@ GameObject:
   - component: {fileID: 515623413}
   - component: {fileID: 515623412}
   - component: {fileID: 515623419}
-  - component: {fileID: 515623420}
   m_Layer: 0
   m_Name: ObjectiveChair
   m_TagString: Untagged
@@ -29287,24 +29286,6 @@ MonoBehaviour:
   fastenObjective: Assist passengers to fasten their seatbelts. (2/2)
   defaultChair: {fileID: 308885081}
   hideDefaultChair: {fileID: 515623409}
---- !u!114 &515623420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 515623409}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.9607843, g: 1, b: 0, a: 1}
-  outlineWidth: 10
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &517138062
 GameObject:
   m_ObjectHideFlags: 0
@@ -46766,7 +46747,6 @@ GameObject:
   - component: {fileID: 834232690}
   - component: {fileID: 834232691}
   - component: {fileID: 834232692}
-  - component: {fileID: 834232693}
   m_Layer: 0
   m_Name: Seat1
   m_TagString: Untagged
@@ -47044,24 +47024,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &834232693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 834232682}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.9607843, g: 1, b: 0, a: 1}
-  outlineWidth: 10
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1001 &836572220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -111516,7 +111478,6 @@ GameObject:
   - component: {fileID: 1996033555}
   - component: {fileID: 1996033554}
   - component: {fileID: 1996033559}
-  - component: {fileID: 1996033560}
   m_Layer: 0
   m_Name: ObjectiveChair
   m_TagString: Untagged
@@ -111673,24 +111634,6 @@ MonoBehaviour:
   fastenObjective: Assist passengers to fasten their seatbelts. (1/2)
   defaultChair: {fileID: 669274780}
   hideDefaultChair: {fileID: 1996033551}
---- !u!114 &1996033560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1996033551}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.9607843, g: 1, b: 0, a: 1}
-  outlineWidth: 10
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1997991239
 GameObject:
   m_ObjectHideFlags: 0
