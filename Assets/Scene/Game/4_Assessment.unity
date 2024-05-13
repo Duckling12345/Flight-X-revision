@@ -16289,7 +16289,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2679727714808082925, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3233516841238655136, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: m_fontSize
@@ -16361,20 +16361,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: objectiveList.Array.data[0].Object
-      value: 'Briefly talk to Flight Attendant Carlo to find out about the situation. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
-      propertyPath: objectiveList.Array.data[1].Object
       value: 'Examine the water condition outside through the window. '
       objectReference: {fileID: 0}
     - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
-      propertyPath: objectiveList.Array.data[2].Object
+      propertyPath: objectiveList.Array.data[1].Object
       value: 'Open the door and redirect passengers to this exit. '
       objectReference: {fileID: 0}
     - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
-      propertyPath: objectiveList.Array.data[3].Object
+      propertyPath: objectiveList.Array.data[2].Object
       value: Conduct a last check in the cabin to ensure there are no passengers
         left.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+      propertyPath: objectiveList.Array.data[3].Object
+      value: Head back to the cabin after checking.
       objectReference: {fileID: 0}
     - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: objectiveList.Array.data[4].Object
@@ -16426,7 +16426,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6076027503749943484, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9115571081633994796, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -16454,17 +16454,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2679727714808082925, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
   m_PrefabInstance: {fileID: 484786694}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &484786697 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3233516841238655136, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
-  m_PrefabInstance: {fileID: 484786694}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 484786695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &484786698 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5730837884929972500, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
@@ -31707,7 +31696,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 925235497}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -34801,7 +34790,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &993531632
 Transform:
   m_ObjectHideFlags: 0
@@ -35240,8 +35229,8 @@ MonoBehaviour:
   Pressed: 0
   player: {fileID: 4159898161269825087}
   lookCapsule: {fileID: 1959767770}
-  objectiveText1: {fileID: 484786701}
-  objectiveText2: {fileID: 484786697}
+  objectiveText1: {fileID: 384817500}
+  objectiveText2: {fileID: 484786701}
   objective: {fileID: 1825425661}
   objectiveID: 1
   statetoPlay: DitchingOpen
@@ -35290,7 +35279,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000881752}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -62452,7 +62441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d75d0afb4669b4499bb5754cd5bd3b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeObjectives: {fileID: 2100000, guid: 7b203c7b484bb674e9376e0b2c5fff1e, type: 2}
+  activeObjectives: {fileID: 2100000, guid: d4660bf361e07224ca3df0eda149a850, type: 2}
   inactiveObjectives: {fileID: 2100000, guid: 84961b5587ac26b46a0fdecb5d286ad5, type: 2}
   finalObjectives: {fileID: 2100000, guid: a82c97092ead8b14988eaa75453912cb, type: 2}
   sceneBuildIndex: 2
@@ -67075,7 +67064,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1941394887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111946,7 +111935,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5498184062643668402}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -113663,9 +113652,9 @@ SceneRoots:
   - {fileID: 1084589307729773276}
   - {fileID: 1061148437}
   - {fileID: 1825425660}
+  - {fileID: 2052362362}
   - {fileID: 1959767771}
   - {fileID: 105034576}
-  - {fileID: 2052362362}
   - {fileID: 1002282348}
   - {fileID: 1586189546}
   - {fileID: 1197475557}

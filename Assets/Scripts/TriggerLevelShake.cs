@@ -10,6 +10,7 @@ public class TriggerLevelShake : MonoBehaviour
     public NPCConversation myConversation;
     public GameObject DialogueButton;
     public GameObject playerJoystick;
+    public GameObject npcIcon;
 
     void Awake()
     {
@@ -29,6 +30,7 @@ public class TriggerLevelShake : MonoBehaviour
     {
         this.gameObject.SetActive(false);
         playerJoystick.SetActive(true);
+        npcIcon.SetActive(false);
     }
 
     private void OnDisable()

@@ -100,10 +100,6 @@ public class ScanScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
         popupAnimator.Play("PopUpAnimation");
     }
 
-    public void WaitAnimation()
-    {
-
-    }
 
     private void OnTriggerExit(Collider other)
     {

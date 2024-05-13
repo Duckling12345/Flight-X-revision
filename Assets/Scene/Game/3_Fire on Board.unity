@@ -12841,6 +12841,7 @@ MonoBehaviour:
   deactivateCurrent: {fileID: 1192442991}
   popupAnimator: {fileID: 859384722}
   timetowait: 3
+  fireExtinguisher: {fileID: 1525581165}
 --- !u!114 &1274419792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17250,6 +17251,10 @@ PrefabInstance:
     - target: {fileID: 5959929560000991566, guid: c14f0fc9e72d7854ca4ff4fbe98febfd, type: 3}
       propertyPath: m_Name
       value: Stars
+      objectReference: {fileID: 0}
+    - target: {fileID: 5959929560000991566, guid: c14f0fc9e72d7854ca4ff4fbe98febfd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -65770,7 +65775,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npc: {fileID: 4157820365798656479}
-  timer: {fileID: 1054514439}
+  timer: {fileID: 1304250767}
   Level: {fileID: 1304250767}
 --- !u!95 &4157820365798656482
 Animator:
@@ -108192,7 +108197,7 @@ MonoBehaviour:
   currentIntensity: 1
   regenDelay: 2.5
   regenRate: 0.1
-  Oven: {fileID: 0}
+  Oven: {fileID: 778033545}
   fireParticleSystems:
   - {fileID: 8949815002408175681}
   - {fileID: 8956071098281026915}

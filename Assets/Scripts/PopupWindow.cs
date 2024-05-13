@@ -44,22 +44,34 @@ public class PopupWindow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
                 break;
 
             case 13:
+                ShowPopup("Level 2 | Loss of Pressurization");
+                break;
+
+            case 15:
                 ShowPopup("Level 2 | Mini Game");
                 break;
 
-            case 17:
+            case 18:
                 ShowPopup("Level 3 | Fire on Board");
                 break;
 
-            case 18:
+            case 21:
                 ShowPopup("Level 3 | Mini Game");
                 break;
 
-            case 22:
+            case 20:
+                ShowPopup("Level 3 | Fire on Board");
+                break;
+
+            case 24:
                 ShowPopup("Level 4 | Water Landing");
                 break;
 
-            case 23:
+            case 25:
+                ShowPopup("Level 4 | Water Landing");
+                break;
+
+            case 27:
                 ShowPopup("Level 4 | Mini Game");
                 break;
 
@@ -80,25 +92,25 @@ public class PopupWindow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         {
             ShowPopup("Level 2 | Loss of Pressurization");
         }
-        else if (clipPressed && scene.buildIndex == 13)
+        else if (clipPressed && scene.buildIndex == 14)
         {
             ShowPopup("Level 2 | Mini Game");
         }
-        else if (clipPressed && scene.buildIndex == 17)
+        else if (clipPressed && scene.buildIndex == 18)
         {
             ShowPopup("Level 3 | Fire on Board");
 
         }
-        else if (clipPressed && scene.buildIndex == 18)
+        else if (clipPressed && scene.buildIndex == 21)
         {
             ShowPopup("Level 3 | Mini Game");
 
         }
-        else if (clipPressed && scene.buildIndex == 22)
+        else if (clipPressed && scene.buildIndex == 24)
         {
             ShowPopup("Level 4 | Water Landing");
         }
-        else if (clipPressed && scene.buildIndex == 23)
+        else if (clipPressed && scene.buildIndex == 27)
         {
             ShowPopup("Level 4 | Mini Game");
 
