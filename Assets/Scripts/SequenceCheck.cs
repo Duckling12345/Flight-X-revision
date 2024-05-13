@@ -40,7 +40,7 @@ public class SequenceCheck : MonoBehaviour
 
     private void Start()
     {
-        moveDialoguePosition.anchoredPosition = new Vector3(19, 104, -3);
+        moveDialoguePosition.anchoredPosition = new Vector3(-464, -25, 0);
         button.SetActive(false);
         Buttons.SendColorValue += AddValueAndCheckSequence;
         correctSequence = "213";
