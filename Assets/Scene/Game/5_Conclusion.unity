@@ -2418,6 +2418,7 @@ GameObject:
   m_Component:
   - component: {fileID: 178299166}
   - component: {fileID: 178299168}
+  - component: {fileID: 178299169}
   - component: {fileID: 178299167}
   m_Layer: 0
   m_Name: Girl 1
@@ -2483,6 +2484,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 178299165}
   m_CullTransparentMesh: 1
+--- !u!95 &178299169
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178299165}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8225ccdb58ac6b94ba1823502b0f36bc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!64 &182302058
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24723,6 +24745,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1855565596}
+  - component: {fileID: 1855565597}
   m_Layer: 0
   m_Name: Devs
   m_TagString: Untagged
@@ -24739,7 +24762,7 @@ Transform:
   m_GameObject: {fileID: 1855565595}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -532, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -24749,6 +24772,27 @@ Transform:
   - {fileID: 188181784}
   m_Father: {fileID: 252746290}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1855565597
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855565595}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8225ccdb58ac6b94ba1823502b0f36bc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!64 &1858253578
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -80586,6 +80630,7 @@ MonoBehaviour:
   timetoWait: 27
   showConclusionTime: 29
   transitionAnim: {fileID: 1319838111}
+  devsAnim: {fileID: 1855565597}
 --- !u!4 &6758144272544614956
 Transform:
   m_ObjectHideFlags: 0

@@ -17,7 +17,9 @@ public class ConclusionScript : MonoBehaviour
     public int showConclusionTime;
 
     [SerializeField] Animator transitionAnim;
+    [SerializeField] Animator devsAnim;
 
+    private bool devAnimationPlayed = false;
 
     void Awake()
     {
@@ -40,19 +42,26 @@ public class ConclusionScript : MonoBehaviour
 
     void ShowPanel()
     {
-        conclusionPanel.SetActive(true);
+        if (!devAnimationPlayed && devsAnim != null)
+        {
+            conclusionPanel.SetActive(true);
+            devsAnim.Play("Devs");
+            devAnimationPlayed = true;
+            StartCoroutine(StopAnimationAfterDelay(30, devsAnim.GetCurrentAnimatorStateInfo(0).length));
+        }
     }
 
-   public void BackToMenu()
+    IEnumerator StopAnimationAfterDelay(int sampleSize, float animationLength)
     {
-            Time.timeScale += Time.deltaTime;
-            SceneManager.LoadScene("Level Modules");
+        float sampleLength = animationLength / sampleSize;
+        yield return new WaitForSeconds(sampleLength * sampleSize); 
+        devsAnim.enabled = false;
     }
 
 
-
-
-
-
-
+    public void BackToMenu()
+    {
+        Time.timeScale += Time.deltaTime;
+        SceneManager.LoadScene("Level Modules");
+    }
 }
