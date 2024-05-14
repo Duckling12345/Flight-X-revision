@@ -12783,6 +12783,9 @@ MonoBehaviour:
   obstacle: {fileID: 0}
   removeImage: {fileID: 0}
   okayButton: {fileID: 0}
+  imagegray: {fileID: 0}
+  image1: {fileID: 0}
+  image2: {fileID: 0}
   timetowait: 0
 --- !u!4 &924261585
 Transform:
@@ -25088,6 +25091,9 @@ MonoBehaviour:
   obstacle: {fileID: 0}
   removeImage: {fileID: 0}
   okayButton: {fileID: 0}
+  imagegray: {fileID: 0}
+  image1: {fileID: 0}
+  image2: {fileID: 0}
   timetowait: 0
 --- !u!135 &1956619009
 SphereCollider:
@@ -30407,7 +30413,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8723205431663488723}
   - {fileID: 3586811637015260240}
   - {fileID: 7765076868367601351}
   - {fileID: 7377135264710752194}
@@ -31221,7 +31226,7 @@ GameObject:
   - component: {fileID: 1362997828595870993}
   - component: {fileID: 4902867042453436267}
   m_Layer: 0
-  m_Name: AnnieV2
+  m_Name: AnnieV2 - eto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39919,19 +39924,13 @@ Animator:
   m_GameObject: {fileID: 1846906723200513963}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 4a22b6929052a0744aacb57907a1f485, type: 3}
-  m_Controller: {fileID: 9100000, guid: c6355bb33cde6c640bc159897e127439, type: 2}
+  m_Controller: {fileID: 9100000, guid: 28f29f6c2dfa35e4480e842e4276efdc, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
-    are already bound by a Humanoid avatar. These transforms can only be changed
-    by Humanoid clips.\n\tTransform 'CC_Base_L_Hand'\n\tTransform 'CC_Base_R_Upperarm'\n\tTransform
-    'CC_Base_L_Index1'\n\tTransform 'CC_Base_R_Index1'\n\tTransform 'CC_Base_R_Hand'\n\tTransform
-    'CC_Base_L_Forearm'\n\tTransform 'CC_Base_R_Forearm'\n\tTransform 'CC_Base_L_Upperarm'\n\tTransform
-    'CC_Base_L_Hand'\n\tTransform 'CC_Base_R_Upperarm'\n\tand more ...\n\tFrom animation
-    clip 'CMU compliant skeleton_Life Vest'"
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
@@ -49095,9 +49094,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8233949783832605801}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.7024451, z: 0, w: 0.711738}
-  m_LocalPosition: {x: -0.707, y: 1.3603, z: 0.267}
-  m_LocalScale: {x: 0.06551468, y: 0.06551468, z: 0.065514676}
+  m_LocalRotation: {x: -0, y: -0.75547224, z: -0, w: -0.6551807}
+  m_LocalPosition: {x: 185.12141, y: 1.3702999, z: 83.074875}
+  m_LocalScale: {x: 0.06551473, y: 0.06551468, z: 0.06551472}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5265746320889629807}
@@ -49105,7 +49104,7 @@ Transform:
   - {fileID: 5856508680953043985}
   - {fileID: 6525168517872898503}
   - {fileID: 2655398492708587530}
-  m_Father: {fileID: 1362997828595870993}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -89.247, z: 0}
 --- !u!1 &8744546107623952418
 GameObject:
@@ -50588,6 +50587,7 @@ SceneRoots:
   - {fileID: 2137052167}
   - {fileID: 543450651758999465}
   - {fileID: 1442517766}
+  - {fileID: 8723205431663488723}
   - {fileID: 1362997828595870993}
   - {fileID: 1229459829}
   - {fileID: 284200628}
