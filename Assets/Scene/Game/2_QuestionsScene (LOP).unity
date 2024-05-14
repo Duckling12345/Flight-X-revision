@@ -632,7 +632,7 @@ GameObject:
   - component: {fileID: 286774715}
   - component: {fileID: 286774714}
   m_Layer: 0
-  m_Name: TimeLeft(A)
+  m_Name: TimeLeft(M)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1657,10 +1657,11 @@ MonoBehaviour:
   TryAgainPanel: {fileID: 1628829175}
   timer: {fileID: 0}
   stars: {fileID: 2141164603}
-  TimeLeftA: {fileID: 0}
-  TimeLeftM: {fileID: 0}
-  ObjDone: {fileID: 0}
+  TimeLeftA: {fileID: 1558118659}
+  TimeLeftM: {fileID: 286774714}
+  ObjDone: {fileID: 803352656}
   FireLeft: {fileID: 0}
+  LifeVestGiven: {fileID: 0}
   QuestionTxt: {fileID: 180421764}
   ScoreTxt: {fileID: 1646242685}
   SimScoreTxt: {fileID: 656472903}
@@ -5652,7 +5653,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1563047001
 Transform:
   m_ObjectHideFlags: 0
@@ -6575,7 +6576,7 @@ RectTransform:
   m_Father: {fileID: 1808381235}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
