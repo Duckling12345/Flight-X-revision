@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class WearScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
@@ -22,13 +23,14 @@ public class WearScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     [SerializeField] Animator popupAnimator;
     public float timetowait;
     public GameObject fireExtinguisher;
-
+    public Image bullet;
     private void Update()
     {
         if (fixbutton.Pressed == true && objective.objectivesDone == objectiveID)
         {
             WearPBE();
             objectiveText1.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);
+            bullet.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);
             Invoke("WaitAnimation", timetowait);
             fireExtinguisher.GetComponent<BoxCollider>().enabled = true;
         }

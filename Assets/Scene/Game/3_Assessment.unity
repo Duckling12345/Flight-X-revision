@@ -3217,6 +3217,17 @@ Transform:
   - {fileID: 1382169208}
   m_Father: {fileID: 713573442}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &332760565 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5257721976129500998, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+  m_PrefabInstance: {fileID: 1429166141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &332785039
 GameObject:
   m_ObjectHideFlags: 0
@@ -3927,6 +3938,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 789812803}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &397879223 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1789646124272836412, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+  m_PrefabInstance: {fileID: 1429166141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &403227182
 GameObject:
   m_ObjectHideFlags: 0
@@ -9328,17 +9350,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.028913766, y: 0.09300214, z: 0.3134141}
     m_Extent: {x: 0.39005396, y: 0.6874824, z: 0.32632977}
   m_DirtyAABB: 0
---- !u!114 &900841942 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4376703330661181225, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
-  m_PrefabInstance: {fileID: 1429166141}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1429166144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &902454890
 GameObject:
   m_ObjectHideFlags: 0
@@ -12449,7 +12460,7 @@ MonoBehaviour:
   ObjectToWear: {fileID: 1274419789}
   PBEWorn: {fileID: 175685917}
   wearPressed: 0
-  objectiveText1: {fileID: 1429166145}
+  objectiveText1: {fileID: 1429166144}
   fixbutton: {fileID: 1837594020}
   disableButton: {fileID: 1837594016}
   objective: {fileID: 1304250769}
@@ -12460,6 +12471,7 @@ MonoBehaviour:
   popupAnimator: {fileID: 859384722}
   timetowait: 3
   fireExtinguisher: {fileID: 1525581165}
+  bullet: {fileID: 397879223}
 --- !u!114 &1274419792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14820,6 +14832,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 537724003}
     m_Modifications:
+    - target: {fileID: 380000521152894526, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 763033131838251802, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: m_Name
       value: PopUpWindow
@@ -14831,6 +14847,10 @@ PrefabInstance:
     - target: {fileID: 778530529953377797, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 18.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1433969491995345093, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -150
       objectReference: {fileID: 0}
     - target: {fileID: 2250847608551123682, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -14913,6 +14933,10 @@ PrefabInstance:
       value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+      propertyPath: ObjectiveNotification
+      value: 
+      objectReference: {fileID: 1429166143}
+    - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: objectiveList.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -14976,6 +15000,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7764900007537636698, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361403582631174425, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8589743369619235542, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9115571081633994796, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 3.5
@@ -15002,17 +15038,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!1 &1429166143 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 6076027503749943484, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8742887742385978632, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
   m_PrefabInstance: {fileID: 1429166141}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1429166144 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2679727714808082925, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
-  m_PrefabInstance: {fileID: 1429166141}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1429166145 stripped
+--- !u!114 &1429166144 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4839202560351081131, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1405244509476922464, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
   m_PrefabInstance: {fileID: 1429166141}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
@@ -15021,6 +15052,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1429166145 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6185124905599936669, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+  m_PrefabInstance: {fileID: 1429166141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1429166146 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8361403582631174425, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+  m_PrefabInstance: {fileID: 1429166141}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1430297270
 GameObject:
   m_ObjectHideFlags: 0
@@ -16325,18 +16372,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97d44d1f2cf54904982ccc55b0688e1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missingObjective: {fileID: 1429166143}
+  missingObjective: {fileID: 1429166146}
   fixbutton: {fileID: 2749211637320827651}
   active: {fileID: 8331713792647184917}
   inactive: {fileID: 1525581165}
   disableButton: {fileID: 6811448917893529701}
-  objectiveText1: {fileID: 900841942}
+  objectiveText1: {fileID: 1429166145}
   objective: {fileID: 1304250769}
   objectiveID: 2
   activateNext: {fileID: 1534505064}
   deactivateCurrent: {fileID: 1138766173}
   Stopper: {fileID: 1030764600}
   popupAnimator: {fileID: 859384722}
+  bullet: {fileID: 332760565}
 --- !u!65 &1525581169
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65843,12 +65891,15 @@ MonoBehaviour:
   myConversation: {fileID: 389946694}
   talkPressed: 0
   talkButton: {fileID: 86594103364519939}
-  objectiveText: {fileID: 1429166145}
-  objectiveText1: {fileID: 1429166144}
-  objectiveText2: {fileID: 1429166143}
+  objectiveText: {fileID: 0}
+  objectiveText1: {fileID: 0}
+  objectiveText2: {fileID: 0}
   obstacle: {fileID: 1884752917838336467}
   removeImage: {fileID: 882157022}
   okayButton: {fileID: 882157024}
+  imagegray: {fileID: 0}
+  image1: {fileID: 0}
+  image2: {fileID: 0}
   timetowait: 7
 --- !u!65 &4157820365798656480
 BoxCollider:
@@ -108417,6 +108468,9 @@ MonoBehaviour:
   - {fileID: 2071572618}
   SceneMover: {fileID: 1113155878}
   TimeLeft: {fileID: 521488602}
+  seconds: 0
+  starsActive: 0
+  checkActive: 0
 --- !u!33 &9153457932929419851
 MeshFilter:
   m_ObjectHideFlags: 0

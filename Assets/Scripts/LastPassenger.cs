@@ -4,6 +4,8 @@ using System.Security.Cryptography.X509Certificates;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
+
 
 public class LastPassenger : MonoBehaviour
 {
@@ -28,7 +30,7 @@ public class LastPassenger : MonoBehaviour
     public string fastenObjective;
     public GameObject defaultChair;
     public GameObject hideDefaultChair;
-
+    public Image bullet;
 
     private void Update()
     {
@@ -36,6 +38,7 @@ public class LastPassenger : MonoBehaviour
         if (fixbutton.Pressed == true && objective.objectivesDone == objectiveID)
         {
             objectiveText1.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);
+            bullet.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);
             Invoke("WaitAnimation", timetowait);
             oxygens.SetActive(true);
             seatbelt.SetActive(true);
