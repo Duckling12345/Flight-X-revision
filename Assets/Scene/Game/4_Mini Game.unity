@@ -10598,6 +10598,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1061148437}
     m_Modifications:
+    - target: {fileID: 380000521152894526, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 763033131838251802, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: m_Name
       value: PopUpWindow
@@ -10691,6 +10695,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+      propertyPath: ObjectiveNotification
+      value: 
+      objectReference: {fileID: 484786695}
+    - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: objectiveList.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -10763,6 +10771,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8589743369619235542, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9115571081633994796, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -1.8
@@ -10779,6 +10791,11 @@ PrefabInstance:
       addedObject: {fileID: 1800440752}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+--- !u!1 &484786695 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8742887742385978632, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+  m_PrefabInstance: {fileID: 484786694}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &484786698 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5730837884929972500, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
