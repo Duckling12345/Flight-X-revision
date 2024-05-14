@@ -47083,6 +47083,9 @@ MonoBehaviour:
   - {fileID: 603842464}
   SceneMover: {fileID: 1381748869}
   TimeLeft: {fileID: 1588852143}
+  seconds: 0
+  starsActive: 0
+  checkActive: 0
 --- !u!82 &834232692
 AudioSource:
   m_ObjectHideFlags: 0
@@ -121275,6 +121278,7 @@ MonoBehaviour:
   myConversation: {fileID: 1773429274}
   optionsButton: {fileID: 115531885}
   CaptainSprite: {fileID: 1292526094}
+  waitTime: 12
 --- !u!1 &2133818414
 GameObject:
   m_ObjectHideFlags: 0

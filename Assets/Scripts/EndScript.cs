@@ -9,17 +9,21 @@ public class EndScript : MonoBehaviour
     public NPCConversation myConversation;
     public GameObject optionsButton;
     public GameObject CaptainSprite;
+    public int waitTime;
+
 
     private void OnEnable()
     {
         CaptainSprite.SetActive(true);
         ConversationManager.Instance.StartConversation(myConversation);
         optionsButton.SetActive(false);
+        Invoke("disableConversation", waitTime);
     }
     
 
-    private void OnDisable()
+    void disableConversation()
     {
+        CaptainSprite.SetActive(false);
         ConversationManager.Instance.EndConversation();   
     }
 

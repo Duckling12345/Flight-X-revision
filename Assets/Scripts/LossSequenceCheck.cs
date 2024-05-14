@@ -9,6 +9,7 @@ public class LossSequenceCheck : MonoBehaviour
 
     private string correctSequence, currentSequence;
     public UnlockDoor sceneMover;
+    public MiniGameResult_LOP minigameResult;
     public Shake shaker;
     public GameObject levelResults;
     public GameObject buttons;
@@ -77,6 +78,7 @@ public class LossSequenceCheck : MonoBehaviour
             levelResults.SetActive(true);
             buttons.SetActive(false);
             Invoke("DelayTransition", delayTime);
+            minigameResult.MiniGameComplete();
         }
 
     }

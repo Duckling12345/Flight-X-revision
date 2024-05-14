@@ -26,6 +26,9 @@ public class MiniGameResult : MonoBehaviour
         TimeLeft.text = seconds.ToString() + " seconds";
         FireLeft.text = objCount.ToString() + "/2" + " flames";
         Rewards.text = rewardCount.ToString() + " point/s";
+        PlayerPrefs.SetInt("fobMiniTime", seconds);
+        PlayerPrefs.Save();
+
     }
 
     public void Proceed()

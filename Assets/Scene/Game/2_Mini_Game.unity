@@ -21575,6 +21575,7 @@ GameObject:
   - component: {fileID: 433804162}
   - component: {fileID: 433804163}
   - component: {fileID: 433804164}
+  - component: {fileID: 433804165}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -21776,6 +21777,7 @@ MonoBehaviour:
   correctSequence: 
   currentSequence: 
   sceneMover: {fileID: 1381748869}
+  minigameResult: {fileID: 433804164}
   shaker: {fileID: 844427590}
   levelResults: {fileID: 1559902204}
   buttons: {fileID: 7677441607108472253}
@@ -21820,11 +21822,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9795491a06a3e64449a40b7d1064f352, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  takeTime: {fileID: 433804165}
   timer: {fileID: 2106876148}
   disableTimer: {fileID: 2106876147}
   SceneMover: {fileID: 1381748869}
   TimeLeft: {fileID: 1443629479}
   ObjDone: {fileID: 362252727}
+--- !u!114 &433804165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433804153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2a7d798cca45594ba50b6ad0953ae71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: {fileID: 2106876148}
+  stars: []
+  SceneMover: {fileID: 1381748869}
+  TimeLeft: {fileID: 1443629479}
+  seconds: 0
+  starsActive: 0
+  checkActive: 0
 --- !u!1 &433999818
 GameObject:
   m_ObjectHideFlags: 0
