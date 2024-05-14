@@ -20,13 +20,9 @@ public class QuizManager : MonoBehaviour
     public GameObject Quizpanel;
     public GameObject GoPanel;
     public GameObject TryAgainPanel;
-    //public GameObject timer;
     //public GameObject stars;
-    //public TMP_Text TimeLeftA;
-    //public TMP_Text TimeLeftM;
-    //public TMP_Text ObjDone;
-    //public TMP_Text FireLeft;
-   // public TMP_Text LifeVestGiven;
+    public TMP_Text TimeLeftA;
+    public TMP_Text TimeLeftM;
     public TMP_Text QuestionTxt;
     public Text ScoreTxt;
     public Text SimScoreTxt;
@@ -37,9 +33,24 @@ public class QuizManager : MonoBehaviour
     public int simScore;
     public int sceneBuildIndex;
 
+    private int lopTime;
+    private int lopMiniTime;
+    private int fobTime;
+    private int fobMiniTime;
+    private int waterTime;
+    private int waterMiniTime;
+
+
+
     public void Start()
     {
-        number = 1;
+    int lopTime = PlayerPrefs.GetInt("lopTime", 0);
+    int lopMiniTime = PlayerPrefs.GetInt("lopMiniTime", 0);
+    int fobTime = PlayerPrefs.GetInt("fobTime", 0);
+    int fobMiniTime = PlayerPrefs.GetInt("fobMiniTime", 0);
+    int waterTime = PlayerPrefs.GetInt("waterTime", 0);
+    int waterMiniTime = PlayerPrefs.GetInt("waterMiniTime", 0);
+    number = 1;
         totalQuestions = QnA.Count;
         QuestionNum.text = "Question " + number.ToString() + "/" + totalQuestions;
         GoPanel.SetActive(false);
@@ -92,18 +103,40 @@ public class QuizManager : MonoBehaviour
         float simScorePercentage = ((float)simScore / (float)simScore) * 100f;
         ScoreTxt.text = Mathf.RoundToInt(scorePercentage) + "%";
         SimScoreTxt.text = Mathf.RoundToInt(simScorePercentage) + "%";
-
+        ShowResults();
         //prev code
         //ScoreTxt.text =  score + "/" + totalQuestions;
         //SimScoreTxt.text = simScore + "/" + simScore;
 
-        //convert to text
-        //TimeLeftA.txt =
-        //TimeLeftM.txt =
-        //ObjDone.txt =
-        //FireLeft.txt =
-        //LifeVestGiven.txt =
-}
+    }
+
+    public void ShowResults()
+    {
+        int activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+        if (activeSceneIndex == 16)
+        {
+            TimeLeftA.text = lopTime.ToString();
+            TimeLeftM.text = lopMiniTime.ToString();
+        }
+        else if (activeSceneIndex == 22)
+        {
+            TimeLeftA.text = fobTime.ToString();
+            TimeLeftM.text = fobMiniTime.ToString();
+        }
+        else if (activeSceneIndex == 28)
+        {
+            TimeLeftA.text = waterTime.ToString();
+            TimeLeftM.text = waterMiniTime.ToString();
+        }
+        else
+        {
+            Debug.LogError("Unknown scene index: " + activeSceneIndex);
+        }
+    }
+
+
+
 
     public void correct()
     {
