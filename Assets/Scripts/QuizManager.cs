@@ -20,8 +20,8 @@ public class QuizManager : MonoBehaviour
     public GameObject Quizpanel;
     public GameObject GoPanel;
     public GameObject TryAgainPanel;
-    public GameObject timer;
-    public GameObject stars;
+    //public GameObject timer;
+    //public GameObject stars;
     //public TMP_Text TimeLeftA;
     //public TMP_Text TimeLeftM;
     //public TMP_Text ObjDone;
@@ -81,8 +81,8 @@ public class QuizManager : MonoBehaviour
 
         Quizpanel.SetActive(false);
         GoPanel.SetActive(true);
-        GetComponent<StarsHandler>().starsAchieved();
-        stars.SetActive(true);
+        //  GetComponent<StarsHandler>().starsAchieved();
+        //stars.SetActive(true);
 
         testSlider.value = score;
         simSlider.value = simScore;
