@@ -22,7 +22,7 @@ public class ScoreUI : MonoBehaviour
         int htpscore = PlayerPrefs.GetInt("htpScore", 0);
         int lopscore = PlayerPrefs.GetInt("lopScore", 0);
         int fobscore = PlayerPrefs.GetInt("fobScore", 0);
-        int wlscore = PlayerPrefs.GetInt("wlScore", 0);
+        int wlscore =  PlayerPrefs.GetInt("wlScore", 0);
 
         //Rows
         var row1 = Instantiate(rowUi, transform).GetComponent<RowUI>();
