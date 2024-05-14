@@ -21,7 +21,7 @@ public class MiniGameResult_WL : MonoBehaviour
         int obj = 6;
 
         TimeLeft.text = seconds.ToString() + " seconds";
-        LifeVestGiven.text = obj.ToString() + " given";
+        LifeVestGiven.text = obj.ToString() + " life vests";
         PlayerPrefs.SetInt("waterMiniTime", seconds);
         PlayerPrefs.Save();
     }
