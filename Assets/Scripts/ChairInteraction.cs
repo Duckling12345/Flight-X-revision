@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 {
@@ -27,6 +29,9 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
     public GameObject playerUI;
     public GameObject timer;
     public GameObject stars;
+    public UnityEngine.UI.Slider simSlider;
+    public Text SimScoreTxt;
+    public int simScore;
 
     public bool Pressed;
     public int timeToWait;
@@ -86,8 +91,13 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
         levelResult.SetActive(true);
         playerUI.SetActive(false);
         GetComponent<StarsHandler>().starsAchieved();
-        timer.SetActive(false);    
+        timer.SetActive(false);
         stars.SetActive(false);
+
+        simSlider.value = simScore;
+        //percentage results
+        float simScorePercentage = ((float)simScore / (float)simScore) * 100f;
+        SimScoreTxt.text = Mathf.RoundToInt(simScorePercentage) + "%";
     }
 
     void IPointerDownHandler.OnPointerDown(PointerEventData eventData)
