@@ -22,6 +22,9 @@ public class NPCScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     private GameOverManager gameOver;
     public GameObject removeImage;
     public GameObject okayButton;
+    public Image imagegray;
+    public GameObject image1;
+    public GameObject image2;
     public float timetowait;
 
 
@@ -55,6 +58,7 @@ public class NPCScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {
         obstacle.GetComponent<BoxCollider>().enabled = false;
         objectiveText.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);
+        imagegray.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);
     }
 
 
@@ -66,6 +70,8 @@ public class NPCScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {
         objectiveText1.SetActive(true);
         objectiveText2.SetActive(true);
+        image1.SetActive(true);
+        image2.SetActive(true);
     }
 
     public  void endConvo()

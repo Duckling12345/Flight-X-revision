@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LastObjective : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class LastObjective : MonoBehaviour
     public GameObject deactivateCurrent;
     public GameObject Stopper;
     [SerializeField] Animator popupAnimator;
-
+    public Image bullet;
     private void Update()
     {
         if (fixbutton.Pressed == true && objective.objectivesDone == objectiveID)
@@ -30,6 +31,7 @@ public class LastObjective : MonoBehaviour
             activateNext.SetActive(true);
             deactivateCurrent.SetActive(false);
             objectiveText1.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);
+            bullet.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);
             Stopper.SetActive(false);
             Invoke("WaitAnimation", 1f);
         }

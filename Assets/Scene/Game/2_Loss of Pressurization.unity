@@ -3427,6 +3427,22 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &67342550 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8589743369619235542, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+  m_PrefabInstance: {fileID: 1828772947}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &67342552 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5257721976129500998, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+  m_PrefabInstance: {fileID: 1828772947}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67342550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &69138289
 GameObject:
   m_ObjectHideFlags: 0
@@ -11963,11 +11979,14 @@ MonoBehaviour:
   talkPressed: 0
   talkButton: {fileID: 86594102506547323}
   objectiveText: {fileID: 217664636}
-  objectiveText1: {fileID: 1828772949}
+  objectiveText1: {fileID: 1150390271}
   objectiveText2: {fileID: 250109789}
   obstacle: {fileID: 817578317}
   removeImage: {fileID: 1292526094}
   okayButton: {fileID: 115531885}
+  imagegray: {fileID: 816138463}
+  image1: {fileID: 67342550}
+  image2: {fileID: 1674525491}
   timetowait: 15
 --- !u!4 &200112356
 Transform:
@@ -21208,6 +21227,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 350501717}
   m_Mesh: {fileID: 2619086233303812490, guid: 32188e4d73be93240b4895385cb19d22, type: 3}
+--- !u!114 &350546706 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6185124905599936669, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+  m_PrefabInstance: {fileID: 1828772947}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150390271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &352567056
 GameObject:
   m_ObjectHideFlags: 0
@@ -30145,10 +30175,11 @@ MonoBehaviour:
   deactivateCurrent: {fileID: 25174393}
   DestroyOnExit: {fileID: 515623409}
   InteractButton: {fileID: 577062108}
-  fastenObjectiveText: {fileID: 0}
+  fastenObjectiveText: {fileID: 350546706}
   fastenObjective: Assist passengers to fasten their seatbelts. (2/2)
   defaultChair: {fileID: 308885081}
   hideDefaultChair: {fileID: 515623409}
+  bullet: {fileID: 67342552}
 --- !u!114 &515623420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47431,6 +47462,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 814242002}
   m_Mesh: {fileID: -2467407757028006603, guid: 32188e4d73be93240b4895385cb19d22, type: 3}
+--- !u!114 &816138463 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1789646124272836412, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+  m_PrefabInstance: {fileID: 1828772947}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &817426928
 GameObject:
   m_ObjectHideFlags: 0
@@ -65668,6 +65710,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1395533272}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1150390271 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7764900007537636698, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+  m_PrefabInstance: {fileID: 1828772947}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1151861438
 GameObject:
   m_ObjectHideFlags: 0
@@ -96091,6 +96138,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1674314049}
   m_Mesh: {fileID: 7450065959456330501, guid: 32188e4d73be93240b4895385cb19d22, type: 3}
+--- !u!1 &1674525491 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 380000521152894526, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+  m_PrefabInstance: {fileID: 1828772947}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1676431503
 GameObject:
   m_ObjectHideFlags: 0
@@ -106203,6 +106255,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2013904750}
     m_Modifications:
+    - target: {fileID: 380000521152894526, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 763033131838251802, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: m_Name
       value: PopUpWindow
@@ -106363,6 +106419,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8589743369619235542, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9115571081633994796, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -1.8
@@ -106378,11 +106438,6 @@ PrefabInstance:
 --- !u!4 &1828772948 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5730837884929972500, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
-  m_PrefabInstance: {fileID: 1828772947}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1828772949 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7764900007537636698, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
   m_PrefabInstance: {fileID: 1828772947}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1833160803
@@ -115889,7 +115944,7 @@ MonoBehaviour:
   seatbeltObject: {fileID: 5184647976002160255}
   InteractButton: {fileID: 577062108}
   DestroyOnExit: {fileID: 1996033551}
-  fastenObjectiveText: {fileID: 0}
+  fastenObjectiveText: {fileID: 217664636}
   fastenObjective: Assist passengers to fasten their seatbelts. (1/2)
   defaultChair: {fileID: 669274780}
   hideDefaultChair: {fileID: 1996033551}
