@@ -8,7 +8,7 @@ public class PreflightScript : MonoBehaviour
 {
     public GameObject objectIndicator;
     public GameObject startLevelObject;
-
+    public GameObject obstacle;
     public FixedTalkButton talkButton;
 
     [SerializeField] Animator popupAnimator;
@@ -17,6 +17,7 @@ public class PreflightScript : MonoBehaviour
     {
         if (talkButton.Pressed == true)
         {
+            obstacle.GetComponent<BoxCollider>().enabled = false;
             objectIndicator.SetActive(true);
             startLevelObject.SetActive(true);
             popupAnimator.Play("PopUpAnimation");
