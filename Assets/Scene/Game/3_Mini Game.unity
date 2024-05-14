@@ -11475,8 +11475,8 @@ MonoBehaviour:
   manager: {fileID: 1054514440}
   fixedExtinguish: {fileID: 269301057}
   objective: {fileID: 1304250769}
-  objectiveText1: {fileID: 1429166143}
-  extObjectiveText: {fileID: 1429166143}
+  objectiveText1: {fileID: 0}
+  extObjectiveText: {fileID: 0}
   extObjective: Extinguish all the flames that have spawned. (2/2)
   objectiveID: 2
   removeButton: {fileID: 269301055}
@@ -12557,7 +12557,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8d5d484e90eee23419561820a3b819fe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 556470c470edf334d9695242009a957c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17755,7 +17755,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8d5d484e90eee23419561820a3b819fe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 556470c470edf334d9695242009a957c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -34982,9 +34982,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fixedExtinguish: {fileID: 6019915763898676062}
   objective: {fileID: 1304250769}
-  objectiveText1: {fileID: 1429166143}
+  objectiveText1: {fileID: 0}
   extObjective: Extinguish all the flames that have spawned. (1/2)
-  extObjectiveText: {fileID: 1429166143}
+  extObjectiveText: {fileID: 0}
   objectiveID: 1
   popupAnimator: {fileID: 859384722}
   Oven: {fileID: 1769317676}
@@ -41500,17 +41500,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 182755402ea6e2446bb98cd97a474eaa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1429166143 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4839202560351081131, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
-  m_PrefabInstance: {fileID: 1429166141}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1436346728
