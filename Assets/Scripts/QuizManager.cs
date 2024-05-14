@@ -119,18 +119,18 @@ public class QuizManager : MonoBehaviour
 
         if (activeSceneIndex == 16)
         {
-            TimeLeftA.text = lopTime.ToString() + "seconds";
-            TimeLeftM.text = lopMiniTime.ToString() + "seconds";
+            TimeLeftA.text = lopTime.ToString() + " seconds";
+            TimeLeftM.text = lopMiniTime.ToString() + " seconds";
         }
         else if (activeSceneIndex == 22)
         {
-            TimeLeftA.text = fobTime.ToString() + "seconds";
-            TimeLeftM.text = fobMiniTime.ToString() + "seconds";
+            TimeLeftA.text = fobTime.ToString() + " seconds";
+            TimeLeftM.text = fobMiniTime.ToString() + " seconds";
         }
         else if (activeSceneIndex == 28)
         {
-            TimeLeftA.text = waterTime.ToString() + "seconds";
-            TimeLeftM.text = waterMiniTime.ToString() + "seconds";
+            TimeLeftA.text = waterTime.ToString() + " seconds";
+            TimeLeftM.text = waterMiniTime.ToString() + " seconds";
         }
         else
         {
