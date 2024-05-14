@@ -22,11 +22,11 @@ public class QuizManager : MonoBehaviour
     public GameObject TryAgainPanel;
     public GameObject timer;
     public GameObject stars;
-    public TMP_Text TimeLeftA;
-    public TMP_Text TimeLeftM;
-    public TMP_Text ObjDone;
-    public TMP_Text FireLeft;
-    public TMP_Text LifeVestGiven;
+    //public TMP_Text TimeLeftA;
+    //public TMP_Text TimeLeftM;
+    //public TMP_Text ObjDone;
+    //public TMP_Text FireLeft;
+   // public TMP_Text LifeVestGiven;
     public TMP_Text QuestionTxt;
     public Text ScoreTxt;
     public Text SimScoreTxt;
