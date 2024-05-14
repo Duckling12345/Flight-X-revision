@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class EndScene : MonoBehaviour
 {
@@ -13,6 +15,9 @@ public class EndScene : MonoBehaviour
     public GameObject playerUI;
     public GameObject timer;
     public GameObject stars;
+    public UnityEngine.UI.Slider simSlider;
+    public Text SimScoreTxt;
+    public int simScore;
 
     // Update is called once per frame
     void Update()
@@ -26,6 +31,13 @@ public class EndScene : MonoBehaviour
         GetComponent<StarsHandler>().starsAchieved();
         timer.SetActive(false);
         stars.SetActive(false);
+
+        simSlider.value = simScore;
+
+        //percentage results
+        float simScorePercentage = ((float)simScore / (float)simScore) * 100f;
+        SimScoreTxt.text = Mathf.RoundToInt(simScorePercentage) + "%";
+
     }
     private void FadetoBlack()
     {
