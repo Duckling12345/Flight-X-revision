@@ -1581,7 +1581,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   QnA:
-  - Questions: What is the very first thing that a cabin crew should do when boarding
+  - images: {fileID: 21300000, guid: 5e8674fca66f3254e860f2b394ccd722, type: 3}
+    Questions: What is the very first thing that a cabin crew should do when boarding
       the aircraft?
     Answers:
     - Proceed with boarding passengers without checking for safety hazards.
@@ -1589,7 +1590,8 @@ MonoBehaviour:
     - 'Engage in casual talk with the cabin crew before flight take-off. '
     - 'Inspect the chairs to ensure that they are fully equipped with life vests. '
     CorrectAnswer: 4
-  - Questions: Why is it important to verify the presence of life vests and oxygen
+  - images: {fileID: 21300000, guid: 1ea6890071ae24643b3f7ce0618a1af8, type: 3}
+    Questions: Why is it important to verify the presence of life vests and oxygen
       masks before flight?
     Answers:
     - To impress passengers with our attention to detail.
@@ -1597,7 +1599,8 @@ MonoBehaviour:
     - To save costs on unnecessary maintenance.
     - To create more storage space in the cabin.
     CorrectAnswer: 2
-  - Questions: Which of the following correctly describes the first step in fastening
+  - images: {fileID: 21300000, guid: 1f9fa54c4cacc654fac18671c497d846, type: 3}
+    Questions: Which of the following correctly describes the first step in fastening
       a seatbelt?
     Answers:
     - 'First, insert the seat belt buckle to the other end. '
@@ -1605,7 +1608,8 @@ MonoBehaviour:
     - 'First, lift the buckle towards you. '
     - 'First, rotate the buckle counterclockwise to open it. '
     CorrectAnswer: 1
-  - Questions: 'What is the correct sequence in using a life vest? '
+  - images: {fileID: 21300000, guid: 1f9fa54c4cacc654fac18671c497d846, type: 3}
+    Questions: 'What is the correct sequence in using a life vest? '
     Answers:
     - Place the life vest over your head, secure loose ends, and get it under your
       seat.
@@ -1616,7 +1620,8 @@ MonoBehaviour:
     - Retrieve the life vest under your seat, secure loose ends, and place it over
       your head.
     CorrectAnswer: 4
-  - Questions: What is the first procedure in opening an aircraft door?
+  - images: {fileID: 21300000, guid: e0ae6261130f34446aebdf1fc2e9b29b, type: 3}
+    Questions: What is the first procedure in opening an aircraft door?
     Answers:
     - Get permission from the cabin crew head.
     - Turn the handle diagonally.
@@ -1628,7 +1633,7 @@ MonoBehaviour:
   - {fileID: 1494574200}
   - {fileID: 1387640512}
   - {fileID: 1403151973}
-  correctAnswerImage: {fileID: 0}
+  changeImage: {fileID: 1321888041}
   currentQuestion: 0
   number: 0
   proceedButton: {fileID: 1895910320}
@@ -1637,8 +1642,6 @@ MonoBehaviour:
   Quizpanel: {fileID: 1858063861}
   GoPanel: {fileID: 815517587}
   TryAgainPanel: {fileID: 1278977544}
-  timer: {fileID: 0}
-  stars: {fileID: 0}
   QuestionTxt: {fileID: 1327256610}
   ScoreTxt: {fileID: 1471661866}
   SimScoreTxt: {fileID: 1267553539}

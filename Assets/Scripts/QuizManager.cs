@@ -10,7 +10,7 @@ public class QuizManager : MonoBehaviour
 {
     public List<QuestionsAndAnswers> QnA;
     public GameObject[] options;
-    public GameObject correctAnswerImage;
+    public Image changeImage;
     public int currentQuestion;
     public int number;
     public Button proceedButton;
@@ -201,6 +201,7 @@ public class QuizManager : MonoBehaviour
         {
             currentQuestion = Random.Range(0, QnA.Count);
 
+            changeImage.sprite = QnA[currentQuestion].images;
             QuestionTxt.text = QnA[currentQuestion].Questions;
             SetAnswers();
         }
