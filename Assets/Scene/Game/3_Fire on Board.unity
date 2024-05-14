@@ -2646,7 +2646,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 3
+  m_MaxValue: 4
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -14085,7 +14085,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: pre-flight checking | simulation
+  m_text: fire onboard | simulation
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 16806facce1c5e74b8ab05d6cd12a50c, type: 2}
   m_sharedMaterial: {fileID: 828406689421002274, guid: 16806facce1c5e74b8ab05d6cd12a50c, type: 2}
@@ -110810,6 +110810,9 @@ MonoBehaviour:
   playerUI: {fileID: 7677441605818994117}
   timer: {fileID: 1054514439}
   stars: {fileID: 1227980470}
+  simSlider: {fileID: 195186886}
+  SimScoreTxt: {fileID: 1747990790}
+  simScore: 4
 --- !u!114 &9149842193823408358
 MonoBehaviour:
   m_ObjectHideFlags: 0
