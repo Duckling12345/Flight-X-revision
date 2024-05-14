@@ -2968,22 +2968,6 @@ Transform:
   - {fileID: 1535365813}
   m_Father: {fileID: 61147643}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &168474760 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6076027503749943484, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
-  m_PrefabInstance: {fileID: 1503992375}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &168474762 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3233516841238655136, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
-  m_PrefabInstance: {fileID: 1503992375}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 168474760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &169966564
 GameObject:
   m_ObjectHideFlags: 0
@@ -19255,15 +19239,15 @@ PrefabInstance:
     - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: objectiveText
       value: 
-      objectReference: {fileID: 1650401922}
+      objectReference: {fileID: 0}
     - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: objectiveText1
       value: 
-      objectReference: {fileID: 1901369158}
+      objectReference: {fileID: 0}
     - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: objectiveText2
       value: 
-      objectReference: {fileID: 168474762}
+      objectReference: {fileID: 0}
     - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: objectives.Array.size
       value: 1
@@ -20735,17 +20719,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1243291640}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1650401922 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4839202560351081131, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
-  m_PrefabInstance: {fileID: 1503992375}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1653440896
 GameObject:
   m_ObjectHideFlags: 0
@@ -24671,22 +24644,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 420061107}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1901369156 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2679727714808082925, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
-  m_PrefabInstance: {fileID: 1503992375}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1901369158 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4376703330661181225, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
-  m_PrefabInstance: {fileID: 1503992375}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1901369156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1902370816 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 725214113357079277, guid: be1c6179ad509a04c81fbb87d14e6dcd, type: 3}
@@ -25126,8 +25083,8 @@ MonoBehaviour:
   talkPressed: 0
   talkButton: {fileID: 0}
   objectiveText: {fileID: 0}
-  objectiveText1: {fileID: 1901369156}
-  objectiveText2: {fileID: 168474760}
+  objectiveText1: {fileID: 0}
+  objectiveText2: {fileID: 0}
   obstacle: {fileID: 0}
   removeImage: {fileID: 0}
   okayButton: {fileID: 0}
@@ -27855,7 +27812,7 @@ Animator:
   m_GameObject: {fileID: 6594044719989796842}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 2fca62f8c9bc6514e83698e917daa3b4, type: 3}
-  m_Controller: {fileID: 9100000, guid: 85870ecc8fb5dec44bfcafc57e969997, type: 2}
+  m_Controller: {fileID: 9100000, guid: f88ee575e238c694da1cbe4f6a0f5292, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -32709,7 +32666,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 577a1223906649a49a6dc0457887441a, type: 2}
+  - {fileID: 2100000, guid: 6f6da0cffd0a87740bd1734566368aa6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
