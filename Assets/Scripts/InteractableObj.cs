@@ -20,8 +20,10 @@ public class InteractableObj : MonoBehaviour, IInteractable
     public string inspectObjective;
     [SerializeField] Animator cameraAnimation;
     [SerializeField] Animator pouchAnimation;
+    [SerializeField] Animator handsAnimation;
     public string cameraStateName;
     public string pouchStateName;
+    public string handsStateName;
     public GameObject DestroyOnExit;
     public GameObject InteractButton;
 
@@ -49,6 +51,7 @@ public class InteractableObj : MonoBehaviour, IInteractable
     public void delayAnimation()
     {
         pouchAnimation.Play(pouchStateName);
+        handsAnimation.Play(handsStateName);
 
     }
 
