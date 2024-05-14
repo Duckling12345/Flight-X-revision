@@ -2566,7 +2566,7 @@ GameObject:
   - component: {fileID: 89892644}
   - component: {fileID: 89892643}
   m_Layer: 5
-  m_Name: FireLeft
+  m_Name: LifeVestGiven
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2591,7 +2591,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 122.2, y: -44.300007}
+  m_AnchoredPosition: {x: 113.6, y: -44.300007}
   m_SizeDelta: {x: 236.0627, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &89892643
@@ -2614,7 +2614,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Fire put out:'
+  m_text: 'Life vest given:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d83bb61e69a0f8b4ea9ac92236e1d1c9, type: 2}
   m_sharedMaterial: {fileID: -1647058024891107762, guid: d83bb61e69a0f8b4ea9ac92236e1d1c9, type: 2}
@@ -4311,7 +4311,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: fire onboard | Mini game
+  m_text: water landing | Mini game
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 16806facce1c5e74b8ab05d6cd12a50c, type: 2}
   m_sharedMaterial: {fileID: 828406689421002274, guid: 16806facce1c5e74b8ab05d6cd12a50c, type: 2}
@@ -8912,17 +8912,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 377725122}
   m_Mesh: {fileID: 3082274683875998346, guid: 0ed6cb86ff7dec540b688465e9d4e214, type: 3}
---- !u!114 &384817500 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4839202560351081131, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
-  m_PrefabInstance: {fileID: 484786694}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &387517472
 GameObject:
   m_ObjectHideFlags: 0
@@ -11160,7 +11149,7 @@ PrefabInstance:
     - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: objectiveText
       value: 
-      objectReference: {fileID: 384817500}
+      objectReference: {fileID: 0}
     - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: objectiveList.Array.size
       value: 4
@@ -11250,43 +11239,11 @@ PrefabInstance:
       addedObject: {fileID: 1800440752}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
---- !u!1 &484786695 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6076027503749943484, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
-  m_PrefabInstance: {fileID: 484786694}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &484786696 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2679727714808082925, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
-  m_PrefabInstance: {fileID: 484786694}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &484786697 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3233516841238655136, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
-  m_PrefabInstance: {fileID: 484786694}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 484786695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &484786698 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5730837884929972500, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
   m_PrefabInstance: {fileID: 484786694}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &484786701 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4376703330661181225, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
-  m_PrefabInstance: {fileID: 484786694}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 484786696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &486753839
 GameObject:
   m_ObjectHideFlags: 0
@@ -24928,8 +24885,8 @@ MonoBehaviour:
   Pressed: 0
   player: {fileID: 4159898161269825087}
   lookCapsule: {fileID: 0}
-  objectiveText1: {fileID: 484786701}
-  objectiveText2: {fileID: 484786697}
+  objectiveText1: {fileID: 0}
+  objectiveText2: {fileID: 0}
   objective: {fileID: 0}
   objectiveID: 1
   statetoPlay: DitchingOpen
@@ -25049,9 +25006,9 @@ MonoBehaviour:
   myConversation: {fileID: 1586189547}
   talkPressed: 0
   talkButton: {fileID: 86594103083225601}
-  objectiveText: {fileID: 384817500}
-  objectiveText1: {fileID: 484786696}
-  objectiveText2: {fileID: 484786695}
+  objectiveText: {fileID: 0}
+  objectiveText1: {fileID: 0}
+  objectiveText2: {fileID: 0}
   obstacle: {fileID: 2042260180}
   removeImage: {fileID: 1116827222}
   okayButton: {fileID: 1116827224}
@@ -28252,7 +28209,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -29.8, y: 5}
+  m_AnchoredPosition: {x: 7.0999107, y: 5}
   m_SizeDelta: {x: 100, y: 33.7218}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1118408297
@@ -28275,7 +28232,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2 finished
+  m_text: 2 lifevests
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d83bb61e69a0f8b4ea9ac92236e1d1c9, type: 2}
   m_sharedMaterial: {fileID: -1647058024891107762, guid: d83bb61e69a0f8b4ea9ac92236e1d1c9, type: 2}
@@ -34569,7 +34526,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -37.799973, y: 6}
+  m_AnchoredPosition: {x: -0.9, y: 6}
   m_SizeDelta: {x: 176.9896, y: 69.5212}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1442197786
@@ -46141,7 +46098,7 @@ GameObject:
   - component: {fileID: 1892434776}
   - component: {fileID: 1892434777}
   m_Layer: 0
-  m_Name: LevelResult(MGOLD
+  m_Name: LevelResult(MG)OLD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49436,7 +49393,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2d7931422ecb5f649ba2c40f5a4cca26, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 86da5435befbdd54798cf26c9cd889ad, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
