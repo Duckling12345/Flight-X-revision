@@ -2,6 +2,7 @@ using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ExitScene : MonoBehaviour
 {
@@ -11,7 +12,10 @@ public class ExitScene : MonoBehaviour
     public GameObject levelResult;
     public GameObject playerUI;
     public GameObject timer;
-    public GameObject stars; 
+    public GameObject stars;
+    public UnityEngine.UI.Slider simSlider;
+    public Text SimScoreTxt;
+    public int simScore;
 
     void LevelResult()
     {
@@ -20,6 +24,12 @@ public class ExitScene : MonoBehaviour
         GetComponent<StarsHandler>().starsAchieved();
         timer.SetActive(false);
         stars.SetActive(false);
+
+        simSlider.value = simScore;
+
+        //percentage results
+        float simScorePercentage = ((float)simScore / (float)simScore) * 100f;
+        SimScoreTxt.text = Mathf.RoundToInt(simScorePercentage) + "%";
     }
     private void OnTriggerEnter(Collider other)
     {
