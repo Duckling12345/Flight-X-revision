@@ -43,7 +43,7 @@ public class PopupWindow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
                 ShowPopup("Level 2 | Loss of Pressurization");
                 break;
 
-            case 13:
+            case 14:
                 ShowPopup("Level 2 | Loss of Pressurization");
                 break;
 
@@ -67,7 +67,7 @@ public class PopupWindow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
                 ShowPopup("Level 4 | Water Landing");
                 break;
 
-            case 25:
+            case 26:
                 ShowPopup("Level 4 | Water Landing");
                 break;
 
