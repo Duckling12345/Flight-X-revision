@@ -20,6 +20,13 @@ public class QuizManager : MonoBehaviour
     public GameObject Quizpanel;
     public GameObject GoPanel;
     public GameObject TryAgainPanel;
+    public GameObject timer;
+    public GameObject stars;
+    public TMP_Text TimeLeftA;
+    public TMP_Text TimeLeftM;
+    public TMP_Text ObjDone;
+    public TMP_Text FireLeft;
+    public TMP_Text LifeVestGiven;
     public TMP_Text QuestionTxt;
     public Text ScoreTxt;
     public Text SimScoreTxt;
@@ -74,6 +81,8 @@ public class QuizManager : MonoBehaviour
 
         Quizpanel.SetActive(false);
         GoPanel.SetActive(true);
+        GetComponent<StarsHandler>().starsAchieved();
+        stars.SetActive(true);
 
         testSlider.value = score;
         simSlider.value = simScore;
@@ -88,7 +97,13 @@ public class QuizManager : MonoBehaviour
         //ScoreTxt.text =  score + "/" + totalQuestions;
         //SimScoreTxt.text = simScore + "/" + simScore;
 
-    }
+        //convert to text
+        //TimeLeftA.txt =
+        //TimeLeftM.txt =
+        //ObjDone.txt =
+        //FireLeft.txt =
+        //LifeVestGiven.txt =
+}
 
     public void correct()
     {
