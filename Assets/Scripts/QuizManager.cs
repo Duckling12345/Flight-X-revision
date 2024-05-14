@@ -44,17 +44,12 @@ public class QuizManager : MonoBehaviour
 
     public void Start()
     {
-    int lopTime = PlayerPrefs.GetInt("lopTime", 0);
-    int lopMiniTime = PlayerPrefs.GetInt("lopMiniTime", 0);
-    int fobTime = PlayerPrefs.GetInt("fobTime", 0);
-    int fobMiniTime = PlayerPrefs.GetInt("fobMiniTime", 0);
-    int waterTime = PlayerPrefs.GetInt("waterTime", 0);
-    int waterMiniTime = PlayerPrefs.GetInt("waterMiniTime", 0);
     number = 1;
         totalQuestions = QnA.Count;
         QuestionNum.text = "Question " + number.ToString() + "/" + totalQuestions;
         GoPanel.SetActive(false);
         generateQuestions();
+        ShowResults();
         Debug.Log("Current number:" + number);
     }
 
@@ -112,22 +107,30 @@ public class QuizManager : MonoBehaviour
 
     public void ShowResults()
     {
+        int lopTime = PlayerPrefs.GetInt("lopTime", 0);
+        int lopMiniTime = PlayerPrefs.GetInt("lopMiniTime", 0);
+        int fobTime = PlayerPrefs.GetInt("fobTime", 0);
+        int fobMiniTime = PlayerPrefs.GetInt("fobMiniTime", 0);
+        int waterTime = PlayerPrefs.GetInt("waterTime", 0);
+        int waterMiniTime = PlayerPrefs.GetInt("waterMiniTime", 0);
+
+
         int activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
 
         if (activeSceneIndex == 16)
         {
-            TimeLeftA.text = lopTime.ToString();
-            TimeLeftM.text = lopMiniTime.ToString();
+            TimeLeftA.text = lopTime.ToString() + "seconds";
+            TimeLeftM.text = lopMiniTime.ToString() + "seconds";
         }
         else if (activeSceneIndex == 22)
         {
-            TimeLeftA.text = fobTime.ToString();
-            TimeLeftM.text = fobMiniTime.ToString();
+            TimeLeftA.text = fobTime.ToString() + "seconds";
+            TimeLeftM.text = fobMiniTime.ToString() + "seconds";
         }
         else if (activeSceneIndex == 28)
         {
-            TimeLeftA.text = waterTime.ToString();
-            TimeLeftM.text = waterMiniTime.ToString();
+            TimeLeftA.text = waterTime.ToString() + "seconds";
+            TimeLeftM.text = waterMiniTime.ToString() + "seconds";
         }
         else
         {
