@@ -13,6 +13,11 @@ public class tester : MonoBehaviour
         Debug.Log("object destroyed");
     }
 
+    private void OnDestroy()
+    {
+        PlayErrorSound();
+        Debug.Log("object destroyed");
+    }
 
     void PlayErrorSound()
     {

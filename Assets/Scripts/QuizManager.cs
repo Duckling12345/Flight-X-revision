@@ -27,7 +27,7 @@ public class QuizManager : MonoBehaviour
     public Text ScoreTxt;
     public Text SimScoreTxt;
     public TMP_Text QuestionNum;
-
+    public TMP_Text StarText;
     int totalQuestions = 0;
     public int score;
     public int simScore;
@@ -113,7 +113,9 @@ public class QuizManager : MonoBehaviour
         int fobMiniTime = PlayerPrefs.GetInt("fobMiniTime", 0);
         int waterTime = PlayerPrefs.GetInt("waterTime", 0);
         int waterMiniTime = PlayerPrefs.GetInt("waterMiniTime", 0);
-
+        int lopStars = PlayerPrefs.GetInt("lopStar", 0);
+        int fobtars = PlayerPrefs.GetInt("fobStar", 0);
+        int waterStars = PlayerPrefs.GetInt("waterStar", 0);
 
         int activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
 
@@ -121,16 +123,19 @@ public class QuizManager : MonoBehaviour
         {
             TimeLeftA.text = lopTime.ToString() + " seconds";
             TimeLeftM.text = lopMiniTime.ToString() + " seconds";
+            StarText.text = lopStars.ToString();
         }
         else if (activeSceneIndex == 22)
         {
             TimeLeftA.text = fobTime.ToString() + " seconds";
             TimeLeftM.text = fobMiniTime.ToString() + " seconds";
+            StarText.text = lopStars.ToString();
         }
         else if (activeSceneIndex == 28)
         {
             TimeLeftA.text = waterTime.ToString() + " seconds";
             TimeLeftM.text = waterMiniTime.ToString() + " seconds";
+            StarText.text = lopStars.ToString();
         }
         else
         {
