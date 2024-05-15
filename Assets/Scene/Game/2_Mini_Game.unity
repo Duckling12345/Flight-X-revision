@@ -22109,7 +22109,7 @@ MonoBehaviour:
   buttons: {fileID: 7677441607108472253}
   PlayerAnimation: {fileID: 433804163}
   transitionAnim: {fileID: 1381748872}
-  handsAnim: {fileID: 995483818}
+  handsAnim: {fileID: 0}
   soundSource: {fileID: 1710828449}
   failedSound: {fileID: 8300000, guid: 84153692aebc7c647b7b38276d5af2b7, type: 3}
   stateName: Lean Back
@@ -48747,7 +48747,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 995483817}
-  - component: {fileID: 995483818}
   m_Layer: 0
   m_Name: Annie-V2-arms-rigged
   m_TagString: Untagged
@@ -48763,7 +48762,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 995483816}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.068519324, y: 0.7142595, z: -0.010425477, w: -0.6964408}
+  m_LocalRotation: {x: -0.068088256, y: 0.68809134, z: -0.012945151, w: -0.72230667}
   m_LocalPosition: {x: 0.05, y: -0.13, z: -0.02}
   m_LocalScale: {x: 0.042030018, y: 0.041759994, z: 0.042440016}
   m_ConstrainProportionsScale: 0
@@ -48771,28 +48770,7 @@ Transform:
   - {fileID: 685559945}
   - {fileID: 2085031629}
   m_Father: {fileID: 433804154}
-  m_LocalEulerAnglesHint: {x: 6.334, y: 268.286, z: -4.811}
---- !u!95 &995483818
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 995483816}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6045cfbf844fe15479bc371824a361f3, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_LocalEulerAnglesHint: {x: 6.671, y: 272.527, z: -4.331}
 --- !u!1 &996732367
 GameObject:
   m_ObjectHideFlags: 0
