@@ -11,8 +11,10 @@ public class SeatbeltScript : MonoBehaviour, IPointerUpHandler, IPointerDownHand
     public bool Pressed;
     public FixedSeatbeltButton fixedSeatbelt;
     [SerializeField] Animator BuckleAnim;
+    [SerializeField] Animator FastenAnim;
     public GameObject CameraAnimation;
     public string StateName;
+    public string HandsStateName;
     public GameObject tempDisable;
     public Shake shaker;
     public GameObject activateNext;
