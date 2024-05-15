@@ -39,6 +39,7 @@ public class SeatbeltScript : MonoBehaviour, IPointerUpHandler, IPointerDownHand
     {
         CameraAnimation.SetActive(true);
         BuckleAnim.Play(StateName);
+        FastenAnim.Play(HandsStateName);
         tempDisable.SetActive(false);
         activateNext.SetActive(true);
         deactivateCurrent.SetActive(false);
