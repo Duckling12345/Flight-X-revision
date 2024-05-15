@@ -15,6 +15,7 @@ public class LossSequenceCheck : MonoBehaviour
     public GameObject buttons;
     [SerializeField] Animator PlayerAnimation;
     [SerializeField] Animator transitionAnim;
+    [SerializeField] Animator handsAnim;
     [SerializeField] AudioSource soundSource;
     [SerializeField] AudioClip failedSound;
 
@@ -24,6 +25,7 @@ public class LossSequenceCheck : MonoBehaviour
     public string stateName;
     public string stateName2;
     public string stateName3;
+    public string stateName4;
 
 
     public int delayTime;
