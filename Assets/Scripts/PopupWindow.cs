@@ -55,12 +55,12 @@ public class PopupWindow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
                 ShowPopup("Level 3 | Fire on Board");
                 break;
 
-            case 21:
-                ShowPopup("Level 3 | Mini Game");
-                break;
-
             case 20:
                 ShowPopup("Level 3 | Fire on Board");
+                break;
+
+            case 21:
+                ShowPopup("Level 3 | Mini Game");
                 break;
 
             case 24:
@@ -99,12 +99,10 @@ public class PopupWindow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         else if (clipPressed && scene.buildIndex == 18 || clipPressed && scene.buildIndex == 20)
         {
             ShowPopup("Level 3 | Fire on Board");
-
         }
         else if (clipPressed && scene.buildIndex == 21)
         {
             ShowPopup("Level 3 | Mini Game");
-
         }
         else if (clipPressed && scene.buildIndex == 24 || clipPressed && scene.buildIndex == 26)
         {
@@ -114,7 +112,7 @@ public class PopupWindow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         {
             ShowPopup("Level 4 | Mini Game");
         }
-        else if(clipPressed)
+        else if(clipPressed && scene.buildIndex == 8)
         {
             ShowPopup("Level 1 | In-Flight Safety Demo");
         }

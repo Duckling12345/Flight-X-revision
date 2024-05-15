@@ -18827,6 +18827,9 @@ MonoBehaviour:
   obstacle: {fileID: 817578317}
   removeImage: {fileID: 1292526094}
   okayButton: {fileID: 115531885}
+  imagegray: {fileID: 0}
+  image1: {fileID: 0}
+  image2: {fileID: 0}
   timetowait: 15
 --- !u!65 &375874053
 BoxCollider:
@@ -90565,6 +90568,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+      propertyPath: ObjectiveNotification
+      value: 
+      objectReference: {fileID: 1828772949}
+    - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: objectiveList.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -90628,6 +90635,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7764900007537636698, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361403582631174425, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9115571081633994796, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -1.8
@@ -90640,6 +90655,11 @@ PrefabInstance:
 --- !u!4 &1828772948 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5730837884929972500, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+  m_PrefabInstance: {fileID: 1828772947}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1828772949 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8742887742385978632, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
   m_PrefabInstance: {fileID: 1828772947}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1833160803

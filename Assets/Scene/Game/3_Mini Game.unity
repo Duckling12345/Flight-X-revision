@@ -6474,6 +6474,17 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &252334665 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1789646124272836412, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+  m_PrefabInstance: {fileID: 1429166141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &255135895
 GameObject:
   m_ObjectHideFlags: 0
@@ -6523,6 +6534,7 @@ GameObject:
   - component: {fileID: 262700443}
   - component: {fileID: 262700442}
   - component: {fileID: 262700441}
+  - component: {fileID: 262700450}
   m_Layer: 0
   m_Name: WildFire
   m_TagString: Untagged
@@ -11486,6 +11498,7 @@ MonoBehaviour:
   timer: {fileID: 1054514439}
   stopAnimation: {fileID: 853125438}
   popupAnimator: {fileID: 859384722}
+  gray: {fileID: 262700450}
   fireScript: {fileID: 262700445}
   partikol: {fileID: 262700447}
 --- !u!114 &262700449
@@ -11506,6 +11519,19 @@ MonoBehaviour:
   TimeLeft: {fileID: 1294718597}
   FireLeft: {fileID: 851738770}
   Rewards: {fileID: 996358092}
+--- !u!114 &262700450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262700439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abd1c4fe6af91b24997accb26f77a1dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bullet: {fileID: 252334665}
 --- !u!1 &269301055
 GameObject:
   m_ObjectHideFlags: 0
@@ -41500,6 +41526,8 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 6076027503749943484, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
     - {fileID: 2679727714808082925, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+    - {fileID: 8361403582631174425, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+    - {fileID: 7764900007537636698, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}

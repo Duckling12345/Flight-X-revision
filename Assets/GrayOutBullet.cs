@@ -11,4 +11,8 @@ public class GrayOutBullet : MonoBehaviour
     {
         Bullet.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);
     }
+
+
+
+
 }

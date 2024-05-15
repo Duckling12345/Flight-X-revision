@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class ScanScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 {
+    public GrayOutBullet gray;
     public GameObject objectiveText3;
     public GameObject scanButton;
     public GameObject goBackButton; // Button to stand up
@@ -14,6 +16,8 @@ public class ScanScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
     public GameObject Activate;
     public FixedBackButton fixedBackbutton;
     public FixedScanButton fixedscanbutton;
+    public ActivateBullet activate;
+
 
     public Camera mainCamera;
     public Camera scanCamera;
@@ -27,6 +31,7 @@ public class ScanScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
     public ObjectiveScript objective;
     public int objectiveID;
     public string statetoPlay;
+    public Image image1;
 
     [SerializeField] Animator openDoor;
     [SerializeField] Animator popupAnimator;
@@ -65,6 +70,7 @@ public class ScanScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
         // Activate the stand button
         goBackButton.SetActive(true);
         DeactivateIndicator.SetActive(false);
+        image1.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);
 
     }
 
@@ -91,6 +97,8 @@ public class ScanScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
         ActivateIndicator.SetActive(true);
         Invoke("PlayAnimationLate", 1f);
         AudioManager.Instance.PlayDoorSound();
+        gray.GrayOutImage();
+        activate.activateBullet();
     }
 
 

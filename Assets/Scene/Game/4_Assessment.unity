@@ -19925,6 +19925,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 607584975}
   m_Mesh: {fileID: -8104378957584961196, guid: 0ed6cb86ff7dec540b688465e9d4e214, type: 3}
+--- !u!114 &608613030 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5257721976129500998, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+  m_PrefabInstance: {fileID: 484786694}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &609252570
 GameObject:
   m_ObjectHideFlags: 0
@@ -27804,6 +27815,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 848864994}
   m_Mesh: {fileID: 6244646720392471139, guid: 0ed6cb86ff7dec540b688465e9d4e214, type: 3}
+--- !u!1 &850208902 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 380000521152894526, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+  m_PrefabInstance: {fileID: 484786694}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &853896014
 GameObject:
   m_ObjectHideFlags: 0
@@ -34701,6 +34717,8 @@ GameObject:
   - component: {fileID: 1000881759}
   - component: {fileID: 1000881760}
   - component: {fileID: 1000881761}
+  - component: {fileID: 1000881762}
+  - component: {fileID: 1000881763}
   m_Layer: 0
   m_Name: plane body.004
   m_TagString: Untagged
@@ -34843,6 +34861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f2c667b1ba62d7468f0885baf2443f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gray: {fileID: 1000881762}
   objectiveText3: {fileID: 484786697}
   scanButton: {fileID: 1316225650}
   goBackButton: {fileID: 168173083}
@@ -34851,6 +34870,7 @@ MonoBehaviour:
   Activate: {fileID: 105034575}
   fixedBackbutton: {fileID: 168173085}
   fixedscanbutton: {fileID: 1316225655}
+  activate: {fileID: 1000881763}
   mainCamera: {fileID: 581820908262053716}
   scanCamera: {fileID: 1010017292}
   Pressed: 0
@@ -34861,6 +34881,7 @@ MonoBehaviour:
   objective: {fileID: 1825425661}
   objectiveID: 1
   statetoPlay: DitchingOpen
+  image1: {fileID: 1414570872}
   openDoor: {fileID: 1000881760}
   popupAnimator: {fileID: 686907482}
   ActivateIndicator: {fileID: 237376664}
@@ -34917,6 +34938,33 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!114 &1000881762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000881752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abd1c4fe6af91b24997accb26f77a1dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bullet: {fileID: 608613030}
+--- !u!114 &1000881763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000881752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e3b6996b5f78d14eb2116ac1e2d7d3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image3: {fileID: 850208902}
+  image2: {fileID: 850208902}
 --- !u!1 &1002282343
 GameObject:
   m_ObjectHideFlags: 0
@@ -48146,6 +48194,7 @@ GameObject:
   - component: {fileID: 1400605732}
   - component: {fileID: 1400605736}
   - component: {fileID: 1400605737}
+  - component: {fileID: 1400605738}
   m_Layer: 0
   m_Name: LastCheckStop
   m_TagString: Untagged
@@ -48281,6 +48330,8 @@ MonoBehaviour:
   ActivateFirstAid: {fileID: 925235497}
   soundSource: {fileID: 1400605737}
   checkpoint: {fileID: 8300000, guid: 1f6b242484078a84cb5c0dc3884dd126, type: 3}
+  bullet: {fileID: 1400605738}
+  bullet2: {fileID: 1000881763}
 --- !u!82 &1400605737
 AudioSource:
   m_ObjectHideFlags: 0
@@ -48377,6 +48428,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1400605738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400605730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b805706d863a1a4fbd7630f5a1a4f4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image1: {fileID: 1414570872}
+  image3: {fileID: 608613030}
+  image2: {fileID: 850208902}
 --- !u!1 &1400810691
 GameObject:
   m_ObjectHideFlags: 0
@@ -48990,6 +49056,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 567930342}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1414570872 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1789646124272836412, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+  m_PrefabInstance: {fileID: 484786694}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1418061737
 GameObject:
   m_ObjectHideFlags: 0
@@ -97778,6 +97855,7 @@ GameObject:
   - component: {fileID: 5404446116304915081}
   - component: {fileID: 5404446116304915083}
   - component: {fileID: 5404446116304915082}
+  - component: {fileID: 5404446116304915084}
   m_Layer: 0
   m_Name: Life-Vest
   m_TagString: Untagged
@@ -97887,6 +97965,19 @@ MonoBehaviour:
   ActivateIndicator: {fileID: 1842882543}
   DeactiveIndicator: {fileID: 143972936}
   WearVest: {fileID: 1652705178}
+--- !u!114 &5404446116304915084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5404446116304915079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abd1c4fe6af91b24997accb26f77a1dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bullet: {fileID: 1414570872}
 --- !u!4 &5413964703646568124
 Transform:
   m_ObjectHideFlags: 0

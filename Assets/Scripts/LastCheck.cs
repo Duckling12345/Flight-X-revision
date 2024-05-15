@@ -29,7 +29,10 @@ public class LastCheck : MonoBehaviour
     public GameObject ActivateFirstAid;
 
     public AudioSource soundSource;
-    public AudioClip checkpoint; 
+    public AudioClip checkpoint;
+
+    public BulletColor bullet;
+    public ActivateBullet bullet2;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -37,10 +40,12 @@ public class LastCheck : MonoBehaviour
                 DisableButton.SetActive(false);
                 objectiveText.text = changeObjectiveText;
                 objectiveText.color = Color.black;
+                bullet.ChangeColor();
 
                 objectiveText1.text = changeObjectiveText1;
                 objectiveText1.color = Color.black;
-
+                bullet.HideBullet();
+                bullet2.removeImage();
 
                 disableObjectiveText.SetActive(false);
                 disableObjectiveText2.SetActive(false);

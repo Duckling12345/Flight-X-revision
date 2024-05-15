@@ -20,6 +20,7 @@ public class MiniGameFire_2 : MonoBehaviour
     public GameObject stopAnimation;
     [SerializeField] Animator popupAnimator;
 
+    public GrayOutBullet gray;
     public FireScript fireScript;
     public ParticleSystem partikol;
 
@@ -28,6 +29,7 @@ public class MiniGameFire_2 : MonoBehaviour
         if (fixedExtinguish.buttonPressed == true && objective.objectivesDone == objectiveID)
         {
             objectiveText1.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);
+            gray.GrayOutImage();
             extObjectiveText.text = extObjective;
             Invoke("WaitAnimation", 1f);
             Invoke("playAnimation", 5f);
