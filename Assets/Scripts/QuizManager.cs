@@ -129,13 +129,13 @@ public class QuizManager : MonoBehaviour
         {
             TimeLeftA.text = fobTime.ToString() + " seconds";
             TimeLeftM.text = fobMiniTime.ToString() + " seconds";
-            StarText.text = lopStars.ToString();
+            StarText.text = fobtars.ToString();
         }
         else if (activeSceneIndex == 28)
         {
             TimeLeftA.text = waterTime.ToString() + " seconds";
             TimeLeftM.text = waterMiniTime.ToString() + " seconds";
-            StarText.text = lopStars.ToString();
+            StarText.text = waterStars.ToString();
         }
         else
         {

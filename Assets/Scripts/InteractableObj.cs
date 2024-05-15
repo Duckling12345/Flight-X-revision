@@ -26,6 +26,7 @@ public class InteractableObj : MonoBehaviour, IInteractable
     public string handsStateName;
     public GameObject DestroyOnExit;
     public GameObject InteractButton;
+    public GrayOutBullet grayout;
 
 
     private void Update()
@@ -63,6 +64,7 @@ public class InteractableObj : MonoBehaviour, IInteractable
         InteractButton.SetActive(false);
         defaultChair.SetActive(true);
         hideDefaultChair.SetActive(false);
+        grayout.GrayOutImage();
     }
 
 

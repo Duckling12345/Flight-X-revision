@@ -26776,6 +26776,17 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3035084371323256410, guid: 32188e4d73be93240b4895385cb19d22, type: 3}
+--- !u!114 &1802750443 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5257721976129500998, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+  m_PrefabInstance: {fileID: 8315565336048430138}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754630945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1805328074
 GameObject:
   m_ObjectHideFlags: 0
@@ -33301,6 +33312,7 @@ GameObject:
   - component: {fileID: 5532807414968636711}
   - component: {fileID: 5532807414968636712}
   - component: {fileID: 5532807414968636713}
+  - component: {fileID: 5532807414968636714}
   m_Layer: 0
   m_Name: ObjectiveChair
   m_TagString: Untagged
@@ -69705,6 +69717,7 @@ GameObject:
   - component: {fileID: 871321634}
   - component: {fileID: 5006660478134161948}
   - component: {fileID: 5006660478134161949}
+  - component: {fileID: 5006660478134161950}
   m_Layer: 0
   m_Name: ObjectiveChair
   m_TagString: Untagged
@@ -69743,6 +69756,7 @@ MonoBehaviour:
   handsStateName: InspectHand
   DestroyOnExit: {fileID: 5006660478134161947}
   InteractButton: {fileID: 6811448917328162198}
+  grayout: {fileID: 5006660478134161950}
 --- !u!114 &5006660478134161949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69761,6 +69775,19 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!114 &5006660478134161950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5006660478134161947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abd1c4fe6af91b24997accb26f77a1dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bullet: {fileID: 1802750443}
 --- !u!1 &5007767762203829556
 GameObject:
   m_ObjectHideFlags: 0
@@ -73743,6 +73770,7 @@ MonoBehaviour:
   handsStateName: 
   DestroyOnExit: {fileID: 318105776330187361}
   InteractButton: {fileID: 6811448917328162198}
+  grayout: {fileID: 5532807414968636714}
 --- !u!114 &5532807414968636711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73800,6 +73828,19 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!114 &5532807414968636714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318105776330187361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abd1c4fe6af91b24997accb26f77a1dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bullet: {fileID: 1802750443}
 --- !u!1 &5535450777651496061
 GameObject:
   m_ObjectHideFlags: 0

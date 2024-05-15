@@ -88,15 +88,15 @@ public class PopupWindow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         {
             ShowPopup("Level 1 | Pre-flight Checking");
         }
-        else if (clipPressed && scene.buildIndex == 12)
+        else if (clipPressed && scene.buildIndex == 12 || clipPressed && scene.buildIndex == 14)
         {
             ShowPopup("Level 2 | Loss of Pressurization");
         }
-        else if (clipPressed && scene.buildIndex == 14)
+        else if (clipPressed && scene.buildIndex == 15)
         {
             ShowPopup("Level 2 | Mini Game");
         }
-        else if (clipPressed && scene.buildIndex == 18)
+        else if (clipPressed && scene.buildIndex == 18 || clipPressed && scene.buildIndex == 20)
         {
             ShowPopup("Level 3 | Fire on Board");
 
@@ -106,14 +106,13 @@ public class PopupWindow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             ShowPopup("Level 3 | Mini Game");
 
         }
-        else if (clipPressed && scene.buildIndex == 24)
+        else if (clipPressed && scene.buildIndex == 24 || clipPressed && scene.buildIndex == 26)
         {
             ShowPopup("Level 4 | Water Landing");
         }
         else if (clipPressed && scene.buildIndex == 27)
         {
             ShowPopup("Level 4 | Mini Game");
-
         }
         else if(clipPressed)
         {
