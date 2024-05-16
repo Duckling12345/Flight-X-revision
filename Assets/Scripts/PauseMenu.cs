@@ -54,6 +54,7 @@ public class  PauseMenu : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     }
     public void RestartGame()
     {
+        Time.timeScale = 1f;
         pauseMenu.SetActive(false);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
