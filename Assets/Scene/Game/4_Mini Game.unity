@@ -23606,7 +23606,6 @@ GameObject:
   - component: {fileID: 1000881757}
   - component: {fileID: 1000881758}
   - component: {fileID: 1000881760}
-  - component: {fileID: 1000881761}
   m_Layer: 0
   m_Name: FinalDoor
   m_TagString: Untagged
@@ -23749,6 +23748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f2c667b1ba62d7468f0885baf2443f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gray: {fileID: 0}
   objectiveText3: {fileID: 1800440751}
   scanButton: {fileID: 1316225650}
   goBackButton: {fileID: 168173083}
@@ -23757,6 +23757,7 @@ MonoBehaviour:
   Activate: {fileID: 0}
   fixedBackbutton: {fileID: 168173085}
   fixedscanbutton: {fileID: 1316225655}
+  activate: {fileID: 0}
   mainCamera: {fileID: 581820908262053716}
   scanCamera: {fileID: 0}
   Pressed: 0
@@ -23767,6 +23768,7 @@ MonoBehaviour:
   objective: {fileID: 0}
   objectiveID: 1
   statetoPlay: DitchingOpen
+  image1: {fileID: 0}
   openDoor: {fileID: 1000881760}
   popupAnimator: {fileID: 686907482}
   ActivateIndicator: {fileID: 237376664}
@@ -23792,24 +23794,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1000881761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000881752}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.9607843, g: 1, b: 0, a: 1}
-  outlineWidth: 10
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1002282343
 GameObject:
   m_ObjectHideFlags: 0
@@ -23889,6 +23873,9 @@ MonoBehaviour:
   obstacle: {fileID: 2042260180}
   removeImage: {fileID: 1116827222}
   okayButton: {fileID: 1116827224}
+  imagegray: {fileID: 0}
+  image1: {fileID: 0}
+  image2: {fileID: 0}
   timetowait: 16
 --- !u!65 &1002282347
 BoxCollider:
