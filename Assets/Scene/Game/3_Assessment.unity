@@ -16355,6 +16355,7 @@ GameObject:
   - component: {fileID: 1525581169}
   - component: {fileID: 1525581168}
   - component: {fileID: 1525581174}
+  - component: {fileID: 1525581176}
   m_Layer: 0
   m_Name: Fire Extinguisher (1)
   m_TagString: Untagged
@@ -16539,6 +16540,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InteractButton: {fileID: 6811448917893529701}
   objectiveID: 0
+--- !u!114 &1525581176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525581165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15fc3ade60084b543b51913ff4183303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button1: {fileID: 1962049953}
+  wrongbutton: {fileID: 1962049955}
 --- !u!1 &1530648350
 GameObject:
   m_ObjectHideFlags: 0
@@ -21874,8 +21889,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 390, y: -341}
-  m_SizeDelta: {x: 400, y: 400}
+  m_AnchoredPosition: {x: 512, y: -397}
+  m_SizeDelta: {x: 419.6917, y: 423.2719}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1962049955
 MonoBehaviour:
@@ -21920,7 +21935,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1962049956}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1525581176}
+        m_TargetAssemblyTypeName: WrongScript, Assembly-CSharp
+        m_MethodName: RemoveInteract
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1962049956
 MonoBehaviour:
   m_ObjectHideFlags: 0

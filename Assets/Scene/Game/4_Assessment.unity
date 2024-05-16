@@ -25653,8 +25653,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 390, y: -341}
-  m_SizeDelta: {x: 400, y: 400}
+  m_AnchoredPosition: {x: 558, y: -395.5}
+  m_SizeDelta: {x: 423.2722, y: 413}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &777295359
 MonoBehaviour:
@@ -25699,7 +25699,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 777295360}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5404446116304915085}
+        m_TargetAssemblyTypeName: WrongScript, Assembly-CSharp
+        m_MethodName: RemoveInteract
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &777295360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97999,6 +98011,7 @@ GameObject:
   - component: {fileID: 5404446116304915083}
   - component: {fileID: 5404446116304915082}
   - component: {fileID: 5404446116304915084}
+  - component: {fileID: 5404446116304915085}
   m_Layer: 0
   m_Name: Life-Vest
   m_TagString: Untagged
@@ -98121,6 +98134,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 1414570872}
+--- !u!114 &5404446116304915085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5404446116304915079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15fc3ade60084b543b51913ff4183303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button1: {fileID: 777295357}
+  wrongbutton: {fileID: 777295359}
 --- !u!4 &5413964703646568124
 Transform:
   m_ObjectHideFlags: 0

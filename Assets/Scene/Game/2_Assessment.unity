@@ -30086,6 +30086,7 @@ GameObject:
   - component: {fileID: 515623420}
   - component: {fileID: 515623419}
   - component: {fileID: 515623421}
+  - component: {fileID: 515623422}
   m_Layer: 0
   m_Name: ObjectiveChair
   m_TagString: Untagged
@@ -30262,6 +30263,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InteractButton: {fileID: 577062108}
+--- !u!114 &515623422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515623409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15fc3ade60084b543b51913ff4183303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button1: {fileID: 1637370218}
+  wrongbutton: {fileID: 1637370220}
 --- !u!1 &517138062
 GameObject:
   m_ObjectHideFlags: 0
@@ -92623,10 +92638,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2055507871179484465}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 390, y: -341}
-  m_SizeDelta: {x: 400, y: 400}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -804, y: 300}
+  m_SizeDelta: {x: 416.1113, y: 414}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1637370220
 MonoBehaviour:
@@ -92671,7 +92686,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1637370221}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1996033562}
+        m_TargetAssemblyTypeName: WrongScript, Assembly-CSharp
+        m_MethodName: RemoveInteract
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1637370221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114057,6 +114084,7 @@ GameObject:
   - component: {fileID: 1996033560}
   - component: {fileID: 1996033559}
   - component: {fileID: 1996033561}
+  - component: {fileID: 1996033562}
   m_Layer: 0
   m_Name: ObjectiveChair
   m_TagString: Untagged
@@ -114229,6 +114257,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InteractButton: {fileID: 577062108}
+--- !u!114 &1996033562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996033551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15fc3ade60084b543b51913ff4183303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button1: {fileID: 1637370218}
+  wrongbutton: {fileID: 1637370220}
 --- !u!1 &1997991239
 GameObject:
   m_ObjectHideFlags: 0
