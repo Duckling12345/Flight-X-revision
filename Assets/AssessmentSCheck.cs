@@ -26,9 +26,4 @@ public class AssessmentSCheck : MonoBehaviour
             Debug.Log("Completed");
         }
     }
-
-
-
-
-
 }
