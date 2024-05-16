@@ -28977,6 +28977,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 875346144}
   m_Mesh: {fileID: 3785296276508407262, guid: 0ed6cb86ff7dec540b688465e9d4e214, type: 3}
+--- !u!1 &877254901 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5959929560000991566, guid: c14f0fc9e72d7854ca4ff4fbe98febfd, type: 3}
+  m_PrefabInstance: {fileID: 517285032}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &878085327
 GameObject:
   m_ObjectHideFlags: 0
@@ -39394,13 +39399,14 @@ GameObject:
   - component: {fileID: 1114317051}
   - component: {fileID: 1114317052}
   - component: {fileID: 1114317053}
+  - component: {fileID: 1114317054}
   m_Layer: 0
   m_Name: SceneExit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1114317047
 Transform:
   m_ObjectHideFlags: 0
@@ -39544,6 +39550,22 @@ MonoBehaviour:
   seconds: 0
   starsActive: 0
   checkActive: 0
+--- !u!114 &1114317054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114317046}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2c809ec9d030e44a913d31d558b3fbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: {fileID: 1941394887}
+  stars: {fileID: 877254901}
+  object1: {fileID: 484786697}
+  levelresult: {fileID: 15550985}
 --- !u!1 &1115201973
 GameObject:
   m_ObjectHideFlags: 0
@@ -48679,7 +48701,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1407007171
 MonoBehaviour:
   m_ObjectHideFlags: 0
