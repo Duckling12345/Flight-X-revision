@@ -30,7 +30,7 @@ public class GameOverManager : MonoBehaviour
         timerText.text = string.Format("{00:00}:{1:00}", minutes, seconds);
 
     }
-    void GameOver()
+   public void GameOver()
     {
         GameOverMenu.SetActive(true);
         PlayerUI.SetActive(false);

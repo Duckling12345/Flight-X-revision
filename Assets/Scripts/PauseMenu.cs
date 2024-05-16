@@ -52,7 +52,10 @@ public class  PauseMenu : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         Time.timeScale = 1f;
         SceneManager.LoadScene("Level Modules");
     }
-
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 
 
     void IPointerDownHandler.OnPointerDown(PointerEventData eventData)

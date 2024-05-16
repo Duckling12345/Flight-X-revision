@@ -51,7 +51,7 @@ public class StarsHandler : MonoBehaviour
             starsActive = 0;
         }
 
-        // Remaining time 
+        // Remaining time   
         seconds = Mathf.FloorToInt(timer.remainingTime);
         checkActive = starsActive;
         Debug.Log(checkActive);
