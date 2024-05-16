@@ -7641,8 +7641,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 968, y: -0.000045776367}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 1003, y: -10}
+  m_SizeDelta: {x: 305.1647, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &467238612
 MonoBehaviour:
@@ -7664,7 +7664,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CONCLUSION
+  m_text: CONGRATULATIONS!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d83bb61e69a0f8b4ea9ac92236e1d1c9, type: 2}
   m_sharedMaterial: {fileID: -1647058024891107762, guid: d83bb61e69a0f8b4ea9ac92236e1d1c9, type: 2}
@@ -7698,7 +7698,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -12266,8 +12266,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11, y: -380.0242}
-  m_SizeDelta: {x: 498.7908, y: 186.8521}
+  m_AnchoredPosition: {x: -6, y: -382}
+  m_SizeDelta: {x: 400.6565, y: 154.1407}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &770422101
 MonoBehaviour:
@@ -13308,8 +13308,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 523, y: -287}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 1240, y: -511}
+  m_SizeDelta: {x: 1678.2869, y: 563.2438}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &810577863
 MonoBehaviour:
@@ -13331,15 +13331,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Congratulations on reaching this point! You deserve this medal for all
-    your accomplishments. We hope this game has broadened your knowledge of emergency
-    flight scenarios.
+  m_text: 'Congratulations on reaching this point! Your dedication and hard work
+    in mastering these emergency scenarios have truly paid off. We hope this game
+    has broadened your knowledge of emergency flight scenarios.
 
 
-    Best of luck on your journey towards saving lives!'
+    Keep up the
+    great work, and continue to strive for excellence in all that you do. Well done!'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 16806facce1c5e74b8ab05d6cd12a50c, type: 2}
-  m_sharedMaterial: {fileID: 828406689421002274, guid: 16806facce1c5e74b8ab05d6cd12a50c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+  m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -13399,7 +13400,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -1301.0464, w: -371.35812}
+  m_margin: {x: 0, y: 0, z: 3.7495117, w: -6.304291}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -20864,6 +20865,7 @@ GameObject:
   - component: {fileID: 1212482026}
   - component: {fileID: 1212482028}
   - component: {fileID: 1212482027}
+  - component: {fileID: 1212482029}
   m_Layer: 0
   m_Name: Medal
   m_TagString: Untagged
@@ -20887,8 +20889,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 44, y: -489}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 28, y: -542}
+  m_SizeDelta: {x: 149.3601, y: 119.0336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1212482027
 MonoBehaviour:
@@ -20910,7 +20912,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 52a5ed54de5bde243a1f5bf8ecc18f90, type: 3}
+  m_Sprite: {fileID: 470533201, guid: ddf3c94d7a871ff4a9ef22a5db81c3dc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20928,6 +20930,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212482025}
   m_CullTransparentMesh: 1
+--- !u!95 &1212482029
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212482025}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9c8dff52fa0122b4c9e42a81e3c8fe7a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!64 &1213527964
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24511,7 +24534,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1382372118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24948,7 +24971,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 917.0738, y: -942.0724}
+  m_AnchoredPosition: {x: 914, y: -968}
   m_SizeDelta: {x: 830.0718, y: 141.6586}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1410090472
@@ -31159,8 +31182,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -45}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.000045776367, y: 0}
+  m_SizeDelta: {x: -66.6748, y: -64.8832}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1753321792
 MonoBehaviour:
@@ -31184,10 +31207,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: fbbe4d62ec32e1740bebb6dac86e1d0e, type: 3}
-    m_FontSize: 14
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 115
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -31195,9 +31218,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'EXIT
-
-'
+  m_Text: VIEW SUMMARY
 --- !u!222 &1753321793
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -34814,7 +34835,13 @@ Animator:
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
+    are already bound by a Humanoid avatar. These transforms can only be changed
+    by Humanoid clips.\n\tTransform 'CC_Base_L_Hand'\n\tTransform 'CC_Base_R_Upperarm'\n\tTransform
+    'CC_Base_L_Index1'\n\tTransform 'CC_Base_R_Index1'\n\tTransform 'CC_Base_R_Hand'\n\tTransform
+    'CC_Base_L_Forearm'\n\tTransform 'CC_Base_R_Forearm'\n\tTransform 'CC_Base_L_Upperarm'\n\tTransform
+    'CC_Base_L_Hand'\n\tTransform 'CC_Base_R_Upperarm'\n\tand more ...\n\tFrom animation
+    clip 'CMU compliant skeleton_Life Vest'"
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
@@ -76695,6 +76722,7 @@ MonoBehaviour:
   handsStateName: 
   DestroyOnExit: {fileID: 5006660478134161947}
   InteractButton: {fileID: 6811448917328162198}
+  grayout: {fileID: 0}
 --- !u!114 &5006660478134161949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80658,6 +80686,7 @@ MonoBehaviour:
   handsStateName: 
   DestroyOnExit: {fileID: 318105776330187361}
   InteractButton: {fileID: 6811448917328162198}
+  grayout: {fileID: 0}
 --- !u!114 &5532807414968636711
 MonoBehaviour:
   m_ObjectHideFlags: 0
