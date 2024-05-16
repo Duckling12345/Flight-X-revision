@@ -12423,6 +12423,7 @@ GameObject:
   - component: {fileID: 1274419792}
   - component: {fileID: 1274419791}
   - component: {fileID: 1274419797}
+  - component: {fileID: 1274419798}
   m_Layer: 0
   m_Name: PBE
   m_TagString: Untagged
@@ -12581,6 +12582,20 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4994483318804348304, guid: 62eeaf6a3de75244c95023dea4731eb2, type: 3}
+--- !u!114 &1274419798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274419789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92ace34271a023049acd1bc254035749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InteractButton: {fileID: 1837594016}
+  objectiveID: 0
 --- !u!1 &1281655318
 GameObject:
   m_ObjectHideFlags: 0
@@ -16336,6 +16351,7 @@ GameObject:
   - component: {fileID: 1525581172}
   - component: {fileID: 1525581171}
   - component: {fileID: 1525581170}
+  - component: {fileID: 1525581175}
   - component: {fileID: 1525581169}
   - component: {fileID: 1525581168}
   - component: {fileID: 1525581174}
@@ -16403,7 +16419,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 49.005905, y: 68.4552, z: 37.31249}
   m_Center: {x: -12.252171, y: 8.676325, z: 15.690286}
@@ -16505,6 +16521,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 601da117fd7618e45ab7252b400e388d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interact: {fileID: 2749211637320827651}
+  timer: {fileID: 1054514440}
+  stars: {fileID: 1563176236}
+  object1: {fileID: 1274419789}
+--- !u!114 &1525581175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525581165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92ace34271a023049acd1bc254035749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InteractButton: {fileID: 6811448917893529701}
+  objectiveID: 0
 --- !u!1 &1530648350
 GameObject:
   m_ObjectHideFlags: 0
@@ -17078,6 +17112,11 @@ RectTransform:
 --- !u!82 &1563176235 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 3637331864114228460, guid: c14f0fc9e72d7854ca4ff4fbe98febfd, type: 3}
+  m_PrefabInstance: {fileID: 1563176233}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1563176236 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5959929560000991566, guid: c14f0fc9e72d7854ca4ff4fbe98febfd, type: 3}
   m_PrefabInstance: {fileID: 1563176233}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1564117376

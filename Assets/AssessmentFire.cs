@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class AssessmentFire : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public FixedButton interact;
+    public GameOverManager timer;
+    public GameObject stars;
+    public GameObject object1;
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+
+        if (interact.Pressed)
+        {
+            if (object1.activeInHierarchy == true)
+            {
+                timer.GameOver();
+                stars.SetActive(false);
+
+            }
+        }
+        else
+        {
+            Debug.Log("Completed");
+        }
     }
 }
