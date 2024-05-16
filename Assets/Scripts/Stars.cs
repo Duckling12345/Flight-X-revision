@@ -31,7 +31,7 @@ public class Stars : MonoBehaviour
             //soundSource.PlayOneShot(errorClip);
             //Invoke("MuteAudio", 1f);
         }
-        else if (timer.remainingTime >= 16f && timer.remainingTime <= 44f || wrongButton1.buttonPressed && wrongButton1.objectiveID == 2)
+        else if (timer.remainingTime >= 16f && timer.remainingTime <= 44f || wrongButtton2.buttonPressed && wrongButtton2.objectiveID == 2)
         {
             // Two stars
             stars[0].SetActive(true);
