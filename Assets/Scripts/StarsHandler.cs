@@ -12,13 +12,14 @@ public class StarsHandler : MonoBehaviour
     public UnlockDoor SceneMover;
     public TMP_Text TimeLeft;
     public int seconds;
-
+    public WrongScript wrongButton1;
+    public WrongScript wrongButtton2;
     public int starsActive;
     public int checkActive;
      
     public void starsAchieved()
     {
-        if (timer.remainingTime >= 1f && timer.remainingTime <= 15f)
+        if (timer.remainingTime >= 1f && timer.remainingTime <= 15f || wrongButton1.buttonPressed && wrongButton1.objectiveID == 1)
         {
             // One star
             stars[0].SetActive(true);
@@ -26,7 +27,7 @@ public class StarsHandler : MonoBehaviour
             stars[2].SetActive(false);
             starsActive = 1;
         }
-        else if (timer.remainingTime >= 16f && timer.remainingTime <= 44f)
+        else if (timer.remainingTime >= 16f && timer.remainingTime <= 44f || wrongButton1.buttonPressed && wrongButton1.objectiveID == 2)
         {
             // Two stars
             stars[0].SetActive(true);

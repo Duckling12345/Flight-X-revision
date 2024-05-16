@@ -12,8 +12,9 @@ public class Stars : MonoBehaviour
     public GameOverManager timer;
     public AudioSource soundSource;
     public AudioClip errorClip;
+    public WrongScript wrongButton1;
+    public WrongScript wrongButtton2;
 
- 
     private void Update()
     {
         StarsAchieved();
@@ -21,7 +22,7 @@ public class Stars : MonoBehaviour
 
     public void StarsAchieved()
     {
-        if (timer.remainingTime >= 1f && timer.remainingTime <= 15f)
+        if (timer.remainingTime >= 1f && timer.remainingTime <= 15f || wrongButton1.buttonPressed && wrongButton1.objectiveID == 1)
         {
             // One star
             stars[0].SetActive(true);
@@ -30,7 +31,7 @@ public class Stars : MonoBehaviour
             //soundSource.PlayOneShot(errorClip);
             //Invoke("MuteAudio", 1f);
         }
-        else if (timer.remainingTime >= 16f && timer.remainingTime <= 44f)
+        else if (timer.remainingTime >= 16f && timer.remainingTime <= 44f || wrongButton1.buttonPressed && wrongButton1.objectiveID == 2)
         {
             // Two stars
             stars[0].SetActive(true);
