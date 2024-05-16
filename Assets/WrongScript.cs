@@ -8,7 +8,7 @@ public class WrongScript : MonoBehaviour
 {
     public GameObject button1;
     public Button wrongbutton;
-    //public GameObject panel;
+    public GameObject panel;
 
 
 
@@ -24,7 +24,7 @@ public class WrongScript : MonoBehaviour
 
     public void RemoveInteract()
     {
-        //panel.SetActive(true);
+        panel.SetActive(true);
         wrongbutton.interactable = false;
     }
 
@@ -32,7 +32,7 @@ public class WrongScript : MonoBehaviour
     {
         wrongbutton.interactable = true;
         button1.SetActive(false);
-        //panel.SetActive(false);
+        panel.SetActive(false);
     }
 
 
