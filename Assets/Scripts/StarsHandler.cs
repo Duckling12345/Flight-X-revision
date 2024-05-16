@@ -103,11 +103,6 @@ public class StarsHandler : MonoBehaviour
     }
 
 
-
-
-
-
-
     public void Quiz()
     {
         SceneMover.NextLevel();
