@@ -4,7 +4,7 @@ using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using UnityEngine.UIElements;
+//using UnityEngine.UIElements;
 
 public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 {
@@ -29,7 +29,7 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
     public GameObject playerUI;
     public GameObject timer;
     public GameObject stars;
-    public UnityEngine.UI.Slider simSlider;
+    public Slider simSlider;
     public Text SimScoreTxt;
     public int simScore;
 

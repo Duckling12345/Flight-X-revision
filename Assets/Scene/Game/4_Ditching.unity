@@ -3282,7 +3282,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1114317053}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StarsHandler, Assembly-CSharp
         m_MethodName: backToMenu
         m_Mode: 1
@@ -14944,9 +14944,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1114317053}
-        m_TargetAssemblyTypeName: StarsHandler, Assembly-CSharp
-        m_MethodName: Quiz
+      - m_Target: {fileID: 914023576}
+        m_TargetAssemblyTypeName: UnlockDoor, Assembly-CSharp
+        m_MethodName: NextLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -42291,7 +42291,6 @@ GameObject:
   - component: {fileID: 1114317049}
   - component: {fileID: 1114317048}
   - component: {fileID: 1114317051}
-  - component: {fileID: 1114317052}
   - component: {fileID: 1114317053}
   m_Layer: 0
   m_Name: SceneExit
@@ -42399,7 +42398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InteractButton: {fileID: 6811448918208387687}
---- !u!114 &1114317052
+--- !u!114 &1114317053
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42408,7 +42407,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1114317046}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29fb6c448d7acb74681246ca4574bb95, type: 3}
+  m_Script: {fileID: 11500000, guid: 98b9f0e982a2bca42bc9a5367e0839a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   disableButton: {fileID: 6811448918208387687}
@@ -42421,28 +42420,6 @@ MonoBehaviour:
   simSlider: {fileID: 453179736}
   SimScoreTxt: {fileID: 1372428479}
   simScore: 5
---- !u!114 &1114317053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1114317046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2a7d798cca45594ba50b6ad0953ae71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timer: {fileID: 1941394887}
-  stars:
-  - {fileID: 110374295}
-  - {fileID: 765666734}
-  - {fileID: 1620515433}
-  SceneMover: {fileID: 914023576}
-  TimeLeft: {fileID: 732518904}
-  seconds: 0
-  starsActive: 0
-  checkActive: 0
 --- !u!1001 &1116827221
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67143,7 +67120,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1114317053}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StarsHandler, Assembly-CSharp
         m_MethodName: Quiz
         m_Mode: 1

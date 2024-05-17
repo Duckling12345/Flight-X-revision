@@ -702,7 +702,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9149842193823408358}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StarsHandler, Assembly-CSharp
         m_MethodName: Quiz
         m_Mode: 1
@@ -2277,7 +2277,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9149842193823408358}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StarsHandler, Assembly-CSharp
         m_MethodName: backToMenu
         m_Mode: 1
@@ -31897,9 +31897,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9149842193823408358}
-        m_TargetAssemblyTypeName: StarsHandler, Assembly-CSharp
-        m_MethodName: Quiz
+      - m_Target: {fileID: 1113155878}
+        m_TargetAssemblyTypeName: UnlockDoor, Assembly-CSharp
+        m_MethodName: NextLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -112755,7 +112755,6 @@ GameObject:
   - component: {fileID: 9149842193823408354}
   - component: {fileID: 9149842193823408355}
   - component: {fileID: 9149842193823408356}
-  - component: {fileID: 9149842193823408357}
   - component: {fileID: 9149842193823408358}
   m_Layer: 0
   m_Name: WildFire
@@ -112902,7 +112901,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &9149842193823408357
+--- !u!114 &9149842193823408358
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -112911,7 +112910,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 9147667995635109615}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf46c1039de161540b634d158651aa35, type: 3}
+  m_Script: {fileID: 11500000, guid: 571f033abe542de43927a3e269575c1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fireScript: {fileID: 9149842193823408354}
@@ -112925,28 +112924,6 @@ MonoBehaviour:
   simSlider: {fileID: 195186886}
   SimScoreTxt: {fileID: 1747990790}
   simScore: 4
---- !u!114 &9149842193823408358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9147667995635109615}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2a7d798cca45594ba50b6ad0953ae71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timer: {fileID: 1054514440}
-  stars:
-  - {fileID: 991428732}
-  - {fileID: 1798043724}
-  - {fileID: 236099480}
-  SceneMover: {fileID: 1113155878}
-  TimeLeft: {fileID: 349816732}
-  seconds: 0
-  starsActive: 0
-  checkActive: 0
 --- !u!33 &9153457932929419851
 MeshFilter:
   m_ObjectHideFlags: 0
