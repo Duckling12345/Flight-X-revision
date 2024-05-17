@@ -27,8 +27,8 @@ public class WrongScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
         button1.SetActive(false);
     }
 
-    public void RemoveInteract()
-    {
+    
+    public void RemoveInteract() { 
         panel.SetActive(true);
         wrongbutton.interactable = false;
         //starHand.stars[objectiveID].SetActive(false);
