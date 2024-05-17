@@ -41,7 +41,7 @@ public class WrongScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
         wrongbutton.interactable = true;
         button1.SetActive(false);
         panel.SetActive(false);
-
+        
     }
 
     void IPointerDownHandler.OnPointerDown(PointerEventData eventData)

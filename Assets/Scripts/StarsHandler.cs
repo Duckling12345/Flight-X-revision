@@ -13,13 +13,13 @@ public class StarsHandler : MonoBehaviour
     public TMP_Text TimeLeft;
     public int seconds;
     public WrongScript wrongButton1;
-    public WrongScript wrongButtton2;
+    public WrongScript wrongButton2;
     public int starsActive;
     public int checkActive;
      
     public void starsAchieved()
     {
-        if (timer.remainingTime >= 1f && timer.remainingTime <= 15f || wrongButton1.buttonPressed && wrongButton1.objectiveID == 1)
+        if (timer.remainingTime >= 1f && timer.remainingTime <= 15f || wrongButton2.buttonPressed && wrongButton2.objectiveID == 1)
         {
             // One star
             stars[0].SetActive(true);

@@ -10,6 +10,9 @@ public class AssessmentSCheck : MonoBehaviour
     public GameObject object2;
     public GameObject animcamera;
     public GameObject captainvoice;
+    public GameObject button1;
+    public GameObject button2;
+
 
     private void Update()
     {
@@ -20,6 +23,8 @@ public class AssessmentSCheck : MonoBehaviour
                 timer.GameOver();
                 stars.SetActive(false);
                 captainvoice.SetActive(false);
+                button1.SetActive(false);
+                button2.SetActive(false);
             }
         } else
         {
