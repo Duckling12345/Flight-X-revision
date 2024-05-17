@@ -13746,6 +13746,10 @@ MonoBehaviour:
   button1: {fileID: 1590962851}
   wrongbutton: {fileID: 1590962853}
   panel: {fileID: 2020691232}
+  buttonPressed: 0
+  starHand: {fileID: 9149842193823408358}
+  stars2: {fileID: 1563176237}
+  objectiveID: 1
 --- !u!1 &1281655318
 GameObject:
   m_ObjectHideFlags: 0
@@ -17713,6 +17717,10 @@ MonoBehaviour:
   button1: {fileID: 1962049953}
   wrongbutton: {fileID: 1962049955}
   panel: {fileID: 2090955013}
+  buttonPressed: 0
+  starHand: {fileID: 9149842193823408358}
+  stars2: {fileID: 1563176237}
+  objectiveID: 2
 --- !u!1 &1530648350
 GameObject:
   m_ObjectHideFlags: 0
@@ -18293,6 +18301,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5959929560000991566, guid: c14f0fc9e72d7854ca4ff4fbe98febfd, type: 3}
   m_PrefabInstance: {fileID: 1563176233}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1563176237 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2820591598692436498, guid: c14f0fc9e72d7854ca4ff4fbe98febfd, type: 3}
+  m_PrefabInstance: {fileID: 1563176233}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227980470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4fed1b42ee634c4aa9433a75c1b02c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1564117376
 GameObject:
   m_ObjectHideFlags: 0
@@ -109978,6 +109997,8 @@ MonoBehaviour:
   SceneMover: {fileID: 1113155878}
   TimeLeft: {fileID: 521488602}
   seconds: 0
+  wrongButton1: {fileID: 0}
+  wrongButtton2: {fileID: 0}
   starsActive: 0
   checkActive: 0
 --- !u!33 &9153457932929419851

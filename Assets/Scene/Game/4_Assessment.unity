@@ -17950,6 +17950,17 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 3637331864114228460, guid: c14f0fc9e72d7854ca4ff4fbe98febfd, type: 3}
   m_PrefabInstance: {fileID: 517285032}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &517285037 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2820591598692436498, guid: c14f0fc9e72d7854ca4ff4fbe98febfd, type: 3}
+  m_PrefabInstance: {fileID: 517285032}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517285034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4fed1b42ee634c4aa9433a75c1b02c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &520254137
 GameObject:
   m_ObjectHideFlags: 0
@@ -35471,7 +35482,6 @@ GameObject:
   - component: {fileID: 1000881761}
   - component: {fileID: 1000881762}
   - component: {fileID: 1000881763}
-  - component: {fileID: 1000881764}
   m_Layer: 0
   m_Name: plane body.004
   m_TagString: Untagged
@@ -35718,21 +35728,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image3: {fileID: 850208902}
   image2: {fileID: 850208902}
---- !u!114 &1000881764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000881752}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15fc3ade60084b543b51913ff4183303, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  button1: {fileID: 2091200003}
-  wrongbutton: {fileID: 2091200005}
-  panel: {fileID: 1157528409}
 --- !u!1 &1002282343
 GameObject:
   m_ObjectHideFlags: 0
@@ -40387,6 +40382,8 @@ MonoBehaviour:
   SceneMover: {fileID: 914023576}
   TimeLeft: {fileID: 417434120}
   seconds: 0
+  wrongButton1: {fileID: 0}
+  wrongButtton2: {fileID: 0}
   starsActive: 0
   checkActive: 0
 --- !u!114 &1114317054
@@ -74902,7 +74899,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1000881764}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: WrongScript, Assembly-CSharp
         m_MethodName: RemoveInteract
         m_Mode: 1
@@ -99714,6 +99711,10 @@ MonoBehaviour:
   button1: {fileID: 777295357}
   wrongbutton: {fileID: 777295359}
   panel: {fileID: 650291459}
+  buttonPressed: 0
+  starHand: {fileID: 1114317053}
+  stars2: {fileID: 517285037}
+  objectiveID: 1
 --- !u!4 &5413964703646568124
 Transform:
   m_ObjectHideFlags: 0
