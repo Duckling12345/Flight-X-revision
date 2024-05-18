@@ -23,9 +23,10 @@ public class AssessmentSCheck : MonoBehaviour
                 timer.GameOver();
                 stars.SetActive(false);
                 captainvoice.SetActive(false);
-                button1.SetActive(false);
-                button2.SetActive(false);
+               
             }
+            button1.SetActive(false);
+            button2.SetActive(false);
         } else
         {
             Debug.Log("Completed");
