@@ -4051,7 +4051,7 @@ ParticleSystem:
         m_RotationOrder: 4
     randomizeRotationDirection: 0
     gravitySource: 0
-    maxNumParticles: 1000
+    maxNumParticles: 70
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 1
     rotation3D: 0
@@ -41940,6 +41940,7 @@ GameObject:
   - component: {fileID: 1976340450}
   - component: {fileID: 1976340452}
   - component: {fileID: 1976340453}
+  - component: {fileID: 1976340454}
   m_Layer: 0
   m_Name: AnnieV2
   m_TagString: Untagged
@@ -42043,6 +42044,31 @@ MonoBehaviour:
   showConclusionTime: 29
   transitionAnim: {fileID: 1319838111}
   devsAnim: {fileID: 1855565597}
+--- !u!114 &1976340454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976340449}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95cebd414df40a54e9a4703bcee4bdef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myConversation: {fileID: 0}
+  talkPressed: 0
+  talkButton: {fileID: 0}
+  objectiveText: {fileID: 0}
+  objectiveText1: {fileID: 0}
+  objectiveText2: {fileID: 0}
+  obstacle: {fileID: 0}
+  removeImage: {fileID: 0}
+  okayButton: {fileID: 0}
+  imagegray: {fileID: 0}
+  image1: {fileID: 0}
+  image2: {fileID: 0}
+  timetowait: 0
 --- !u!64 &1977317084
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -56183,7 +56209,7 @@ MonoBehaviour:
   _FixedClipboardButton: {fileID: 1659790362}
   _PopupWindow: {fileID: 817077882}
   _FixedTalkButton: {fileID: 5809612637541490069}
-  _NPCScript: {fileID: 0}
+  _NPCScript: {fileID: 1976340454}
 --- !u!1 &1537494236143479696
 GameObject:
   m_ObjectHideFlags: 0
